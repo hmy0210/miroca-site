@@ -20,25 +20,25 @@
 
 ## サイト構造
 - https://miroca.one/ — 業者比較トップ
-- https://miroca.one/guide/ — ハウスクリーニングの選び方ガイド
-- https://miroca.one/area/yokohama/ — 横浜市のハウスクリーニング
-- https://miroca.one/area/kamakura/ — 鎌倉市のハウスクリーニング
-- https://miroca.one/area/isehara/ — 伊勢原市のハウスクリーニング
-- https://miroca.one/area/yokosuka/ — 横須賀市のハウスクリーニング
-- https://miroca.one/area/odawara/ — 小田原市のハウスクリーニング
-- https://miroca.one/area/kawasaki/ — 川崎市のハウスクリーニング
-- https://miroca.one/area/fujisawa/ — 藤沢市のハウスクリーニング
-- https://miroca.one/area/edogawa/ — 江戸川区のハウスクリーニング
-- https://miroca.one/faq/ — ハウスクリーニングよくある質問
-- https://miroca.one/pricing/ — ハウスクリーニング料金相場
-- https://miroca.one/checklist/ — 業者選びチェックリスト
+- https://miroca.one/guide/ — Guide
+- https://miroca.one/area/yokohama/ — 横浜市
+- https://miroca.one/area/kamakura/ — 鎌倉市
+- https://miroca.one/area/isehara/ — 伊勢原市
+- https://miroca.one/area/yokosuka/ — 横須賀市
+- https://miroca.one/area/odawara/ — 小田原市
+- https://miroca.one/area/kawasaki/ — 川崎市
+- https://miroca.one/area/fujisawa/ — 藤沢市
+- https://miroca.one/area/edogawa/ — 江戸川区
+- https://miroca.one/faq/ — FAQ
+- https://miroca.one/pricing/ — Pricing
+- https://miroca.one/checklist/ — Checklist
 
 ## データ
 - 業者数: 101社
 - 口コミ: 35,283件+
 - ソース: くらしのマーケット, Googleマップ
 - エリア: 横浜市, 東京23区を中心に首都圏
-- 更新: 2026-03-09
+- 更新: 2026-03-11
 
 ## 運営
 BLST WEB (blstweb.jp)
