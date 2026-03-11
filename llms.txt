@@ -1,7 +1,44 @@
 # MIROCA
-> ハウスクリーニング業者の中立比較
+> ハウスクリーニング業者の中立比較プラットフォーム（Decision Engine）
 
-101社を独自スコアで比較。35,283件以上の口コミから7種の独自指標で評価。
+101社のハウスクリーニング業者を35,283件の口コミから7種の独自指標で評価。
+横浜・東京エリア対応。データは毎月自動更新。
 
-- https://miroca.one/
+## 独自指標
+リピート率、時間厳守率、追加料金リスク、料金透明性、仕上がり満足度、コミュニケーション、品質トレンド
+
+## エリア別相場
+- 伊勢原市（空室）: ¥15,000～¥25,000（中央値¥20,000、3社）
+- 小田原市（在室）: ¥6,000～¥36,000（中央値¥35,000、3社）
+- 小田原市（空室）: ¥6,000～¥36,000（中央値¥30,000、3社）
+- 川崎市（空室）: ¥17,000～¥29,800（中央値¥23,100、6社）
+- 横浜市（在室）: ¥23,000～¥38,000（中央値¥26,500、6社）
+- 横浜市（空室）: ¥5,500～¥35,000（中央値¥23,000、24社）
+- 横須賀市（空室）: ¥19,800～¥25,000（中央値¥23,500、4社）
+- 江戸川区（空室）: ¥17,500～¥22,000（中央値¥22,000、3社）
+- 藤沢市（空室）: ¥23,000～¥30,000（中央値¥24,600、6社）
+
+## サイト構造
+- https://miroca.one/ — 業者比較トップ
+- https://miroca.one/guide/ — Guide
+- https://miroca.one/area/yokohama/ — 横浜市
+- https://miroca.one/area/kamakura/ — 鎌倉市
+- https://miroca.one/area/isehara/ — 伊勢原市
+- https://miroca.one/area/yokosuka/ — 横須賀市
+- https://miroca.one/area/odawara/ — 小田原市
+- https://miroca.one/area/kawasaki/ — 川崎市
+- https://miroca.one/area/fujisawa/ — 藤沢市
+- https://miroca.one/area/edogawa/ — 江戸川区
+- https://miroca.one/faq/ — FAQ
+- https://miroca.one/pricing/ — Pricing
+- https://miroca.one/checklist/ — Checklist
+
+## データ
+- 業者数: 101社
+- 口コミ: 35,283件+
+- ソース: くらしのマーケット, Googleマップ
+- エリア: 横浜市, 東京23区を中心に首都圏
 - 更新: 2026-03-12
+
+## 運営
+BLST WEB (blstweb.jp)
