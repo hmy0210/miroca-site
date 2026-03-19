@@ -6,14 +6,17 @@
 <style>*{margin:0;padding:0;box-sizing:border-box}
 body{font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;background:#FAF7F2;color:#3D2E1F;line-height:1.8}
 a{color:#1A8C7A;text-decoration:none}a:hover{text-decoration:underline}
-.gh{background:#fff;border-bottom:1px solid #EDE6DA;padding:14px 20px;display:flex;align-items:center;gap:8px}
+.gh{background:#fff;border-bottom:1px solid #EDE6DA;padding:14px 20px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
 .gh-logo{font:800 20px/1 -apple-system,BlinkMacSystemFont,"Hiragino Sans",Meiryo,sans-serif;color:#3D2E1F}
+.gh-nav{display:flex;gap:8px;margin-left:auto}
+.gh-nav a{font-size:12px;color:#7A6A5A;padding:4px 8px;border-radius:6px;transition:.15s}
+.gh-nav a:hover{background:#E8F8F5;color:#1A8C7A;text-decoration:none}
 .gh-sep{color:#C4B8AA}.gh-title{font-size:13px;color:#7A6A5A}
 .gm{max-width:740px;margin:0 auto;padding:32px 20px}
 .g-h1{font-size:26px;font-weight:900;line-height:1.5;margin-bottom:8px}
 .g-sub{font-size:14px;color:#7A6A5A;margin-bottom:4px}
 .g-date{font-size:11px;color:#A09585;margin-bottom:32px}
-.g-sec{margin-bottom:36px;background:#fff;border:1px solid #EDE6DA;border-radius:18px;padding:24px;box-shadow:0 2px 12px rgba(60,46,30,.06)}
+.g-sec{margin-bottom:28px;background:#fff;border:1px solid #EDE6DA;border-radius:18px;padding:24px;box-shadow:0 2px 12px rgba(60,46,30,.06)}
 .g-h2{font-size:18px;font-weight:900;line-height:1.5;margin-bottom:12px;display:flex;align-items:center;gap:10px}
 .g-h2 em{color:#1A8C7A;font-style:normal}
 .g-num{width:28px;height:28px;border-radius:50%;background:#E8F8F5;color:#1A8C7A;font:700 13px/28px -apple-system,BlinkMacSystemFont,"Hiragino Sans",Meiryo,sans-serif;text-align:center;flex-shrink:0}
@@ -27,7 +30,7 @@ a{color:#1A8C7A;text-decoration:none}a:hover{text-decoration:underline}
 .g-table td{padding:8px 12px;border-bottom:1px solid #EDE6DA}
 .g-card{background:#fff;border:1px solid #EDE6DA;border-radius:14px;padding:16px;margin-bottom:10px}
 .g-card-top{display:flex;justify-content:space-between;align-items:center;margin-bottom:4px}
-.g-card-score{font:700 14px -apple-system,BlinkMacSystemFont,"Hiragino Sans",Meiryo,sans-serif;color:#1A8C7A}
+.g-card-rank{font-size:12px;color:#A09585}.g-card-score{font:700 14px -apple-system,BlinkMacSystemFont,"Hiragino Sans",Meiryo,sans-serif;color:#1A8C7A}
 .g-card-name{font-size:14px;font-weight:700;margin-bottom:4px}
 .g-card-meta{font-size:12px;color:#7A6A5A;margin-bottom:4px}
 .g-card-tags{font-size:11px;color:#5A4A3A;margin-bottom:6px}
@@ -37,14 +40,20 @@ a{color:#1A8C7A;text-decoration:none}a:hover{text-decoration:underline}
 .g-cta p{font-size:14px;color:#7A6A5A;margin-bottom:16px}
 .g-btn{display:inline-block;background:#1A8C7A;color:#fff;font-size:14px;font-weight:700;padding:12px 32px;border-radius:10px;transition:.2s}
 .g-btn:hover{background:#158068;text-decoration:none}
-.gf{text-align:center;padding:24px 20px;font-size:11px;color:#A09585;border-top:1px solid #EDE6DA;margin-top:24px}
-@media(max-width:600px){.g-h1{font-size:22px}.g-h2{font-size:16px}}</style>
+.gf{border-top:1px solid #EDE6DA;margin-top:24px;padding:32px 20px 24px}
+.gf-links{max-width:740px;margin:0 auto 20px;display:flex;gap:40px}
+.gf-col{display:flex;flex-direction:column;gap:5px}
+.gf-col-t{font-size:12px;font-weight:700;color:#3D2E1F;margin-bottom:2px}
+.gf-col a{font-size:12px;color:#7A6A5A}.gf-col a:hover{color:#1A8C7A}
+.gf-btm{max-width:740px;margin:0 auto;text-align:center;font-size:11px;color:#A09585;border-top:1px solid #EDE6DA;padding-top:16px}
+.gf-btm p{margin-bottom:4px}.gf-btm a{color:#A09585}
+@media(max-width:600px){.g-h1{font-size:22px}.g-h2{font-size:16px}.gh-nav{display:none}.gf-links{flex-direction:column;gap:16px}}</style>
 </head><body>
-<header class="gh"><a href="https://miroca.one/" class="gh-logo">MIROCA</a><span class="gh-sep">/</span><a href="https://miroca.one/guide/" class="gh-title">ガイド</a><span class="gh-sep">/</span><span class="gh-title">藤沢市</span></header>
+<header class="gh"><a href="https://miroca.one/" class="gh-logo">MIROCA</a><nav class="gh-nav"><a href="https://miroca.one/guide/">ガイド</a><a href="https://miroca.one/pricing/">相場</a><a href="https://miroca.one/faq/">FAQ</a><a href="https://miroca.one/checklist/">チェックリスト</a></nav><span class="gh-sep">/</span><span class="gh-title">藤沢市</span></header>
 <main class="gm">
 <h1 class="g-h1">藤沢市のハウスクリーニング業者 6社</h1>
 <p class="g-sub">793件の口コミを独自解析した結果です。</p>
-<p class="g-date">最終更新: 2026-03-16</p>
+<p class="g-date">最終更新: 2026-03-20</p>
 <section class="g-sec">
 <h2 class="g-h2">藤沢市の料金相場</h2>
 <div class="g-table"><table><tr><th>タイプ</th><th>最安</th><th>中央値</th><th>最高</th><th>業者数</th></tr>
@@ -60,7 +69,8 @@ a{color:#1A8C7A;text-decoration:none}a:hover{text-decoration:underline}
  | ¥30,000～
 </div>
 <div class="g-card-tags">損害保険 / 有資格者 / 自社施工</div>
-<a href="https://curama.jp/house/vacancy/SER006280290/" rel="noopener" target="_blank" class="g-card-link">くらしのマーケットで見る →</a>
+<a href="https://miroca.one/provider/006280290/" class="g-card-link">MIROCAで詳細を見る →</a>
+ <a href="https://curama.jp/house/vacancy/SER006280290/" rel="noopener" target="_blank" class="g-card-link" style="color:#A09585">出典 →</a>
 </div>
 <div class="g-card">
 <div class="g-card-top"><span class="g-card-rank">#2</span><span class="g-card-score">63点</span></div>
@@ -69,7 +79,8 @@ a{color:#1A8C7A;text-decoration:none}a:hover{text-decoration:underline}
  | ¥23,000～
 </div>
 <div class="g-card-tags">損害保険 / 仕上がり保証 / 自社施工</div>
-<a href="https://curama.jp/house/vacancy/SER934088859/" rel="noopener" target="_blank" class="g-card-link">くらしのマーケットで見る →</a>
+<a href="https://miroca.one/provider/934088859/" class="g-card-link">MIROCAで詳細を見る →</a>
+ <a href="https://curama.jp/house/vacancy/SER934088859/" rel="noopener" target="_blank" class="g-card-link" style="color:#A09585">出典 →</a>
 </div>
 <div class="g-card">
 <div class="g-card-top"><span class="g-card-rank">#3</span><span class="g-card-score">61点</span></div>
@@ -78,7 +89,8 @@ a{color:#1A8C7A;text-decoration:none}a:hover{text-decoration:underline}
  | ¥24,000～
 </div>
 <div class="g-card-tags">損害保険 / 自社施工</div>
-<a href="https://curama.jp/house/vacancy/SER648264443/" rel="noopener" target="_blank" class="g-card-link">くらしのマーケットで見る →</a>
+<a href="https://miroca.one/provider/648264443/" class="g-card-link">MIROCAで詳細を見る →</a>
+ <a href="https://curama.jp/house/vacancy/SER648264443/" rel="noopener" target="_blank" class="g-card-link" style="color:#A09585">出典 →</a>
 </div>
 <div class="g-card">
 <div class="g-card-top"><span class="g-card-rank">#4</span><span class="g-card-score">60点</span></div>
@@ -87,7 +99,8 @@ a{color:#1A8C7A;text-decoration:none}a:hover{text-decoration:underline}
  | ¥25,000～
 </div>
 <div class="g-card-tags">損害保険 / 自社施工</div>
-<a href="https://curama.jp/house/vacancy/SER320906324/" rel="noopener" target="_blank" class="g-card-link">くらしのマーケットで見る →</a>
+<a href="https://miroca.one/provider/320906324/" class="g-card-link">MIROCAで詳細を見る →</a>
+ <a href="https://curama.jp/house/vacancy/SER320906324/" rel="noopener" target="_blank" class="g-card-link" style="color:#A09585">出典 →</a>
 </div>
 <div class="g-card">
 <div class="g-card-top"><span class="g-card-rank">#5</span><span class="g-card-score">57点</span></div>
@@ -96,7 +109,8 @@ a{color:#1A8C7A;text-decoration:none}a:hover{text-decoration:underline}
  | ¥28,000～
 </div>
 <div class="g-card-tags">自社施工</div>
-<a href="https://curama.jp/house/vacancy/SER011997906/" rel="noopener" target="_blank" class="g-card-link">くらしのマーケットで見る →</a>
+<a href="https://miroca.one/provider/011997906/" class="g-card-link">MIROCAで詳細を見る →</a>
+ <a href="https://curama.jp/house/vacancy/SER011997906/" rel="noopener" target="_blank" class="g-card-link" style="color:#A09585">出典 →</a>
 </div>
 <div class="g-card">
 <div class="g-card-top"><span class="g-card-rank">#6</span><span class="g-card-score">47点</span></div>
@@ -105,12 +119,13 @@ a{color:#1A8C7A;text-decoration:none}a:hover{text-decoration:underline}
  | ¥24,200～
 </div>
 <div class="g-card-tags">自社施工</div>
-<a href="https://curama.jp/house/vacancy/SER726530720/" rel="noopener" target="_blank" class="g-card-link">くらしのマーケットで見る →</a>
+<a href="https://miroca.one/provider/726530720/" class="g-card-link">MIROCAで詳細を見る →</a>
+ <a href="https://curama.jp/house/vacancy/SER726530720/" rel="noopener" target="_blank" class="g-card-link" style="color:#A09585">出典 →</a>
 </div>
 </section>
 <section class="g-cta">
 <a href="https://miroca.one/" class="g-btn">全101社をフィルターで比較する →</a>
 </section>
 </main>
-<footer class="gf"><p>© 2026 BLST WEB — 2026-03-16</p></footer>
+<footer class="gf"><p>© 2026 BLST WEB — 2026-03-20</p></footer>
 </body></html>
