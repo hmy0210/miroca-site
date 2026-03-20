@@ -132,6 +132,8 @@
 - https://miroca.one/provider/726530720/ — 藤沢市 / 自社施工 / ¥24,200〜
 - https://miroca.one/provider/881394039/ — 本庄市 / 口コミ100件超 / 自社施工 / ¥18,000〜
 - https://miroca.one/provider/504289248/ — 相模原市 / 損害保険加入 / 自社施工 / ¥13,000〜
+- https://miroca.one/report/ — 市場レポート一覧
+- https://miroca.one/report/2026-03/ — 2026年03月レポート
 
 ## データ
 - 業者数: 101社
