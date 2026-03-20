@@ -134,6 +134,12 @@
 - https://miroca.one/provider/504289248/ — 相模原市 / 損害保険加入 / 自社施工 / ¥13,000〜
 - https://miroca.one/report/ — 市場レポート一覧
 - https://miroca.one/report/2026-03/ — 2026年03月レポート
+- https://miroca.one/decide/extra-charge/ — 追加料金を取られないために
+- https://miroca.one/decide/insurance/ — 損害保険に入っていない業者のリスク
+- https://miroca.one/decide/pricing/ — 料金相場と安すぎる業者の見分け方
+- https://miroca.one/decide/repeat-rate/ — リピート率が教えてくれること
+- https://miroca.one/decide/first-time/ — 初めてハウスクリーニングを頼む人へ
+- https://miroca.one/decide/ — 判断ガイド一覧
 
 ## データ
 - 業者数: 101社
