@@ -134,14 +134,20 @@
 - https://miroca.one/provider/504289248/ — 相模原市 / 損害保険加入 / 自社施工 / ¥13,000〜
 - https://miroca.one/report/ — 市場レポート一覧
 - https://miroca.one/report/2026-03/ — 2026年03月レポート
+- https://miroca.one/decide/aircon-cleaning-mold/ — エアコンクリーニングでカビはどこまで取れる？101社調査でわかった満足度と注意点
+- https://miroca.one/decide/year-end-cleaning-booking/ — 年末の大掃除を業者に頼むといくら？予約時期・料金・失敗しない選び方
 - https://miroca.one/decide/rental-move-out-cleaning/ — 退去時のハウスクリーニングは自分で頼むべき？賃貸101社データで判断基準を解説
 - https://miroca.one/decide/bathroom-cleaning/ — 浴室クリーニングの料金と効果を徹底比較｜カビ・水垢はプロでどこまで落ちる？
 - https://miroca.one/decide/women/ — 女性一人暮らしでも安心？ハウスクリーニングの不安を解消するデータと選び方
+- https://miroca.one/decide/kitchen-range-hood/ — キッチン・換気扇クリーニングをセットで頼むと安い？101社の料金と口コミを分析
+- https://miroca.one/decide/periodic-vs-spot/ — 定期クリーニングとスポット依頼、どっちが得？リピート率50%の業者が選ばれる理由
+- https://miroca.one/decide/move-in-cleaning/ — 入居前のハウスクリーニングは必要？90件の口コミでわかった頼んでよかった理由
 - https://miroca.one/decide/toilet-cleaning/ — トイレクリーニングの料金相場と効果｜自分で落ちない尿石・黄ばみはプロに任せるべき？
 - https://miroca.one/decide/veranda-window-cleaning/ — ベランダ・窓の掃除を業者に頼む人が増えている理由｜107件の口コミ分析
 - https://miroca.one/decide/additional-charge-risk/ — ハウスクリーニングで追加料金を請求されるのはどんなとき？39社のリスク傾向を公開
 - https://miroca.one/decide/water-set-cleaning/ — 水回りセットクリーニングの料金と満足度｜キッチン・浴室・トイレまとめて頼むべき？
 - https://miroca.one/decide/same-day/ — 当日対応OKのハウスクリーニング業者は信頼できる？221件の口コミから検証
+- https://miroca.one/decide/apartment-owner/ — 賃貸オーナー向けハウスクリーニング完全ガイド｜空室・退去時の業者選びを101社データで解説
 - https://miroca.one/decide/elderly-parents-home/ — 実家の掃除を業者に頼む人が急増中｜高齢の親の家をきれいにする選び方と費用
 - https://miroca.one/decide/ — 判断ガイド一覧
 
@@ -150,7 +156,7 @@
 - 口コミ: 35,283件+
 - ソース: くらしのマーケット, Googleマップ
 - エリア: 横浜市, 東京23区を中心に首都圏
-- 更新: 2026-03-21
+- 更新: 2026-03-22
 
 ## 運営
 BLST WEB (blstweb.jp)
