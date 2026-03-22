@@ -167,6 +167,43 @@ font:800 20px/1 -apple-system,BlinkMacSystemFont,"Hiragino Sans",Meiryo,sans-ser
 <div class="p-price-main"><span class="p-price-value">¥26,000</span><span class="p-price-to">〜 ¥128,000</span></div>
 <div class="p-price-clarity neutral">やや幅あり（4.9倍）</div>
 </section>
+<section class="psec">
+<h2 class="psec-h"><span class="psec-icon">🗺</span>対応エリア</h2>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<style>#provider-map{height:360px;border-radius:14px;border:1px solid #EDE6DA;margin:16px 0}.miroca-popup{font:13px -apple-system,BlinkMacSystemFont,"Hiragino Sans",Meiryo,sans-serif;line-height:1.6}.miroca-popup b{color:#1A8C7A}@media(max-width:600px){#provider-map{height:280px}}</style>
+<div id="provider-map"></div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function(){
+var map=L.map("provider-map",{scrollWheelZoom:false}).setView([35.68334583333333,139.52051666666665],10);
+L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{attribution:"&copy; OpenStreetMap",maxZoom:18}).addTo(map);
+L.circleMarker([35.6378,139.5047],{radius:8,fillColor:"#1A8C7A",color:"#fff",weight:2,fillOpacity:0.7}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>稲城市</b></div>");
+L.circleMarker([35.7711,139.5189],{radius:8,fillColor:"#1A8C7A",color:"#fff",weight:2,fillOpacity:0.7}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>清瀬市</b></div>");
+L.circleMarker([35.6839,139.4414],{radius:8,fillColor:"#1A8C7A",color:"#fff",weight:2,fillOpacity:0.7}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>国立市</b></div>");
+L.circleMarker([35.6994,139.5028],{radius:8,fillColor:"#1A8C7A",color:"#fff",weight:2,fillOpacity:0.7}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>小金井市</b></div>");
+L.circleMarker([35.7106,139.4622],{radius:8,fillColor:"#1A8C7A",color:"#fff",weight:2,fillOpacity:0.7}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>国分寺市</b></div>");
+L.circleMarker([35.7286,139.4775],{radius:8,fillColor:"#1A8C7A",color:"#fff",weight:2,fillOpacity:0.7}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>小平市</b></div>");
+L.circleMarker([35.6344,139.5781],{radius:8,fillColor:"#1A8C7A",color:"#fff",weight:2,fillOpacity:0.7}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>狛江市</b></div>");
+L.circleMarker([35.6994,139.6364],{radius:8,fillColor:"#1A8C7A",color:"#fff",weight:2,fillOpacity:0.7}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>杉並区</b></div>");
+L.circleMarker([35.6461,139.6531],{radius:8,fillColor:"#1A8C7A",color:"#fff",weight:2,fillOpacity:0.7}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>世田谷区</b></div>");
+L.circleMarker([35.6369,139.4464],{radius:8,fillColor:"#1A8C7A",color:"#fff",weight:2,fillOpacity:0.7}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>多摩市</b></div>");
+L.circleMarker([35.6506,139.5406],{radius:8,fillColor:"#1A8C7A",color:"#fff",weight:2,fillOpacity:0.7}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>調布市</b></div>");
+L.circleMarker([35.7253,139.5381],{radius:8,fillColor:"#1A8C7A",color:"#fff",weight:2,fillOpacity:0.7}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>西東京市</b></div>");
+L.circleMarker([35.7356,139.6517],{radius:8,fillColor:"#1A8C7A",color:"#fff",weight:2,fillOpacity:0.7}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>練馬区</b></div>");
+L.circleMarker([35.7578,139.5297],{radius:8,fillColor:"#1A8C7A",color:"#fff",weight:2,fillOpacity:0.7}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>東久留米市</b></div>");
+L.circleMarker([35.7547,139.4689],{radius:8,fillColor:"#1A8C7A",color:"#fff",weight:2,fillOpacity:0.7}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>東村山市</b></div>");
+L.circleMarker([35.7456,139.4264],{radius:8,fillColor:"#1A8C7A",color:"#fff",weight:2,fillOpacity:0.7}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>東大和市</b></div>");
+L.circleMarker([35.6692,139.4778],{radius:8,fillColor:"#1A8C7A",color:"#fff",weight:2,fillOpacity:0.7}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>府中市</b></div>");
+L.circleMarker([35.5486,139.4464],{radius:8,fillColor:"#1A8C7A",color:"#fff",weight:2,fillOpacity:0.7}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>町田市</b></div>");
+L.circleMarker([35.6836,139.5594],{radius:8,fillColor:"#1A8C7A",color:"#fff",weight:2,fillOpacity:0.7}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>三鷹市</b></div>");
+L.circleMarker([35.7175,139.5664],{radius:8,fillColor:"#1A8C7A",color:"#fff",weight:2,fillOpacity:0.7}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>武蔵野市</b></div>");
+L.circleMarker([35.7547,139.3875],{radius:8,fillColor:"#1A8C7A",color:"#fff",weight:2,fillOpacity:0.7}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>武蔵村山市</b></div>");
+L.circleMarker([35.6194,139.5594],{radius:8,fillColor:"#1A8C7A",color:"#fff",weight:2,fillOpacity:0.7}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>川崎市多摩区</b></div>");
+L.circleMarker([35.6039,139.5069],{radius:8,fillColor:"#1A8C7A",color:"#fff",weight:2,fillOpacity:0.7}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>川崎市麻生区</b></div>");
+L.circleMarker([35.5856,139.6117],{radius:8,fillColor:"#1A8C7A",color:"#fff",weight:2,fillOpacity:0.7}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>川崎市高津区</b></div>");
+})();
+</script>
+</section>
 <section class="psec p-cta-sec">
 <h2 class="psec-h" style="justify-content:center"><span class="psec-icon">🔎</span>この業者に依頼する</h2>
 <a href="https://www.happy-bears.com/houseclean/fcshop/tokyo-chofu" target="_blank" rel="noopener" class="p-cta-btn">公式サイトで予約・問い合わせ →</a>

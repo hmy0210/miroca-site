@@ -170,6 +170,37 @@ font:800 20px/1 -apple-system,BlinkMacSystemFont,"Hiragino Sans",Meiryo,sans-ser
 </div>
 <div class="p-consistency">一貫性: <b>100%</b> — 信頼性が高い</div>
 </section>
+<section class="psec">
+<h2 class="psec-h"><span class="psec-icon">🗺</span>対応エリア</h2>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<style>#provider-map{height:360px;border-radius:14px;border:1px solid #EDE6DA;margin:16px 0}.miroca-popup{font:13px -apple-system,BlinkMacSystemFont,"Hiragino Sans",Meiryo,sans-serif;line-height:1.6}.miroca-popup b{color:#1A8C7A}@media(max-width:600px){#provider-map{height:280px}}</style>
+<div id="provider-map"></div>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+(function(){
+var map=L.map("provider-map",{scrollWheelZoom:false}).setView([35.422133333333335,139.42601111111114],10);
+L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{attribution:"&copy; OpenStreetMap",maxZoom:18}).addTo(map);
+L.circleMarker([35.5486,139.4464],{radius:8,fillColor:"#1A8C7A",color:"#fff",weight:2,fillOpacity:0.7}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>町田市</b></div>");
+L.circleMarker([35.4411,139.3617],{radius:8,fillColor:"#1A8C7A",color:"#fff",weight:2,fillOpacity:0.7}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>厚木市</b></div>");
+L.circleMarker([35.3953,139.3144],{radius:8,fillColor:"#1A8C7A",color:"#fff",weight:2,fillOpacity:0.7}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>伊勢原市</b></div>");
+L.circleMarker([35.4528,139.3906],{radius:8,fillColor:"#1A8C7A",color:"#fff",weight:2,fillOpacity:0.7}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>海老名市</b></div>");
+L.circleMarker([35.2644,139.1523],{radius:8,fillColor:"#1A8C7A",color:"#fff",weight:2,fillOpacity:0.7}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>小田原市</b></div>");
+L.circleMarker([35.3192,139.5467],{radius:8,fillColor:"#1A8C7A",color:"#fff",weight:2,fillOpacity:0.7}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>鎌倉市</b></div>");
+L.circleMarker([35.4889,139.4083],{radius:8,fillColor:"#1A8C7A",color:"#fff",weight:2,fillOpacity:0.7}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>座間市</b></div>");
+L.circleMarker([35.3339,139.4019],{radius:8,fillColor:"#1A8C7A",color:"#fff",weight:2,fillOpacity:0.7}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>茅ヶ崎市</b></div>");
+L.circleMarker([35.3739,139.2283],{radius:8,fillColor:"#1A8C7A",color:"#fff",weight:2,fillOpacity:0.7}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>秦野市</b></div>");
+L.circleMarker([35.3297,139.3497],{radius:8,fillColor:"#1A8C7A",color:"#fff",weight:2,fillOpacity:0.7}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>平塚市</b></div>");
+L.circleMarker([35.3389,139.49],{radius:8,fillColor:"#1A8C7A",color:"#fff",weight:2,fillOpacity:0.7}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>藤沢市</b></div>");
+L.circleMarker([35.4872,139.4619],{radius:8,fillColor:"#1A8C7A",color:"#fff",weight:2,fillOpacity:0.7}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>大和市</b></div>");
+L.circleMarker([35.5685,139.5173],{radius:8,fillColor:"#1A8C7A",color:"#fff",weight:2,fillOpacity:0.7}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>横浜市青葉区</b></div>");
+L.circleMarker([35.4748,139.5381],{radius:8,fillColor:"#1A8C7A",color:"#fff",weight:2,fillOpacity:0.7}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>横浜市旭区</b></div>");
+L.circleMarker([35.4017,139.4928],{radius:8,fillColor:"#1A8C7A",color:"#fff",weight:2,fillOpacity:0.7}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>横浜市泉区</b></div>");
+L.circleMarker([35.4631,139.4967],{radius:8,fillColor:"#1A8C7A",color:"#fff",weight:2,fillOpacity:0.7}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>横浜市瀬谷区</b></div>");
+L.circleMarker([35.3997,139.5333],{radius:8,fillColor:"#1A8C7A",color:"#fff",weight:2,fillOpacity:0.7}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>横浜市戸塚区</b></div>");
+L.circleMarker([35.5167,139.5378],{radius:8,fillColor:"#1A8C7A",color:"#fff",weight:2,fillOpacity:0.7}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>横浜市緑区</b></div>");
+})();
+</script>
+</section>
 <section class="psec p-cta-sec">
 <h2 class="psec-h" style="justify-content:center"><span class="psec-icon">🔎</span>この業者に依頼する</h2>
 <a href="http://www.osoujikakumei.jp/isehara_tsurumaki/" target="_blank" rel="noopener" class="p-cta-btn">公式サイトで予約・問い合わせ →</a>
