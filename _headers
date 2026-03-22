@@ -1,0 +1,2 @@
+/*
+  Content-Security-Policy: default-src 'self' https: ; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://unpkg.com ; style-src 'self' 'unsafe-inline' https://unpkg.com ; img-src 'self' https: data: ; connect-src 'self' https:
