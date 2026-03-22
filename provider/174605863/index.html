@@ -174,8 +174,8 @@ font:800 20px/1 -apple-system,BlinkMacSystemFont,"Hiragino Sans",Meiryo,sans-ser
 <h2 class="psec-h"><span class="psec-icon">🗺</span>対応エリア</h2>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <style>#provider-map{height:400px;border-radius:14px;border:1px solid #EDE6DA;margin:16px 0}
-.miroca-popup{font:13px -apple-system,BlinkMacSystemFont,"Hiragino Sans",Meiryo,sans-serif;line-height:1.6}
-.miroca-popup b{color:#1A8C7A}
+.mp{font:13px -apple-system,BlinkMacSystemFont,"Hiragino Sans",Meiryo,sans-serif;line-height:1.6}
+.mp b{color:#1A8C7A}.mp a{color:#1A8C7A;font-weight:600}
 @media(max-width:600px){#provider-map{height:300px}}</style>
 <div id="provider-map"></div>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -183,122 +183,12 @@ font:800 20px/1 -apple-system,BlinkMacSystemFont,"Hiragino Sans",Meiryo,sans-ser
 (function(){
 var map=L.map("provider-map",{scrollWheelZoom:false}).setView([35.44789210526314,139.52986578947372],9);
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{attribution:"&copy; OpenStreetMap",maxZoom:18}).addTo(map);
-L.circle([35.3739,139.2283],{
-radius:5753,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>秦野市</b></div>");
-L.circle([35.3953,139.3144],{
-radius:4222,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>伊勢原市</b></div>");
-L.circle([35.4528,139.3906],{
-radius:2876,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>海老名市</b></div>");
-L.circle([35.4889,139.4083],{
-radius:2393,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>座間市</b></div>");
-L.circle([35.2644,139.1523],{
-radius:6023,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>小田原市</b></div>");
-L.circle([35.4872,139.4619],{
-radius:2931,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>大和市</b></div>");
-L.circle([35.5308,139.7028],{
-radius:3568,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>川崎市川崎区</b></div>");
-L.circle([35.5456,139.6844],{
-radius:1784,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>川崎市幸区</b></div>");
-L.circle([35.5728,139.6561],{
-radius:2185,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>川崎市中原区</b></div>");
-L.circle([35.5856,139.6117],{
-radius:2326,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>川崎市高津区</b></div>");
-L.circle([35.6194,139.5594],{
-radius:2523,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>川崎市多摩区</b></div>");
-L.circle([35.5847,139.5772],{
-radius:2393,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>川崎市宮前区</b></div>");
-L.circle([35.6039,139.5069],{
-radius:2705,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>川崎市麻生区</b></div>");
-L.circle([35.4411,139.3617],{
-radius:5470,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>厚木市</b></div>");
-L.circle([35.3339,139.4019],{
-radius:3385,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>茅ヶ崎市</b></div>");
-L.circle([35.3389,139.49],{
-radius:4720,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>藤沢市</b></div>");
-L.circle([35.3297,139.3497],{
-radius:4652,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>平塚市</b></div>");
-L.circle([35.2956,139.5803],{
-radius:2326,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>逗子市</b></div>");
-L.circle([35.3192,139.5467],{
-radius:3568,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>鎌倉市</b></div>");
-L.circle([35.2814,139.6722],{
-radius:5670,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>横須賀市</b></div>");
-L.circle([35.4856,139.6322],{
-radius:2705,fillColor:"#1A8C7A",color:"#1A8C7A",weight:2,fillOpacity:0.25
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>横浜市神奈川区</b></div>");
-L.circle([35.4558,139.6206],{
-radius:1492,fillColor:"#1A8C7A",color:"#1A8C7A",weight:2,fillOpacity:0.25
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>横浜市西区</b></div>");
-L.circle([35.4383,139.6422],{
-radius:2585,fillColor:"#1A8C7A",color:"#1A8C7A",weight:2,fillOpacity:0.25
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>横浜市中区</b></div>");
-L.circle([35.4269,139.6019],{
-radius:2034,fillColor:"#1A8C7A",color:"#1A8C7A",weight:2,fillOpacity:0.25
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>横浜市南区</b></div>");
-L.circle([35.4467,139.5944],{
-radius:2585,fillColor:"#1A8C7A",color:"#1A8C7A",weight:2,fillOpacity:0.25
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>横浜市保土ケ谷区</b></div>");
-L.circle([35.4028,139.6217],{
-radius:2459,fillColor:"#1A8C7A",color:"#1A8C7A",weight:2,fillOpacity:0.25
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>横浜市磯子区</b></div>");
-L.circle([35.3456,139.6197],{
-radius:3141,fillColor:"#1A8C7A",color:"#1A8C7A",weight:2,fillOpacity:0.25
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>横浜市金沢区</b></div>");
-L.circle([35.5339,139.6327],{
-radius:3141,fillColor:"#1A8C7A",color:"#1A8C7A",weight:2,fillOpacity:0.25
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>横浜市港北区</b></div>");
-L.circle([35.3997,139.5333],{
-radius:3385,fillColor:"#1A8C7A",color:"#1A8C7A",weight:2,fillOpacity:0.25
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>横浜市戸塚区</b></div>");
-L.circle([35.3969,139.5869],{
-radius:2459,fillColor:"#1A8C7A",color:"#1A8C7A",weight:2,fillOpacity:0.25
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>横浜市港南区</b></div>");
-L.circle([35.4748,139.5381],{
-radius:3241,fillColor:"#1A8C7A",color:"#1A8C7A",weight:2,fillOpacity:0.25
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>横浜市旭区</b></div>");
-L.circle([35.5167,139.5378],{
-radius:2820,fillColor:"#1A8C7A",color:"#1A8C7A",weight:2,fillOpacity:0.25
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>横浜市緑区</b></div>");
-L.circle([35.4631,139.4967],{
-radius:2326,fillColor:"#1A8C7A",color:"#1A8C7A",weight:2,fillOpacity:0.25
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>横浜市瀬谷区</b></div>");
-L.circle([35.3608,139.5567],{
-radius:2459,fillColor:"#1A8C7A",color:"#1A8C7A",weight:2,fillOpacity:0.25
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>横浜市栄区</b></div>");
-L.circle([35.4017,139.4928],{
-radius:2763,fillColor:"#1A8C7A",color:"#1A8C7A",weight:2,fillOpacity:0.25
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>横浜市泉区</b></div>");
-L.circle([35.5685,139.5173],{
-radius:3337,fillColor:"#1A8C7A",color:"#1A8C7A",weight:2,fillOpacity:0.25
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>横浜市青葉区</b></div>");
-L.circle([35.5467,139.5703],{
-radius:2985,fillColor:"#1A8C7A",color:"#1A8C7A",weight:2,fillOpacity:0.25
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>横浜市都筑区</b></div>");
-L.circle([35.5103,139.6828],{
-radius:3241,fillColor:"#1A8C7A",color:"#1A8C7A",weight:2,fillOpacity:0.25
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>横浜市鶴見区</b></div>");
+L.polygon([[35.2644,139.1523],[35.2814,139.6722],[35.5308,139.7028],[35.5728,139.6561],[35.6194,139.5594],[35.6039,139.5069],[35.3739,139.2283]],{color:"#1A8C7A",weight:2,fillColor:"#1A8C7A",fillOpacity:0.1,dashArray:"6 4"}).addTo(map);
+L.marker([35.4376724,139.6244695],{
+icon:L.divIcon({className:"",html:'<div style="background:#D97706;color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font:700 14px sans-serif;border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.3)">📍</div>'})
+}).addTo(map).bindPopup("<div class=\"mp\"><b>所在地</b></div>");
 })();
-</script><div style="font-size:13px;color:#7A6A5A;line-height:1.8;margin-top:8px"><p style="margin-bottom:8px">対応エリア（38市区町村）:</p><b>神奈川県</b>: 足柄下郡箱根町、足柄下郡湯河原町、足柄下郡真鶴町、秦野市、伊勢原市、海老名市、座間市、南足柄市、綾瀬市、愛甲郡清川村、愛甲郡愛川町、小田原市、大和市、高座郡寒川町、川崎市川崎区、川崎市幸区、川崎市中原区、川崎市高津区、川崎市多摩区、川崎市宮前区、川崎市麻生区、厚木市、茅ヶ崎市、藤沢市、平塚市、足柄上郡中井町、足柄上郡大井町、足柄上郡松田町、足柄上郡山北町、足柄上郡開成町、相模原市緑区、相模原市中央区、相模原市南区、三浦郡葉山町、三浦市、逗子市、鎌倉市、中郡二宮町、中郡大磯町、横須賀市、横浜市神奈川区、横浜市西区、横浜市中区、横浜市南区、横浜市保土ケ谷区、横浜市磯子区、横浜市金沢区、横浜市港北区、横浜市戸塚区、横浜市港南区、横浜市旭区、横浜市緑区、横浜市瀬谷区、横浜市栄区、横浜市泉区、横浜市青葉区、横浜市都筑区、横浜市鶴見区</div>
+</script><div style="font-size:13px;color:#7A6A5A;line-height:1.8;margin-top:8px"><p style="margin-bottom:8px">対応エリア（38市区町村）— 破線内が対応範囲:</p><b>神奈川県</b>: 足柄下郡箱根町、足柄下郡湯河原町、足柄下郡真鶴町、秦野市、伊勢原市、海老名市、座間市、南足柄市、綾瀬市、愛甲郡清川村、愛甲郡愛川町、小田原市、大和市、高座郡寒川町、川崎市川崎区、川崎市幸区、川崎市中原区、川崎市高津区、川崎市多摩区、川崎市宮前区、川崎市麻生区、厚木市、茅ヶ崎市、藤沢市、平塚市、足柄上郡中井町、足柄上郡大井町、足柄上郡松田町、足柄上郡山北町、足柄上郡開成町、相模原市緑区、相模原市中央区、相模原市南区、三浦郡葉山町、三浦市、逗子市、鎌倉市、中郡二宮町、中郡大磯町、横須賀市、横浜市神奈川区、横浜市西区、横浜市中区、横浜市南区、横浜市保土ケ谷区、横浜市磯子区、横浜市金沢区、横浜市港北区、横浜市戸塚区、横浜市港南区、横浜市旭区、横浜市緑区、横浜市瀬谷区、横浜市栄区、横浜市泉区、横浜市青葉区、横浜市都筑区、横浜市鶴見区</div>
 </section>
 <section class="psec p-cta-sec">
 <h2 class="psec-h" style="justify-content:center"><span class="psec-icon">🔎</span>この業者に依頼する</h2>

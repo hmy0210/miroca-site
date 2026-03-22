@@ -75,8 +75,8 @@ a{color:#1A8C7A;text-decoration:none}a:hover{text-decoration:underline}
 <h1 class="g-h1">江戸川区のハウスクリーニング業者 3社</h1>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <style>#area-map{height:400px;border-radius:14px;border:1px solid #EDE6DA;margin:16px 0}
-.miroca-popup{font:13px -apple-system,BlinkMacSystemFont,"Hiragino Sans",Meiryo,sans-serif;line-height:1.6}
-.miroca-popup b{color:#1A8C7A}
+.mp{font:13px -apple-system,BlinkMacSystemFont,"Hiragino Sans",Meiryo,sans-serif;line-height:1.6}
+.mp b{color:#1A8C7A}.mp a{color:#1A8C7A;font-weight:600}
 @media(max-width:600px){#area-map{height:300px}}</style>
 <div id="area-map"></div>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -84,212 +84,17 @@ a{color:#1A8C7A;text-decoration:none}a:hover{text-decoration:underline}
 (function(){
 var map=L.map("area-map",{scrollWheelZoom:false}).setView([35.7068,139.8682],13);
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{attribution:"&copy; OpenStreetMap",maxZoom:18}).addTo(map);
-L.circle([35.7068,139.8682],{
-radius:3949,fillColor:"#1A8C7A",color:"#1A8C7A",weight:2,fillOpacity:0.25
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>江戸川区</b><br>3社が対応</div>");
-L.circle([35.8078,139.7239],{
-radius:4442,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>川口市</b><br>3社が対応</div>");
-L.circle([35.8261,139.8058],{
-radius:2931,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>草加市</b><br>3社が対応</div>");
-L.circle([35.8344,139.8644],{
-radius:3090,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>三郷市</b><br>3社が対応</div>");
-L.circle([35.8228,139.8389],{
-radius:2393,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>八潮市</b><br>3社が対応</div>");
-L.circle([35.7322,139.9306],{
-radius:4259,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>市川市</b><br>3社が対応</div>");
-L.circle([35.6536,139.9019],{
-radius:2326,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>浦安市</b><br>3社が対応</div>");
-L.circle([35.6431,140.1067],{
-radius:2585,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>千葉市稲毛区</b><br>3社が対応</div>");
-L.circle([35.6072,140.1233],{
-radius:3784,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>千葉市中央区</b><br>3社が対応</div>");
-L.circle([35.675,140.0739],{
-radius:3337,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>千葉市花見川区</b><br>3社が対応</div>");
-L.circle([35.6361,140.0611],{
-radius:2585,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>千葉市美浜区</b><br>3社が対応</div>");
-L.circle([35.6336,140.1717],{
-radius:5170,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>千葉市若葉区</b><br>3社が対応</div>");
-L.circle([35.6947,139.9828],{
-radius:5201,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>船橋市</b><br>3社が対応</div>");
-L.circle([35.775,139.8047],{
-radius:4107,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>足立区</b><br>3社が対応</div>");
-L.circle([35.7358,139.7836],{
-radius:1784,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>荒川区</b><br>3社が対応</div>");
-L.circle([35.7511,139.7092],{
-radius:3191,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>板橋区</b><br>3社が対応</div>");
-L.circle([35.5614,139.7161],{
-radius:4406,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>大田区</b><br>3社が対応</div>");
-L.circle([35.7436,139.8475],{
-radius:3337,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>葛飾区</b><br>3社が対応</div>");
-L.circle([35.7528,139.7347],{
-radius:2585,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>北区</b><br>3社が対応</div>");
-L.circle([35.6727,139.8172],{
-radius:3568,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>江東区</b><br>3社が対応</div>");
-L.circle([35.6089,139.7306],{
-radius:2705,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>品川区</b><br>3社が対応</div>");
-L.circle([35.6636,139.7036],{
-radius:2185,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>渋谷区</b><br>3社が対応</div>");
-L.circle([35.6938,139.7036],{
-radius:2393,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>新宿区</b><br>3社が対応</div>");
-L.circle([35.6994,139.6364],{
-radius:3289,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>杉並区</b><br>3社が対応</div>");
-L.circle([35.7106,139.8014],{
-radius:2111,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>墨田区</b><br>3社が対応</div>");
-L.circle([35.6461,139.6531],{
-radius:4296,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>世田谷区</b><br>3社が対応</div>");
-L.circle([35.7128,139.78],{
-radius:1784,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>台東区</b><br>3社が対応</div>");
-L.circle([35.6706,139.7719],{
-radius:1784,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>中央区</b><br>3社が対応</div>");
-L.circle([35.6942,139.7536],{
-radius:1954,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>千代田区</b><br>3社が対応</div>");
-L.circle([35.7264,139.7161],{
-radius:2034,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>豊島区</b><br>3社が対応</div>");
-L.circle([35.7078,139.6639],{
-radius:2185,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>中野区</b><br>3社が対応</div>");
-L.circle([35.7356,139.6517],{
-radius:3908,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>練馬区</b><br>3社が対応</div>");
-L.circle([35.7081,139.7522],{
-radius:1871,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>文京区</b><br>3社が対応</div>");
-L.circle([35.6581,139.7514],{
-radius:2523,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>港区</b><br>3社が対応</div>");
-L.circle([35.6339,139.6983],{
-radius:2185,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>目黒区</b><br>3社が対応</div>");
-L.circle([35.5308,139.7028],{
-radius:3568,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>川崎市川崎区</b><br>3社が対応</div>");
-L.circle([35.5456,139.6844],{
-radius:1784,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>川崎市幸区</b><br>3社が対応</div>");
-L.circle([35.5856,139.6117],{
-radius:2326,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>川崎市高津区</b><br>3社が対応</div>");
-L.circle([35.6194,139.5594],{
-radius:2523,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>川崎市多摩区</b><br>3社が対応</div>");
-L.circle([35.5728,139.6561],{
-radius:2185,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>川崎市中原区</b><br>3社が対応</div>");
-L.circle([35.5847,139.5772],{
-radius:2393,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>川崎市宮前区</b><br>3社が対応</div>");
-L.circle([35.5339,139.6327],{
-radius:3141,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>横浜市港北区</b><br>3社が対応</div>");
-L.circle([35.5103,139.6828],{
-radius:3241,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>横浜市鶴見区</b><br>3社が対応</div>");
-L.circle([35.7953,139.5933],{
-radius:2393,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>朝霞市</b><br>2社が対応</div>");
-L.circle([35.8911,139.7906],{
-radius:4370,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>越谷市</b><br>2社が対応</div>");
-L.circle([35.8594,139.6456],{
-radius:1871,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>さいたま市浦和区</b><br>2社が対応</div>");
-L.circle([35.8533,139.5944],{
-radius:2393,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>さいたま市桜区</b><br>2社が対応</div>");
-L.circle([35.8789,139.6203],{
-radius:1595,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>さいたま市中央区</b><br>2社が対応</div>");
-L.circle([35.8656,139.6828],{
-radius:2931,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>さいたま市緑区</b><br>2社が対応</div>");
-L.circle([35.8428,139.6456],{
-radius:2111,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>さいたま市南区</b><br>2社が対応</div>");
-L.circle([35.9108,139.6706],{
-radius:3090,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>さいたま市見沼区</b><br>2社が対応</div>");
-L.circle([35.8367,139.5797],{
-radius:1692,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>志木市</b><br>2社が対応</div>");
-L.circle([35.8178,139.6778],{
-radius:2393,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>戸田市</b><br>2社が対応</div>");
-L.circle([35.7928,139.5644],{
-radius:2705,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>新座市</b><br>2社が対応</div>");
-L.circle([35.8911,139.8414],{
-radius:3191,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>吉川市</b><br>2社が対応</div>");
-L.circle([35.7811,139.6119],{
-radius:1871,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>和光市</b><br>2社が対応</div>");
-L.circle([35.8256,139.6797],{
-radius:1261,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>蕨市</b><br>2社が対応</div>");
-L.circle([35.8644,140.0283],{
-radius:3699,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>我孫子市</b><br>1社が対応</div>");
-L.circle([35.8678,139.9714],{
-radius:6050,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>柏市</b><br>2社が対応</div>");
-L.circle([35.7769,139.9986],{
-radius:2585,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>鎌ケ谷市</b><br>2社が対応</div>");
-L.circle([35.8561,139.9028],{
-radius:3337,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>流山市</b><br>2社が対応</div>");
-L.circle([35.6808,140.0264],{
-radius:2585,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>習志野市</b><br>2社が対応</div>");
-L.circle([35.955,139.8747],{
-radius:5753,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>野田市</b><br>2社が対応</div>");
-L.circle([35.7878,139.9036],{
-radius:4406,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>松戸市</b><br>2社が対応</div>");
-L.circle([35.7225,140.0997],{
-radius:4029,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>八千代市</b><br>2社が対応</div>");
-L.circle([35.6344,139.5781],{
-radius:1381,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>狛江市</b><br>2社が対応</div>");
-L.circle([35.6836,139.5594],{
-radius:2256,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>三鷹市</b><br>2社が対応</div>");
-L.circle([35.7175,139.5664],{
-radius:1871,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>武蔵野市</b><br>2社が対応</div>");
+L.marker([35.6721463,139.8650621],{
+icon:L.divIcon({className:"",html:'<div style="background:#1A8C7A;color:#fff;border-radius:50%;width:32px;height:32px;display:flex;align-items:center;justify-content:center;font:700 12px sans-serif;border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.3)">64</div>'})
+}).addTo(map).bindPopup("<div class=\"mp\"><b>江戸川区 / 口コミ567件 / 仕上がり保証 / 損害保険加入 / ¥22,000〜</b><br>MIROCA スコア: 64点<br>★4.83 (567件)<br>¥22,000〜<br><a href=\"/provider/897733595/\">詳細を見る →</a></div>");
+L.marker([35.6904839,139.8699631],{
+icon:L.divIcon({className:"",html:'<div style="background:#1A8C7A;color:#fff;border-radius:50%;width:32px;height:32px;display:flex;align-items:center;justify-content:center;font:700 12px sans-serif;border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.3)">64</div>'})
+}).addTo(map).bindPopup("<div class=\"mp\"><b>江戸川区 / 口コミ1562件 / 損害保険加入 / 自社施工 / ¥22,000〜</b><br>MIROCA スコア: 64点<br>★4.76 (1562件)<br>¥22,000〜<br><a href=\"/provider/725686250/\">詳細を見る →</a></div>");
+L.marker([35.6904839,139.8699631],{
+icon:L.divIcon({className:"",html:'<div style="background:#1A8C7A;color:#fff;border-radius:50%;width:32px;height:32px;display:flex;align-items:center;justify-content:center;font:700 12px sans-serif;border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.3)">56</div>'})
+}).addTo(map).bindPopup("<div class=\"mp\"><b>江戸川区 / 口コミ651件 / 自社施工 / ¥17,500〜</b><br>MIROCA スコア: 56点<br>★4.86 (651件)<br>¥17,500〜<br><a href=\"/provider/560344874/\">詳細を見る →</a></div>");
 })();
-</script><p style="font-size:13px;color:#7A6A5A;margin-top:8px">江戸川区に所在する3社（うち3社の対応エリアを地図に表示）。タップで詳細を表示。</p>
+</script><p style="font-size:13px;color:#7A6A5A;margin-top:8px">江戸川区に所在する3社の位置を表示。マーカーの数字はMIROCAスコア。タップで詳細。</p>
 <p class="g-sub">2,780件の口コミを独自解析した結果です。</p>
 <p class="g-date">最終更新: 2026-03-22</p>
 <section class="g-sec">

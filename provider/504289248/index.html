@@ -171,8 +171,8 @@ font:800 20px/1 -apple-system,BlinkMacSystemFont,"Hiragino Sans",Meiryo,sans-ser
 <h2 class="psec-h"><span class="psec-icon">🗺</span>対応エリア</h2>
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 <style>#provider-map{height:400px;border-radius:14px;border:1px solid #EDE6DA;margin:16px 0}
-.miroca-popup{font:13px -apple-system,BlinkMacSystemFont,"Hiragino Sans",Meiryo,sans-serif;line-height:1.6}
-.miroca-popup b{color:#1A8C7A}
+.mp{font:13px -apple-system,BlinkMacSystemFont,"Hiragino Sans",Meiryo,sans-serif;line-height:1.6}
+.mp b{color:#1A8C7A}.mp a{color:#1A8C7A;font-weight:600}
 @media(max-width:600px){#provider-map{height:300px}}</style>
 <div id="provider-map"></div>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
@@ -180,17 +180,12 @@ font:800 20px/1 -apple-system,BlinkMacSystemFont,"Hiragino Sans",Meiryo,sans-ser
 (function(){
 var map=L.map("provider-map",{scrollWheelZoom:false}).setView([35.61396666666666,139.4055666666667],11);
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",{attribution:"&copy; OpenStreetMap",maxZoom:18}).addTo(map);
-L.circle([35.6369,139.4464],{
-radius:2585,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>多摩市</b></div>");
-L.circle([35.6564,139.3239],{
-radius:7694,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>八王子市</b></div>");
-L.circle([35.5486,139.4464],{
-radius:4787,fillColor:"#5EEAD4",color:"#5EEAD4",weight:1,fillOpacity:0.15
-}).addTo(map).bindPopup("<div class=\"miroca-popup\"><b>町田市</b></div>");
+L.polygon([[35.5486,139.4464],[35.6369,139.4464],[35.6564,139.3239]],{color:"#1A8C7A",weight:2,fillColor:"#1A8C7A",fillOpacity:0.1,dashArray:"6 4"}).addTo(map);
+L.marker([35.5607713,139.3842232],{
+icon:L.divIcon({className:"",html:'<div style="background:#D97706;color:#fff;border-radius:50%;width:28px;height:28px;display:flex;align-items:center;justify-content:center;font:700 14px sans-serif;border:2px solid #fff;box-shadow:0 2px 6px rgba(0,0,0,.3)">📍</div>'})
+}).addTo(map).bindPopup("<div class=\"mp\"><b>所在地</b></div>");
 })();
-</script><div style="font-size:13px;color:#7A6A5A;line-height:1.8;margin-top:8px"><p style="margin-bottom:8px">対応エリア（3市区町村）:</p><b>東京都</b>: 多摩市、八王子市、町田市<br><b>神奈川県</b>: 相模原市緑区、相模原市中央区</div>
+</script><div style="font-size:13px;color:#7A6A5A;line-height:1.8;margin-top:8px"><p style="margin-bottom:8px">対応エリア（3市区町村）— 破線内が対応範囲:</p><b>東京都</b>: 多摩市、八王子市、町田市<br><b>神奈川県</b>: 相模原市緑区、相模原市中央区</div>
 </section>
 <section class="psec p-cta-sec">
 <h2 class="psec-h" style="justify-content:center"><span class="psec-icon">🔎</span>この業者に依頼する</h2>
