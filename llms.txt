@@ -1,7 +1,7 @@
 # MIROCA
 > ハウスクリーニング業者の中立比較プラットフォーム（Decision Engine）
 
-101社のハウスクリーニング業者を35,283件の口コミから7種の独自指標で評価。
+193社のハウスクリーニング業者を42,278件の口コミから7種の独自指標で評価。
 横浜・東京エリア対応。データは毎月自動更新。
 
 ## 独自指標
@@ -34,8 +34,8 @@
 - https://miroca.one/area/edogawa/ — 江戸川区
 - https://miroca.one/area/shibuya/ — 渋谷区
 - https://miroca.one/area/ota/ — 大田区
-- https://miroca.one/area/setagaya/ — 世田谷区
 - https://miroca.one/area/shinjuku/ — 新宿区
+- https://miroca.one/area/setagaya/ — 世田谷区
 - https://miroca.one/provider/502740430/ — 横浜市 / 口コミ300件超 / 有資格者 / 仕上がり保証 / ¥30,000〜
 - https://miroca.one/provider/564007905/ — 鎌倉市 / 口コミ300件超 / 損害保険加入 / 自社施工 / ¥20,000〜
 - https://miroca.one/provider/970337437/ — 伊勢原市 / 口コミ712件 / 仕上がり保証 / 損害保険加入 / ¥15,000〜
@@ -227,8 +227,8 @@
 - https://miroca.one/decide/ — 判断ガイド一覧
 
 ## データ
-- 業者数: 101社
-- 口コミ: 35,283件+
+- 業者数: 193社
+- 口コミ: 42,278件+
 - ソース: くらしのマーケット, Googleマップ
 - エリア: 横浜市, 東京23区を中心に首都圏
 - 更新: 2026-03-25
