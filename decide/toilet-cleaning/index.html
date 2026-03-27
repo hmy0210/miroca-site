@@ -63,111 +63,107 @@ a{color:#1A8C7A;text-decoration:none}a:hover{text-decoration:underline}
 .g-cta p{font-size:14px;color:#7A6A5A;margin-bottom:16px}
 .g-btn{display:inline-block;background:#1A8C7A;color:#fff;font-size:14px;font-weight:700;padding:12px 32px;border-radius:10px;transition:.2s}
 .g-btn:hover{background:#158068;text-decoration:none}
-.gf{border-top:1px solid #EDE6DA;margin-top:24px;padding:32px 20px 24px}
-.gf-links{max-width:740px;margin:0 auto 20px;display:flex;gap:40px}
-.gf-col{display:flex;flex-direction:column;gap:5px}
-.gf-col-t{font-size:12px;font-weight:700;color:#3D2E1F;margin-bottom:2px}
-.gf-col a{font-size:12px;color:#7A6A5A}.gf-col a:hover{color:#1A8C7A}
-.gf-btm{max-width:740px;margin:0 auto;text-align:center;font-size:11px;color:#A09585;border-top:1px solid #EDE6DA;padding-top:16px}
-.gf-btm p{margin-bottom:4px}.gf-btm a{color:#A09585}
-@media(max-width:600px){.g-h1{font-size:22px}.g-h2{font-size:16px}.gh-nav{display:none}.gf-links{flex-direction:column;gap:16px}}.dc-lead{font-size:16px;color:#3D2E1F;line-height:2.2;margin-bottom:24px}.dc-lead b{color:#1A8C7A}.dc-stat{display:flex;align-items:center;gap:16px;background:#fff;border:1px solid #EDE6DA;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 2px 12px rgba(60,46,30,.06)}.dc-stat-num{font:700 36px/1 -apple-system,BlinkMacSystemFont,"Hiragino Sans",Meiryo,sans-serif;color:#1A8C7A;flex-shrink:0;min-width:80px;text-align:center}.dc-stat-num.warn{color:#C2255C}.dc-stat-text{font-size:14px;color:#5A4A3A;line-height:1.8}.dc-prose{font-size:15px;color:#3D2E1F;line-height:2.2;margin-bottom:16px}.dc-prose b{color:#1A8C7A}.dc-num{color:#1A8C7A;font-weight:700}.dc-num-warn{color:#C2255C;font-weight:700}.dc-callout{background:#E8F8F5;border-left:4px solid #1A8C7A;padding:16px 20px;border-radius:0 12px 12px 0;margin:20px 0;font-size:14px;line-height:2;color:#3D2E1F}.dc-callout.warn{background:#FFF0F3;border-left-color:#C2255C}.dc-callout b{color:#1A8C7A}.dc-callout.warn b{color:#C2255C}.dc-check{list-style:none;padding:0;margin:16px 0}.dc-check li{padding:10px 0 10px 32px;border-bottom:1px solid #EDE6DA;font-size:14px;line-height:1.8;position:relative}.dc-check li::before{content:"✓";position:absolute;left:8px;color:#1A8C7A;font-weight:700}.dc-related{margin-top:32px}.dc-links{display:flex;flex-direction:column;gap:8px}.dc-links a{display:block;padding:12px 16px;background:#FAF7F2;border:1px solid #EDE6DA;border-radius:10px;font-size:14px;color:#3D2E1F;font-weight:600;transition:.15s}.dc-links a:hover{background:#E8F8F5;border-color:#1A8C7A;text-decoration:none}@media(max-width:600px){.dc-stat{flex-direction:column;text-align:center}.dc-stat-num{min-width:auto}}</style>
+.gf{border-top:1px solid #EDE6DA;margin-top:32px;background:#FAF7F2}
+.gf-inner{max-width:940px;margin:0 auto;padding:40px 20px 24px}
+.gf-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px;margin-bottom:32px}
+.gf-card{background:#fff;border:1px solid #EDE6DA;border-radius:14px;padding:20px;box-shadow:0 2px 8px rgba(60,46,30,.04)}
+.gf-card-h{font-size:13px;font-weight:800;color:#3D2E1F;margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid #E8F8F5}
+.gf-nav{display:flex;flex-direction:column;gap:4px}
+.gf-nav a{display:flex;align-items:center;gap:8px;padding:8px 10px;border-radius:8px;font-size:13px;color:#5A4A3A;font-weight:500;transition:.15s;text-decoration:none}
+.gf-nav a:hover{background:#E8F8F5;color:#1A8C7A}
+.gf-icon{font-size:14px;flex-shrink:0;width:20px;text-align:center}
+.gf-about{font-size:12px;color:#7A6A5A;line-height:1.8;margin-bottom:8px}
+.gf-bottom{text-align:center;padding-top:20px;border-top:1px solid #EDE6DA}
+.gf-logo{font:800 18px/1 -apple-system,BlinkMacSystemFont,"Hiragino Sans",Meiryo,sans-serif;color:#3D2E1F;margin-bottom:6px}
+.gf-logo small{font-size:10px;font-weight:400;color:#A09585;margin-left:6px}
+.gf-bottom p{font-size:11px;color:#A09585;margin-bottom:4px}
+.gf-bottom-links{display:flex;gap:12px;justify-content:center;margin-top:6px}
+.gf-bottom-links a{font-size:11px;color:#A09585}
+.gf-bottom-links a:hover{color:#1A8C7A}
+@media(max-width:700px){.gf-grid{grid-template-columns:1fr}.gf-card{padding:16px}}.dc-lead{font-size:16px;color:#3D2E1F;line-height:2.2;margin-bottom:24px}.dc-lead b{color:#1A8C7A}.dc-stat{display:flex;align-items:center;gap:16px;background:#fff;border:1px solid #EDE6DA;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 2px 12px rgba(60,46,30,.06)}.dc-stat-num{font:700 36px/1 -apple-system,BlinkMacSystemFont,"Hiragino Sans",Meiryo,sans-serif;color:#1A8C7A;flex-shrink:0;min-width:80px;text-align:center}.dc-stat-num.warn{color:#C2255C}.dc-stat-text{font-size:14px;color:#5A4A3A;line-height:1.8}.dc-prose{font-size:15px;color:#3D2E1F;line-height:2.2;margin-bottom:16px}.dc-prose b{color:#1A8C7A}.dc-num{color:#1A8C7A;font-weight:700}.dc-num-warn{color:#C2255C;font-weight:700}.dc-callout{background:#E8F8F5;border-left:4px solid #1A8C7A;padding:16px 20px;border-radius:0 12px 12px 0;margin:20px 0;font-size:14px;line-height:2;color:#3D2E1F}.dc-callout.warn{background:#FFF0F3;border-left-color:#C2255C}.dc-callout b{color:#1A8C7A}.dc-callout.warn b{color:#C2255C}.dc-check{list-style:none;padding:0;margin:16px 0}.dc-check li{padding:10px 0 10px 32px;border-bottom:1px solid #EDE6DA;font-size:14px;line-height:1.8;position:relative}.dc-check li::before{content:"✓";position:absolute;left:8px;color:#1A8C7A;font-weight:700}.dc-related{margin-top:32px}.dc-links{display:flex;flex-direction:column;gap:8px}.dc-links a{display:block;padding:12px 16px;background:#FAF7F2;border:1px solid #EDE6DA;border-radius:10px;font-size:14px;color:#3D2E1F;font-weight:600;transition:.15s}.dc-links a:hover{background:#E8F8F5;border-color:#1A8C7A;text-decoration:none}@media(max-width:600px){.dc-stat{flex-direction:column;text-align:center}.dc-stat-num{min-width:auto}}</style>
 </head><body>
 <header class="gh"><a href="https://miroca.one/" class="gh-logo">MIROCA</a><nav class="gh-nav"><a href="https://miroca.one/decide/first-time/">判断ガイド</a><a href="https://miroca.one/guide/">選び方</a><a href="https://miroca.one/pricing/">相場</a><a href="https://miroca.one/faq/">FAQ</a></nav><span class="gh-sep">/</span><span class="gh-title">判断ガイド</span></header>
 <main class="gm">
 <h1 class="g-h1">トイレクリーニングの料金相場と効果｜自分で落ちない尿石・黄ばみはプロに任せるべき？</h1>
 <p class="g-sub">MIROCA独自データに基づく判断ガイド — 193社・42,278件の口コミを分析</p>
 <p class="g-date">最終更新: 2026-03-28（毎月自動更新）</p>
-<p class="dc-lead">トイレの頑固な尿石・黄ばみ・黒カビが市販洗剤で全然落ちない……そんな経験はありませんか？この記事では、プロに依頼した場合の料金相場や効果、失敗しない業者の選び方まで、MIROCAが収集した<span class="dc-num-warn">193社</span>・<span class="dc-num-warn">42,278件</span>の口コミデータをもとに徹底解説します。</p>
+<p class="dc-lead">トイレの黄ばみや尿石に市販洗剤を試しても効果がなく、プロへの依頼を迷っていませんか？この記事では、料金相場・業者の選び方・自分で対処できる汚れとプロに任せるべき汚れの見極め方まで、MIROCAに集まった実データをもとに解説します。</p>
 <section class="g-sec">
-<h2 class="g-h2">自分で落ちない尿石・黄ばみ、プロに頼むと本当にキレイになるのか？</h2>
-<p class="dc-prose">結論から言うと、尿石・黄ばみ・黒カビが市販洗剤で落ちないなら、プロへの依頼は費用対効果が高い選択です。</p>
-<p class="dc-prose">市販のトイレ用洗剤は、軽度の汚れや予防的な使用には有効ですが、長期間かけて蓄積・結晶化した汚れに対しては十分な効果を発揮できない段階があります。「何度こすっても落ちない」という状態になっているなら、それはすでに市販洗剤の限界を超えているサインです。</p>
-<p class="dc-prose">MIROCAに集まったトイレクリーニング関連の口コミは<span class="dc-num">227件</span>。そのうち、「また（依頼したい）」というリピート意向を示すキーワードが含まれるものが<span class="dc-num">137件</span>で、出現率は約<span class="dc-num">60%</span>にのぼります。これは全カテゴリ平均のリピート率<span class="dc-num">20.2%</span>と比較しても、突出して高い数字です。一度プロに任せた人の多くが、その効果に納得して再依頼を検討していることがデータからも読み取れます。</p>
-<p class="dc-prose">「やっぱりプロは違う」「自分では絶対に無理だった」という体感が、この数字の背景にあると考えられます。頑固汚れを前にして諦めかけているなら、まず業者への相談を検討する価値は十分にあります。</p>
+<h2 class="g-h2">自分で落ちない尿石・黄ばみはプロに任せると解決する</h2>
+<p class="dc-prose">「サンポールを試したけど全然落ちない」「黒ずみが何度掃除しても戻ってくる」——そんな悩みは、市販洗剤の限界に達しているサインかもしれません。プロのハウスクリーニング業者は、市販品では手に入らない高濃度の専用薬剤と、汚れの種類に合わせた施工技術を持っています。硬化した尿石には酸性の専用溶剤を適切な濃度・接触時間で使用し、黒カビには根まで届く除菌処理を行うため、市販洗剤では太刀打ちできない汚れでも除去できるケースが多くあります。</p>
+<p class="dc-prose">MIROCAに寄せられたトイレ関連の口コミ<span class="dc-num">227件</span>を分析すると、「また（リピート意向）」を含む口コミが<span class="dc-num">137件</span>と全体の<span class="dc-num">60%</span>超を占めています。「また頼みたい」という言葉が自然に出てくるということは、単に汚れが落ちただけでなく、体験全体に満足しているユーザーが多いことを示しています。また、「自分で試してうまくいかなかった後でプロに頼んだ」という声も少なくなく、DIYでこじらせた汚れへの対処という二度手間が発生するケースも報告されています。早めにプロへ相談することが、時間的にも費用的にも合理的な選択になりやすいのです。</p>
 </section>
 <section class="g-sec">
-<h2 class="g-h2">トイレクリーニングの料金相場｜どこに依頼するといくらかかる？</h2>
-<p class="dc-prose">MIROCA掲載<span class="dc-num">193社</span>の料金レンジは、最安<span class="dc-num">¥5,000</span>から最高<span class="dc-num">¥300,000</span>と非常に幅があります。平均は<span class="dc-num">¥23,901</span>ですが、この数字だけで判断するのは危険です。</p>
-<p class="dc-prose">料金の差は、主に施工範囲・使用する薬剤の種類・作業時間の違いによって生じます。便器のみのシンプルなプランであれば<span class="dc-num">¥5,000</span>〜<span class="dc-num">¥10,000</span>前後が目安ですが、タンク内洗浄・ウォシュレット分解洗浄・床壁を含む全体クリーニングになると<span class="dc-num">¥15,000</span>〜<span class="dc-num">¥30,000</span>以上になるケースも珍しくありません。</p>
-<p class="dc-prose">特に注意したいのが追加料金のリスクです。MIROCA掲載業者のうち、追加料金リスクが「高」と判定される業者が<span class="dc-num-warn">39社</span>存在します。一方で「低」と判定されるのはわずか<span class="dc-num-warn">3社</span>。見積もり金額がそのまま最終請求額になるとは限らないという現実があります。</p>
-<p class="dc-prose">依頼前には必ず「この見積もり以外に費用は発生しないか」を業者に明示的に確認してください。最安値の業者に飛びついて、追加請求で結果的に高くついたというケースは避けたいところです。料金は「総額で比較する」という意識が重要です。</p>
+<h2 class="g-h2">トイレクリーニングの料金相場——何が価格を左右するのか</h2>
+<p class="dc-prose">MIROCA掲載業者の料金レンジは5,000円〜300,000円と非常に幅広く、単純に「いくらか」だけで比較するのは危険です。一般的なトイレ1台のスポットクリーニングは8,000円〜15,000円前後が中心帯ですが、掲載業者全体の平均は23,901円となっており、作業範囲や汚れの程度によって大きく変動します。</p>
+<p class="dc-prose">価格差を生む主な要因は3つです。①<b>汚れの蓄積年数</b>：尿石は放置するほど石灰化が進み、除去に必要な薬剤量・作業時間が増えます。②<b>便器の種類</b>：タンクレストイレやウォシュレット一体型は構造が複雑で、パーツの取り外しに手間がかかるため料金が上がります。③<b>作業範囲</b>：便器だけでなく床・壁・換気扇まで含めるかどうかで最終金額は大きく変わります。</p>
+<p class="dc-prose">特に注意したいのが追加料金のリスクです。MIROCA掲載業者のうち追加料金リスクが「高」と評価される業者は<span class="dc-num-warn">39社</span>に上り、「低」はわずか<span class="dc-num-warn">3社</span>にとどまります。「格安」をうたう業者が最終的に高くなるパターンはよくあるため、見積もり段階で「コミコミ料金か」「追加費用が発生する条件はあるか」を必ず書面で確認してください。</p>
 </section>
 <section class="g-sec">
-<h2 class="g-h2">プロが落とせる汚れの正体｜なぜ市販洗剤では限界があるのか</h2>
-<p class="dc-prose">尿石はアルカリ性の結晶化した汚れです。市販のトイレ用洗剤の多くは弱酸性〜中性であるため、しっかり固まった尿石を溶解・分解するには成分的な力不足になることがあります。プロが使用する業務用の強酸性薬剤は、素材を傷めないよう濃度と接触時間を管理しながら、こうした汚れを効率的に分解できます。</p>
-<p class="dc-prose">黄ばみは尿石単体ではなく、水垢・カルシウム成分・皮脂などが複合的に層を成している場合があります。層ごとに汚れの性質が異なるため、一種類の洗剤で対処しようとすると限界が出てきます。プロは汚れの種類を見極めながら薬剤を使い分けるアプローチが可能です。</p>
-<p class="dc-prose">黒カビについても、目に見える部分だけでなく、便器裏・タンク内部・ウォシュレットノズルの内側といった手が届きにくい箇所に潜伏していることがよくあります。専用の器具を使って届きにくい部分まで除去できるのがプロの強みです。</p>
-<p class="dc-prose">MIROCAに集まった口コミ全<span class="dc-num">42,278件</span>のうち、「丁寧」というキーワードが<span class="dc-num">2,190件</span>（約<span class="dc-num">5.2%</span>）に登場しており、細部への対応と作業品質が利用者から高く評価されていることが読み取れます。汚れを落とすだけでなく、丁寧な作業そのものへの満足が、プロ依頼の価値を高めています。</p>
+<h2 class="g-h2">プロに頼んで「よかった」——口コミから浮かび上がる3つの満足理由</h2>
+<p class="dc-prose">MIROCAに集まった口コミを定性分析すると、満足の理由は大きく3つのカテゴリに集約されます。</p>
+<p class="dc-prose"><b>① 汚れの完全除去</b>：「新品同然になった」という表現が複数の口コミに登場します。何年もかけて蓄積した尿石や黄ばみが1回の施工でリセットされる体験は、自力での限界を感じていた人ほど印象が強く残るようです。</p>
+<p class="dc-prose"><b>② 作業の丁寧さ</b>：MIROCAの全口コミ<span class="dc-num">42,278件</span>の中で「丁寧」は<span class="dc-num">2,190件</span>と全キーワード中最多です。便器内部だけでなく、ノズル・ウォシュレットのフタ裏・床と便器の隙間といった見落としがちな箇所まで対応してくれたという評価が多く見られます。</p>
+<p class="dc-prose"><b>③ 再汚染の遅さ</b>：プロはクリーニング後にコーティング処理や仕上げを施すことが多く、「前より汚れが付きにくくなった」と感じるユーザーが一定数います。水回り関連の口コミ<span class="dc-num">180件</span>でも同様の傾向があり、衛生設備全般においてプロへの信頼度は高い水準を保っています。</p>
 </section>
 <section class="g-sec">
-<h2 class="g-h2">トイレクリーニングでプロに頼んで良かった具体的なポイント</h2>
-<p class="dc-prose">口コミデータを分析すると、プロへの依頼で特に評価が高いポイントがいくつか浮かび上がります。</p>
-<p class="dc-prose">まず目立つのが「臭いが消えた」という声です。尿石はアンモニア臭の主な発生源であるため、尿石を根本から除去することでトイレ特有の臭いが大幅に改善されます。表面を拭くだけでは解決しない部分をプロが処理することで、臭いが「消えた」と感じる体験につながります。</p>
-<p class="dc-prose">「自分では絶対に届かなかった場所がキレイになった」という驚きの声も多数あります。便器の裏側・タンク内部・ウォシュレットのノズル周辺は、日常の掃除では見落としやすく、汚れが蓄積しやすい箇所です。こうした部分まで対応できるのはプロならではです。</p>
-<p class="dc-prose">また、トイレ口コミ<span class="dc-num">227件</span>のうち「水回り」関連のキーワードが<span class="dc-num">180件</span>に登場しています。トイレ単体の依頼から、洗面台・浴室などの水回り全体へのセット依頼に広がるケースが多く、満足体験が次の依頼につながる構造が確認できます。</p>
-<p class="dc-prose">作業時間の短さも評価されています。便器のみであれば約1時間、全体クリーニングでも1.5〜2時間が目安で、短時間でプロレベルの仕上がりになる点が「頼んで良かった」という感想を後押ししています。</p>
+<h2 class="g-h2">業者選びで失敗しないチェックリスト</h2>
+<p class="dc-prose">料金だけで業者を選ぶのは最もリスクが高い選び方です。MIROCAのデータをもとに、確認すべき3つの指標を紹介します。</p>
+<p class="dc-prose"><b>保険加入の有無</b>：MIROCA掲載<span class="dc-num-warn">193社</span>のうち保険加入は<span class="dc-num-warn">62社</span>、未加入は<span class="dc-num-warn">39社</span>です。作業中に便器やウォシュレットが破損するトラブルは稀ではありません。万一のケースに備え、保険加入業者を優先することを強く推奨します。見積もり時に「損害賠償保険に加入していますか」と一言確認するだけで防げるリスクです。</p>
+<p class="dc-prose"><b>追加料金リスクの確認</b>：前述の通り、リスク「高」が<span class="dc-num-warn">39社</span>に対してリスク「低」は<span class="dc-num-warn">3社</span>と極端に少ない現状があります。「基本料金に含まれるもの・含まれないものをリストで教えてください」と聞くことが有効です。</p>
+<p class="dc-prose"><b>リピート率</b>：MIROCA掲載業者のリピート率は平均<span class="dc-num">20.2%</span>、最高で<span class="dc-num">50%</span>の業者も存在します。リピート率が高いということは、一度使った人が再び選んでいるという事実であり、品質の安定性を示す有力な指標です。口コミ件数と合わせて確認することで、初回依頼でも安心して選べる業者が絞り込めます。</p>
 </section>
 <section class="g-sec">
-<h2 class="g-h2">失敗しない業者選びの3つのポイント</h2>
-<p class="dc-prose">業者選びを誤ると、仕上がりへの不満や追加請求トラブルにつながります。以下の3点を必ず確認してください。</p>
-<p class="dc-prose"><b>保険加入の確認</b></p>
-<p class="dc-prose">作業中に便器やウォシュレットが破損した場合、損害賠償保険に加入していない業者では補償を受けられないリスクがあります。MIROCA掲載<span class="dc-num-warn">193社</span>のうち、保険加入確認済みは<span class="dc-num-warn">62社</span>・未加入は<span class="dc-num-warn">39社</span>（残りは不明）。依頼前に必ず「損害賠償保険に加入しているか」を確認しましょう。</p>
-<p class="dc-prose"><b>追加料金の有無を事前に明確化</b></p>
-<p class="dc-prose">前述のとおり、追加料金リスク「高」の業者が<span class="dc-num-warn">39社</span>存在します。見積もり時に「この金額以外に費用は発生しないか」を具体的に確認し、口頭ではなく書面やチャットで記録を残しておくと安心です。</p>
-<p class="dc-prose"><b>口コミの件数と内容を確認</b></p>
-<p class="dc-prose">口コミ件数が多く、「どの部分をどう掃除してくれたか」という具体的な記述がある口コミは信頼性が高いです。星評価だけでなく内容を読み込むことで、業者の実力と誠実さを把握できます。MIROCAでは保険加入状況・追加料金リスク・口コミをまとめて比較できるため、業者選びの判断軸として活用してください。</p>
-</section>
-<section class="g-sec">
-<h2 class="g-h2">トイレクリーニングを依頼する前に知っておきたいQ&amp;A</h2>
-<p class="dc-prose"><b>Q. 作業時間はどのくらい？</b></p>
-<p class="dc-prose">便器のみであれば約1時間が目安。タンク内洗浄・床壁を含む全体クリーニングの場合は1.5〜2時間程度が一般的です。</p>
-<p class="dc-prose"><b>Q. ウォシュレットも掃除してもらえる？</b></p>
-<p class="dc-prose">ノズル洗浄や内部分解洗浄に対応している業者とそうでない業者があります。依頼前に対応範囲を必ず確認してください。</p>
-<p class="dc-prose"><b>Q. 定期的に頼む必要がある？</b></p>
-<p class="dc-prose">年1〜2回の定期依頼で汚れの蓄積を防ぐことができます。トイレクリーニングのリピート意向率は約<span class="dc-num">60%</span>と高く、リピート割引を設けている業者も存在します。平均リピート率<span class="dc-num">20.2%</span>を大きく上回るこの数字は、定期依頼の価値を裏付けています。</p>
-<p class="dc-prose"><b>Q. 自分でできることとプロに任せることの境界線は？</b></p>
-<p class="dc-prose">週1回の軽拭きや市販洗剤での定期的な掃除は自分で行い、尿石・黄ばみの固着やカビの根除去はプロに依頼するのが現実的な使い分けです。</p>
-<p class="dc-prose"><b>Q. 複数業者に見積もりを取るべき？</b></p>
-<p class="dc-prose">料金の幅が大きいため、2〜<span class="dc-num">3社</span>に見積もりを依頼して総額で比較することを強く推奨します。</p>
-</section>
-<section class="g-sec">
-<h2 class="g-h2">まとめ｜尿石・黄ばみが自力で落ちないなら、業者比較から始めよう</h2>
-<p class="dc-prose">市販洗剤で落ちない頑固な尿石・黄ばみ・黒カビは、プロの業務用薬剤と専用技術でなければ根本から解決できません。MIROCAのデータが示すとおり、トイレクリーニングは一度依頼した人の約<span class="dc-num">60%</span>がリピートを検討するほど満足度の高いカテゴリです。</p>
-<p class="dc-prose">料金は<span class="dc-num-warn">¥5,000</span>〜が入口ですが、追加料金リスクのある業者が<span class="dc-num-warn">39社</span>存在するため、見積もり内容の事前確認は必須です。業者選びでは「保険加入の確認」「追加料金リスクの確認」「口コミ内容の確認」の3点を軸にしてください。</p>
-<p class="dc-prose">MIROCAでは<span class="dc-num-warn">193社</span>の料金・保険加入状況・追加料金リスク・口コミをまとめて比較できます。「まずどの業者に頼めばいいかわからない」という方は、ぜひMIROCAの比較ページから始めてみてください。</p>
+<h2 class="g-h2">自分でできる応急処置と「プロに任せる判断基準」</h2>
+<p class="dc-prose">すべての汚れをすぐにプロへ頼む必要はありません。状態によって判断基準は異なります。</p>
+<p class="dc-prose"><b>自分で対処できる目安</b>は、変色が薄い黄ばみや発生して間もない黒ずみです。市販の酸性洗剤（クエン酸系）や塩素系洗剤を使った週1回のケアで改善が見込めます。ただしこれは「初期段階」に限った話です。</p>
+<p class="dc-prose"><b>プロに任せるべき目安</b>は次の4つです。①爪で引っかかるほど硬化した尿石、②洗剤を変えても再発する黒カビ、③ウォシュレット内部・タンク内の汚れ、④臭いの原因が特定できない場合。特に①については、放置するほど石灰化が進行して除去が困難になり、結果として施工費用が高くなります。「もう少し様子を見よう」が最もコストのかかる判断になりやすい点は覚えておいてください。</p>
+<p class="dc-prose">MIROCAでは<span class="dc-num">193社</span>・口コミ<span class="dc-num">42,278件</span>のデータをもとに複数業者への一括見積もりが可能です。まず見積もりを比較することで、料金の妥当性と業者の対応品質を同時に確認できます。満足度平均<span class="dc-num">98.2%</span>というデータが示す通り、適切な業者選びさえできれば、プロへの依頼は高い確率で「頼んでよかった」という結果につながります。気になる汚れがあれば、まずMIROCAで無料の一括見積もりを試してみてください。</p>
 </section>
 <section class="g-sec dc-related"><h2 class="g-h2">関連する判断ガイド</h2><div class="dc-links">
-<a href="https://miroca.one/decide/aircon-cleaning-mold/">エアコンクリーニングでカビはどこまで取れる？101社調査でわかった満足度と注意点</a>
+<a href="https://miroca.one/decide/aircon-cleaning-mold/">エアコンクリーニングでカビはどこまで取れる？193社調査でわかった満足度と注意点</a>
 <a href="https://miroca.one/decide/bathroom-cleaning/">浴室クリーニングの料金と効果を徹底比較｜カビ・水垢はプロでどこまで落ちる？</a>
-<a href="https://miroca.one/decide/kitchen-range-hood/">キッチン・換気扇クリーニングをセットで頼むと安い？101社の料金と口コミを分析</a>
+<a href="https://miroca.one/decide/kitchen-range-hood/">キッチン・換気扇クリーニングをセットで頼むと安い？193社の料金と口コミを分析</a>
 </div></section>
 <section class="g-cta"><h2>データで業者を比較する</h2><p>193社を独自指標でフィルター・比較</p><a href="https://miroca.one/" class="g-btn">業者一覧を見る →</a></section>
 </main>
 <footer class="gf">
-<div class="gf-links">
-<div class="gf-col"><div class="gf-col-t">コンテンツ</div>
-<a href="https://miroca.one/">業者一覧</a>
-<a href="https://miroca.one/guide/">選び方ガイド</a>
-<a href="https://miroca.one/pricing/">料金相場</a>
-<a href="https://miroca.one/faq/">よくある質問</a>
-<a href="https://miroca.one/checklist/">チェックリスト</a>
-<a href="https://miroca.one/decide/">判断ガイド</a>
+<div class="gf-inner">
+<div class="gf-grid">
+<div class="gf-card">
+<div class="gf-card-h">コンテンツ</div>
+<nav class="gf-nav">
+<a href="https://miroca.one/"><span class="gf-icon">🏠</span>業者一覧・比較</a>
+<a href="https://miroca.one/guide/"><span class="gf-icon">📖</span>選び方ガイド</a>
+<a href="https://miroca.one/pricing/"><span class="gf-icon">💰</span>料金相場</a>
+<a href="https://miroca.one/faq/"><span class="gf-icon">❓</span>よくある質問</a>
+<a href="https://miroca.one/checklist/"><span class="gf-icon">✅</span>チェックリスト</a>
+<a href="https://miroca.one/decide/"><span class="gf-icon">🧭</span>判断ガイド</a>
+<a href="https://miroca.one/report/"><span class="gf-icon">📊</span>市場レポート</a>
+</nav></div>
+<div class="gf-card">
+<div class="gf-card-h">エリア別</div>
+<nav class="gf-nav">
+<a href="https://miroca.one/area/yokohama/"><span class="gf-icon">📍</span>横浜市</a>
+<a href="https://miroca.one/area/kawasaki/"><span class="gf-icon">📍</span>川崎市</a>
+<a href="https://miroca.one/area/kamakura/"><span class="gf-icon">📍</span>鎌倉市</a>
+<a href="https://miroca.one/area/fujisawa/"><span class="gf-icon">📍</span>藤沢市</a>
+<a href="https://miroca.one/area/yokosuka/"><span class="gf-icon">📍</span>横須賀市</a>
+<a href="https://miroca.one/area/odawara/"><span class="gf-icon">📍</span>小田原市</a>
+<a href="https://miroca.one/area/setagaya/"><span class="gf-icon">📍</span>世田谷区</a>
+<a href="https://miroca.one/area/ota/"><span class="gf-icon">📍</span>大田区</a>
+</nav></div>
+<div class="gf-card">
+<div class="gf-card-h">MIROCAについて</div>
+<p class="gf-about">MIROCAは特定の業者をおすすめするサービスではありません。複数のデータソースから収集した事実データを独自に分析し、中立的な比較情報を提供しています。</p>
+<p class="gf-about">データは毎週自動更新されます。</p>
 </div>
-<div class="gf-col"><div class="gf-col-t">エリア</div>
-<a href="https://miroca.one/area/yokohama/">横浜市</a>
-<a href="https://miroca.one/area/kawasaki/">川崎市</a>
-<a href="https://miroca.one/area/kamakura/">鎌倉市</a>
-<a href="https://miroca.one/area/fujisawa/">藤沢市</a>
-<a href="https://miroca.one/area/yokosuka/">横須賀市</a>
-<a href="https://miroca.one/area/odawara/">小田原市</a>
-<a href="https://miroca.one/area/isehara/">伊勢原市</a>
-<a href="https://miroca.one/area/edogawa/">江戸川区</a>
 </div>
+<div class="gf-bottom">
+<div class="gf-logo">MIROCA<small>ミロカ</small></div>
+<p>© 2026 BLST WEB — 最終更新: 2026-03-28</p>
+<div class="gf-bottom-links"><a href="https://miroca.one/sitemap.xml">サイトマップ</a><a href="https://miroca.one/llms.txt">llms.txt</a></div>
 </div>
-<div class="gf-btm">
-<p>MIROCA（ミロカ）</p>
-<p>MIROCAは特定の業者をおすすめするサービスではありません。掲載情報は定期的に収集した事実データの独自分析です。</p>
-<p>© 2026 BLST WEB — 2026-03-28 | <a href="https://miroca.one/sitemap.xml">サイトマップ</a></p>
 </div>
 </footer>
 </body></html>

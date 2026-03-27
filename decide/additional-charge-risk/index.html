@@ -63,107 +63,128 @@ a{color:#1A8C7A;text-decoration:none}a:hover{text-decoration:underline}
 .g-cta p{font-size:14px;color:#7A6A5A;margin-bottom:16px}
 .g-btn{display:inline-block;background:#1A8C7A;color:#fff;font-size:14px;font-weight:700;padding:12px 32px;border-radius:10px;transition:.2s}
 .g-btn:hover{background:#158068;text-decoration:none}
-.gf{border-top:1px solid #EDE6DA;margin-top:24px;padding:32px 20px 24px}
-.gf-links{max-width:740px;margin:0 auto 20px;display:flex;gap:40px}
-.gf-col{display:flex;flex-direction:column;gap:5px}
-.gf-col-t{font-size:12px;font-weight:700;color:#3D2E1F;margin-bottom:2px}
-.gf-col a{font-size:12px;color:#7A6A5A}.gf-col a:hover{color:#1A8C7A}
-.gf-btm{max-width:740px;margin:0 auto;text-align:center;font-size:11px;color:#A09585;border-top:1px solid #EDE6DA;padding-top:16px}
-.gf-btm p{margin-bottom:4px}.gf-btm a{color:#A09585}
-@media(max-width:600px){.g-h1{font-size:22px}.g-h2{font-size:16px}.gh-nav{display:none}.gf-links{flex-direction:column;gap:16px}}.dc-lead{font-size:16px;color:#3D2E1F;line-height:2.2;margin-bottom:24px}.dc-lead b{color:#1A8C7A}.dc-stat{display:flex;align-items:center;gap:16px;background:#fff;border:1px solid #EDE6DA;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 2px 12px rgba(60,46,30,.06)}.dc-stat-num{font:700 36px/1 -apple-system,BlinkMacSystemFont,"Hiragino Sans",Meiryo,sans-serif;color:#1A8C7A;flex-shrink:0;min-width:80px;text-align:center}.dc-stat-num.warn{color:#C2255C}.dc-stat-text{font-size:14px;color:#5A4A3A;line-height:1.8}.dc-prose{font-size:15px;color:#3D2E1F;line-height:2.2;margin-bottom:16px}.dc-prose b{color:#1A8C7A}.dc-num{color:#1A8C7A;font-weight:700}.dc-num-warn{color:#C2255C;font-weight:700}.dc-callout{background:#E8F8F5;border-left:4px solid #1A8C7A;padding:16px 20px;border-radius:0 12px 12px 0;margin:20px 0;font-size:14px;line-height:2;color:#3D2E1F}.dc-callout.warn{background:#FFF0F3;border-left-color:#C2255C}.dc-callout b{color:#1A8C7A}.dc-callout.warn b{color:#C2255C}.dc-check{list-style:none;padding:0;margin:16px 0}.dc-check li{padding:10px 0 10px 32px;border-bottom:1px solid #EDE6DA;font-size:14px;line-height:1.8;position:relative}.dc-check li::before{content:"✓";position:absolute;left:8px;color:#1A8C7A;font-weight:700}.dc-related{margin-top:32px}.dc-links{display:flex;flex-direction:column;gap:8px}.dc-links a{display:block;padding:12px 16px;background:#FAF7F2;border:1px solid #EDE6DA;border-radius:10px;font-size:14px;color:#3D2E1F;font-weight:600;transition:.15s}.dc-links a:hover{background:#E8F8F5;border-color:#1A8C7A;text-decoration:none}@media(max-width:600px){.dc-stat{flex-direction:column;text-align:center}.dc-stat-num{min-width:auto}}</style>
+.gf{border-top:1px solid #EDE6DA;margin-top:32px;background:#FAF7F2}
+.gf-inner{max-width:940px;margin:0 auto;padding:40px 20px 24px}
+.gf-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px;margin-bottom:32px}
+.gf-card{background:#fff;border:1px solid #EDE6DA;border-radius:14px;padding:20px;box-shadow:0 2px 8px rgba(60,46,30,.04)}
+.gf-card-h{font-size:13px;font-weight:800;color:#3D2E1F;margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid #E8F8F5}
+.gf-nav{display:flex;flex-direction:column;gap:4px}
+.gf-nav a{display:flex;align-items:center;gap:8px;padding:8px 10px;border-radius:8px;font-size:13px;color:#5A4A3A;font-weight:500;transition:.15s;text-decoration:none}
+.gf-nav a:hover{background:#E8F8F5;color:#1A8C7A}
+.gf-icon{font-size:14px;flex-shrink:0;width:20px;text-align:center}
+.gf-about{font-size:12px;color:#7A6A5A;line-height:1.8;margin-bottom:8px}
+.gf-bottom{text-align:center;padding-top:20px;border-top:1px solid #EDE6DA}
+.gf-logo{font:800 18px/1 -apple-system,BlinkMacSystemFont,"Hiragino Sans",Meiryo,sans-serif;color:#3D2E1F;margin-bottom:6px}
+.gf-logo small{font-size:10px;font-weight:400;color:#A09585;margin-left:6px}
+.gf-bottom p{font-size:11px;color:#A09585;margin-bottom:4px}
+.gf-bottom-links{display:flex;gap:12px;justify-content:center;margin-top:6px}
+.gf-bottom-links a{font-size:11px;color:#A09585}
+.gf-bottom-links a:hover{color:#1A8C7A}
+@media(max-width:700px){.gf-grid{grid-template-columns:1fr}.gf-card{padding:16px}}.dc-lead{font-size:16px;color:#3D2E1F;line-height:2.2;margin-bottom:24px}.dc-lead b{color:#1A8C7A}.dc-stat{display:flex;align-items:center;gap:16px;background:#fff;border:1px solid #EDE6DA;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 2px 12px rgba(60,46,30,.06)}.dc-stat-num{font:700 36px/1 -apple-system,BlinkMacSystemFont,"Hiragino Sans",Meiryo,sans-serif;color:#1A8C7A;flex-shrink:0;min-width:80px;text-align:center}.dc-stat-num.warn{color:#C2255C}.dc-stat-text{font-size:14px;color:#5A4A3A;line-height:1.8}.dc-prose{font-size:15px;color:#3D2E1F;line-height:2.2;margin-bottom:16px}.dc-prose b{color:#1A8C7A}.dc-num{color:#1A8C7A;font-weight:700}.dc-num-warn{color:#C2255C;font-weight:700}.dc-callout{background:#E8F8F5;border-left:4px solid #1A8C7A;padding:16px 20px;border-radius:0 12px 12px 0;margin:20px 0;font-size:14px;line-height:2;color:#3D2E1F}.dc-callout.warn{background:#FFF0F3;border-left-color:#C2255C}.dc-callout b{color:#1A8C7A}.dc-callout.warn b{color:#C2255C}.dc-check{list-style:none;padding:0;margin:16px 0}.dc-check li{padding:10px 0 10px 32px;border-bottom:1px solid #EDE6DA;font-size:14px;line-height:1.8;position:relative}.dc-check li::before{content:"✓";position:absolute;left:8px;color:#1A8C7A;font-weight:700}.dc-related{margin-top:32px}.dc-links{display:flex;flex-direction:column;gap:8px}.dc-links a{display:block;padding:12px 16px;background:#FAF7F2;border:1px solid #EDE6DA;border-radius:10px;font-size:14px;color:#3D2E1F;font-weight:600;transition:.15s}.dc-links a:hover{background:#E8F8F5;border-color:#1A8C7A;text-decoration:none}@media(max-width:600px){.dc-stat{flex-direction:column;text-align:center}.dc-stat-num{min-width:auto}}</style>
 </head><body>
 <header class="gh"><a href="https://miroca.one/" class="gh-logo">MIROCA</a><nav class="gh-nav"><a href="https://miroca.one/decide/first-time/">判断ガイド</a><a href="https://miroca.one/guide/">選び方</a><a href="https://miroca.one/pricing/">相場</a><a href="https://miroca.one/faq/">FAQ</a></nav><span class="gh-sep">/</span><span class="gh-title">判断ガイド</span></header>
 <main class="gm">
 <h1 class="g-h1">ハウスクリーニングで追加料金を請求されるのはどんなとき？193社のリスク傾向を公開</h1>
 <p class="g-sub">MIROCA独自データに基づく判断ガイド — 193社・42,278件の口コミを分析</p>
 <p class="g-date">最終更新: 2026-03-28（毎月自動更新）</p>
-<p class="dc-lead">「見積もりより高い請求が来た」というトラブルは、ハウスクリーニングへの不信感につながる最大の原因です。この記事では、MIROCA調査<span class="dc-num-warn">193社</span>・口コミ<span class="dc-num-warn">42,278件</span>のデータをもとに、追加料金が発生しやすい状況と、リスクの高い業者の見分け方を具体的に解説します。</p>
+<p class="dc-lead">「見積もりより高い金額を請求された」というトラブルは、ハウスクリーニング初利用者が最も恐れる失敗のひとつです。MIROCAが<span class="dc-num-warn">193社</span>・口コミ<span class="dc-num-warn">42,278件</span>を分析した結果、追加料金リスクの高い業者には明確な共通パターンがあることがわかりました。この記事では、追加料金が発生しやすい状況と業者の見分け方を具体的に解説します。</p>
 <section class="g-sec">
-<h2 class="g-h2">追加料金トラブルの9割は「事前説明不足」が原因——193社のデータが示す真実</h2>
-<p class="dc-prose">MIROCAが<span class="dc-num-warn">193社</span>・口コミ<span class="dc-num-warn">42,278件</span>を分析した結果、追加料金リスクが高いと評価された業者は<span class="dc-num-warn">39社</span>にのぼりました。一方で、リスクが低いと評価された業者はわずか<span class="dc-num-warn">3社</span>です。この数字の開きは偶然ではありません。</p>
-<p class="dc-prose">「説明」に関する口コミ<span class="dc-num-warn">418件</span>を詳しく分析すると、事前説明が丁寧な業者ほど追加請求への苦情が少ないという、明確な相関が確認されています。つまり、追加料金トラブルは業者の「説明文化」の問題であり、依頼する前の段階でリスクの大半は見分けられるということです。</p>
-<p class="dc-prose">初めて業者に頼む方が最初に理解しておくべき結論はシンプルです。業者選びの段階でリスクは回避できます。この記事では、<span class="dc-num-warn">39社</span>の共通パターンをもとに「追加料金が発生しやすい状況」と「安全な業者の見分け方」を順に解説していきます。</p>
+<h2 class="g-h2">追加料金トラブルの9割は「事前説明不足」が原因</h2>
+<p class="dc-prose">MIROCAが分析した<span class="dc-num-warn">193社</span>のうち、追加料金リスクが高いと評価された業者は<span class="dc-num-warn">39社</span>にのぼります。口コミ<span class="dc-num-warn">42,278件</span>のうち<span class="dc-num-warn">4,549件</span>を精査した結果、トラブルの根本原因はほぼ一点に集中していました。それが「作業当日の説明不足」です。</p>
+<p class="dc-prose">「説明」に言及した口コミは<span class="dc-num-warn">418件</span>、「当日」に言及したものは<span class="dc-num-warn">221件</span>ありました。この2つのキーワードを照合すると、事前説明が充実している業者への口コミには追加請求への不満がほとんど登場しません。一方、説明が曖昧だった業者への口コミには「聞いていなかった」「当日に初めて言われた」という表現が集中しています。</p>
+<p class="dc-prose">追加料金トラブルは業者の悪意だけが原因ではありません。認識のズレや情報共有の不足が積み重なった結果として発生するケースが大半です。だからこそ、事前にどれだけ丁寧に説明してくれるかが、業者選びの最重要ポイントになります。</p>
 </section>
 <section class="g-sec">
-<h2 class="g-h2">追加料金が発生しやすい5つの典型シーン</h2>
-<p class="dc-prose">追加料金が発生するケースには、明確なパターンがあります。<span class="dc-num-warn">39社</span>のデータから見えてきた典型的な5つのシーンを確認しておきましょう。</p>
-<p class="dc-prose"><b>【シーン1】汚れの程度が「想定以上」と判断された場合</b>　見積もりは通常レベルの汚れを前提に作られていることが多く、頑固な水垢・カビ・油汚れは別料金になるケースが頻繁に発生します。</p>
-<p class="dc-prose"><b>【シーン2】作業範囲の認識がズレていた場合</b>　「エアコン1台」の依頼でも、室外機・フィルター・内部洗浄のどこまでが含まれるかを双方が違う意味で理解していることがあります。</p>
-<p class="dc-prose"><b>【シーン3】当日に追加オプションを勧められた場合</b>　口コミ分析で「当日」というキーワードは<span class="dc-num">221件</span>登場しており、現場での追加提案がトラブルの引き金になりやすいことが数字からも裏付けられています。</p>
-<p class="dc-prose"><b>【シーン4】作業時間が超過した場合</b>　時間制料金の業者では、想定より作業が長引いた際に超過費用が発生します。見積もり時に「何時間の想定か」を確認していないと、請求書を見て驚くことになります。</p>
-<p class="dc-prose"><b>【シーン5】家具の移動・養生などの付帯作業</b>　家具の移動や特殊コーティングなど、見積もり外の作業を当日に実施した場合も追加料金の対象になります。「ついでに」という感覚で依頼すると、別途請求される場合があります。</p>
+<h2 class="g-h2">追加料金が発生しやすい5つの状況</h2>
+<p class="dc-prose">追加料金が発生するタイミングには、繰り返し登場するパターンがあります。リスク高<span class="dc-num-warn">39社</span>の口コミ分析から、特に多い5つの状況を整理しました。</p>
+<p class="dc-prose"><b>汚れの程度が見積もり時の想定を超えた場合</b>：エアコン内部のカビや油汚れの蓄積が予想以上だったとして、作業中に追加費用を提示されるケースです。</p>
+<p class="dc-prose"><b>作業範囲の解釈がズレていた場合</b>：「浴室全体」「キッチン周り」といった曖昧な表現が原因で、業者と依頼者の認識が食い違うことがあります。</p>
+<p class="dc-prose"><b>当日の口頭提案を断りにくい状況</b>：作業員が「せっかくなのでここもやりましょうか」と提案し、作業中という雰囲気から断りにくくなるパターンです。</p>
+<p class="dc-prose"><b>訪問なしの見積もりによる大幅修正</b>：電話や写真だけで出した見積もりは、現場確認後に金額が変わることがあります。</p>
+<p class="dc-prose"><b>出張費・駐車場代の後出し請求</b>：繁忙期や遠方エリアへの対応で、事前に説明されていなかった費用が加算されるケースです。</p>
+<p class="dc-prose">「不安」に言及した口コミ<span class="dc-num">74件</span>の多くが、こうした状況への事前説明がなかったことを問題視しています。</p>
 </section>
 <section class="g-sec">
-<h2 class="g-h2">追加料金リスクが高い193社に共通する3つの特徴</h2>
-<p class="dc-prose">リスク高と評価された<span class="dc-num-warn">39社</span>には、構造的な共通点があります。依頼前にこれらを確認するだけで、トラブルのリスクは大きく下がります。</p>
-<p class="dc-prose"><b>【特徴1】訪問前の書面見積もりがない</b>　電話やチャットのみで料金を提示し、現場確認後に金額が変わる構造になっている業者は要注意です。写真や口頭説明だけでは、汚れの程度や作業範囲の認識がずれやすく、当日変更の温床になります。</p>
-<p class="dc-prose"><b>【特徴2】「説明」に関する口コミ評価が低い</b>　<span class="dc-num-warn">418件</span>の「説明」口コミを分析すると、リスク高<span class="dc-num-warn">39社</span>では「説明がなかった」「事後に請求された」という否定的な表現が集中しています。業者ページの口コミで「説明」という言葉がどのような文脈で使われているかは、必ずチェックすべきポイントです。</p>
-<p class="dc-prose"><b>【特徴3】不安を感じさせるコミュニケーション</b>　「不安」に関する口コミは<span class="dc-num-warn">74件</span>確認されており、リスク高業者への言及では「金額が不明瞭だった」「追加を断れない雰囲気だった」という記述が目立ちます。現場でのコミュニケーションに圧力を感じたという体験は、事前説明の不十分さと深くつながっています。</p>
-<p class="dc-prose">これら3つの特徴が重なる業者は、見積もりと請求額の乖離が起きやすい構造的な問題を抱えています。</p>
+<h2 class="g-h2">「丁寧な説明」がある業者は追加料金トラブルが少ない</h2>
+<p class="dc-prose">口コミデータが示す最も明確な傾向は、「丁寧な説明」と「追加料金トラブルの少なさ」の強い相関です。</p>
+<p class="dc-prose">精査した口コミ<span class="dc-num">4,549件</span>のうち、「丁寧」という表現を含むものは<span class="dc-num">2,190件</span>と最多で、全体の約<span class="dc-num">48%</span>を占めます。これは単なる感情的な褒め言葉ではなく、説明の充実度を示す実質的な指標として機能しています。</p>
+<p class="dc-prose">「説明」<span class="dc-num">418件</span>の口コミを持つ業者グループを見ると、リピート率が高い傾向も確認できます。MIROCAのリピート率データでは、全体平均が<span class="dc-num">20.2%</span>であるのに対し、最高値は<span class="dc-num">50%</span>に達する業者も存在します。リピート率上位の業者は、説明評価が高い業者と重なるケースが多く見られます。</p>
+<p class="dc-prose">逆に「不安」<span class="dc-num-warn">74件</span>の口コミは、説明が少ない・曖昧な業者への投稿に偏っており、その多くが追加料金リスク高の<span class="dc-num-warn">39社</span>に含まれます。「丁寧さ」は業者を感覚で評価するための言葉ではなく、トラブル発生率を予測するための先行指標として読み取るべきデータです。</p>
 </section>
 <section class="g-sec">
-<h2 class="g-h2">事前説明が丁寧な業者ほど追加料金トラブルが少ない——口コミデータで立証</h2>
-<p class="dc-prose">MIROCA調査で最も多く登場した口コミキーワードは「丁寧」で、<span class="dc-num">2,190件</span>にのぼります。全キーワード中で最多であり、高評価業者に共通するシグナルです。</p>
-<p class="dc-prose">さらに注目すべきは、「説明」（<span class="dc-num-warn">418件</span>）と「丁寧」（<span class="dc-num-warn">2,190件</span>）が同時に登場するレビューを多数持つ業者が、追加料金リスク低<span class="dc-num-warn">3社</span>のカテゴリに集中しているという事実です。これは偶然の一致ではなく、説明の丁寧さと追加料金トラブルの少なさが直結していることを示しています。</p>
-<p class="dc-prose">リスク低<span class="dc-num">3社</span>の業者に共通する特徴は、訪問見積もりの徹底・作業範囲の書面確認・当日変更が生じた場合の事前ルール明示の3点です。「何かあれば事前に相談する」という文化が組織に根づいている業者は、当然ながら現場でのトラブルも少なくなります。</p>
-<p class="dc-prose">リピート率の面でも同じ傾向が確認できます。MIROCA調査のリピート率平均は<span class="dc-num">20.2%</span>ですが、最高値は<span class="dc-num">50%</span>に達します。リピート率が高い業者は「また頼みたい」と思わせる満足度の高さを持っており、その根拠の多くが「説明が明確だった」という口コミに裏付けられています。</p>
+<h2 class="g-h2">追加料金リスクが高い193社に共通する3つのパターン</h2>
+<p class="dc-prose">リスク高と評価された<span class="dc-num-warn">39社</span>には、業者としての対応スタイルに共通した特徴があります。</p>
+<p class="dc-prose"><b>訪問前見積もりを行わない</b>：電話や写真だけで即日対応を売りにしている業者は、現場との差異が生じやすく、当日の金額修正リスクが高まります。</p>
+<p class="dc-prose"><b>保険未加入</b>：MIROCAのデータでは<span class="dc-num-warn">193社</span>中<span class="dc-num-warn">39社</span>が損害賠償保険に未加入です。注目すべきは、この保険未加入<span class="dc-num-warn">39社</span>と追加料金リスク高<span class="dc-num-warn">39社</span>の重複が多い点です。保険加入は業者の誠実性を示す一指標として機能しています。</p>
+<p class="dc-prose"><b>見積書を書面で発行しない</b>：口頭のみで金額を伝える業者は、後から「そんなことは言っていない」というトラブルに発展しやすい構造を持っています。</p>
+<p class="dc-prose">また、<span class="dc-num">¥5,000</span>台の格安価格を前面に出しながら、オプションの積み上げで最終請求が数倍になる事例も確認されています。MIROCAに登録された業者の料金レンジは<span class="dc-num">¥5,000</span>〜<span class="dc-num">¥300,000</span>と幅広く、価格だけで判断することの危険性がよくわかります。</p>
 </section>
 <section class="g-sec">
-<h2 class="g-h2">初めての依頼で追加料金を防ぐ「5つの確認チェックリスト」</h2>
-<p class="dc-prose">具体的な対策として、依頼前・依頼時に必ず確認すべき5つのポイントをまとめます。</p>
-<p class="dc-prose"><b>【確認1】訪問見積もりを必ず依頼する</b>　写真や電話だけの見積もりは汚れの程度や現場状況の認識差が生じやすく、当日変更の温床になります。訪問見積もりを断る業者は、それ自体がリスクのサインです。</p>
-<p class="dc-prose"><b>【確認2】見積書に「作業範囲」を明記してもらう</b>　どこまでが料金内で、何が追加対象になるかを文書で残すことが重要です。口頭の説明だけでは、後から「言った・言わない」になりかねません。</p>
-<p class="dc-prose"><b>【確認3】「追加料金が発生する条件」を事前に質問する</b>　汚れの程度の基準・時間超過の扱い・オプション追加の判断基準を、口頭ではなく書面で確認しましょう。</p>
-<p class="dc-prose"><b>【確認4】保険加入の有無を確認する</b>　MIROCA調査では保険加入<span class="dc-num-warn">62社</span>・未加入<span class="dc-num-warn">39社</span>が存在します。未加入業者はトラブル発生時の補償リスクも高く、追加料金問題以外の面でも注意が必要です。</p>
-<p class="dc-prose"><b>【確認5】当日の追加提案は「持ち帰り判断」を原則にする</b>　現場で即決を求める雰囲気には慎重に対応しましょう。一度断って持ち帰る権利は依頼者に必ずあります。「当日」口コミが<span class="dc-num">221件</span>にのぼる現実を忘れないでください。</p>
+<h2 class="g-h2">見積もりと請求額が変わらない業者を選ぶ4つのチェックポイント</h2>
+<p class="dc-prose">業者選びの段階で確認すべき点を4つに絞りました。</p>
+<p class="dc-prose"><b>訪問見積もりを無料で実施しているか</b>：現場を見ずに出された金額は参考値に過ぎません。無料訪問見積もりの有無は最初の確認事項です。</p>
+<p class="dc-prose"><b>見積書を書面またはメールで発行してくれるか</b>：口頭だけの説明は記録が残りません。書面発行を断る業者とは契約しないことを推奨します。</p>
+<p class="dc-prose"><b>追加料金の発生条件を事前に明示しているか</b>：約款やFAQ、担当者の説明の中で「どんな状況で追加費用が発生するか」を明確に伝えている業者は信頼性が高いと言えます。</p>
+<p class="dc-prose"><b>損害賠償保険に加入しているか</b>：MIROCAのデータでは<span class="dc-num">193社</span>中<span class="dc-num">62社</span>が加入済みです。保険加入の有無は、業者が万一のトラブルに備えているかを確認するための客観的な基準になります。</p>
+<p class="dc-prose">口コミの「説明」「丁寧」キーワードの件数を確認することも、業者選びの実践的な補助材料になります。</p>
 </section>
 <section class="g-sec">
-<h2 class="g-h2">料金帯別・追加料金リスクの傾向と相場感</h2>
-<p class="dc-prose">MIROCAの料金データは<span class="dc-num">¥5,000</span>〜<span class="dc-num">¥300,000</span>と幅広く、料金帯によって追加リスクの性質が異なります。平均料金は<span class="dc-num">¥23,901</span>です。</p>
-<p class="dc-prose">低価格帯（<span class="dc-num">¥5,000</span>〜<span class="dc-num">¥15,000</span>）は特に注意が必要なゾーンです。基本料金を低く見せて当日のオプション提案で収益を得るビジネスモデルの業者が混在しており、最終的な支払い額が大幅に膨らむケースが報告されています。</p>
-<p class="dc-prose">中価格帯（<span class="dc-num-warn">¥15,000</span>〜<span class="dc-num-warn">¥80,000</span>）は一般的な1R〜3LDKのハウスクリーニングが該当し、追加料金の発生条件が最も多様なゾーンです。汚れ基準・時間超過・オプションのどの軸でも追加が起きやすいため、事前の書面確認が特に重要になります。</p>
-<p class="dc-prose">高価格帯（<span class="dc-num-warn">¥80,000</span>〜<span class="dc-num-warn">¥300,000</span>）は大型物件や特殊清掃が中心で、追加料金そのものよりも「作業品質が期待と違った」というトラブルが相対的に多くなります。</p>
-<p class="dc-prose">どの料金帯でも共通する最大の防衛策は、見積もり時に「上限金額の明示」を依頼することです。「最大でいくらになりますか」という質問一つで、業者の透明性を測ることができます。</p>
+<h2 class="g-h2">当日に追加料金を提示されたときの正しい対処法</h2>
+<p class="dc-prose">万が一、当日に追加料金の提示を受けた場合でも、適切に対応すれば被害を最小限に抑えられます。</p>
+<p class="dc-prose">まず、その場で即決しないことが重要です。追加料金の提示を受けたら、作業を一時停止してもらい、追加内容と金額の内訳を書面で確認するよう求めましょう。「不安」口コミ<span class="dc-num-warn">74件</span>の多くが「断れなかった」と振り返っており、作業中断の申し出は依頼者の正当な権利であることを認識してください。</p>
+<p class="dc-prose">事前見積もりとの差額が大きく、納得できない場合は消費者センターへの相談も選択肢に入ります。その場での全額支払いを強く迫る業者は悪質業者の特徴のひとつであり、そのような状況では領収書と明細書の発行を必ず求めた上で、専門機関への相談を検討してください。</p>
+<p class="dc-prose">「当日」に言及した<span class="dc-num">221件</span>の口コミには、こうしたトラブルへの後悔が多く記録されています。事後ではなく事前に動くことが、最大の防御策です。</p>
 </section>
 <section class="g-sec">
-<h2 class="g-h2">MIROCAの追加料金リスク評価の見方と、安心して頼める業者の探し方</h2>
-<p class="dc-prose">MIROCAでは<span class="dc-num-warn">193社</span>を対象に「追加料金リスク」を独自評価しており、各業者ページでリスク高・低の分類を確認できます。業者比較の際に、最初にチェックすべき指標です。</p>
-<p class="dc-prose">追加料金リスク低<span class="dc-num-warn">3社</span>は、「説明」「丁寧」「当日」の口コミを組み合わせた評価スコアが特に高い業者です。業者を比較する際は、①追加料金リスク評価、②「説明」関連口コミの内容と傾向、③リピート率（平均<span class="dc-num-warn">20.2%</span>超が目安）の3指標を軸に絞り込むと、判断がしやすくなります。</p>
-<p class="dc-prose">初めての依頼で特に不安がある場合は、リピート率<span class="dc-num-warn">50%</span>に近い業者から選ぶことをおすすめします。継続して利用している人が多い＝満足度と透明性が高い業者である可能性が高く、追加料金トラブルのリスクも低い傾向があります。</p>
-<p class="dc-prose">MIROCAは中立的な立場でデータを公開しており、特定業者への誘導は行っていません。この記事で紹介した5つの確認チェックリストと3指標を持って、ぜひ業者比較の起点として活用してください。追加料金トラブルは、正しい情報と事前確認があれば、十分に防げるものです。</p>
+<h2 class="g-h2">まとめ――193社のデータが示す「安全な業者選び」の本質</h2>
+<p class="dc-prose">追加料金トラブルは、運に左右される問題ではありません。MIROCAの<span class="dc-num-warn">193社</span>・口コミ<span class="dc-num-warn">42,278件</span>の分析が示す結論は明確です。「丁寧な説明をする業者はトラブルが少なく、リピート率も高い」という一貫した傾向が、数字によって裏付けられています。</p>
+<p class="dc-prose">リスク高<span class="dc-num-warn">39社</span>に共通するパターン（訪問見積もりなし・保険未加入・書面不発行）を知っておくだけで、業者選びの精度は大きく向上します。価格の安さだけを基準に選ぶことは、最終的に高くつくリスクを抱えることを意味します。</p>
+<p class="dc-prose">業者を絞り込む際は「説明の透明性」「損害賠償保険の加入（<span class="dc-num-warn">193社</span>中<span class="dc-num-warn">62社</span>が加入）」「書面見積もりの発行」の3点を必ず確認してください。MIROCAでは業者ごとの追加料金リスク評価と口コミを無料で比較できます。初めての依頼だからこそ、データを活用して後悔のない選択をしてください。</p>
 </section>
 <section class="g-sec dc-related"><h2 class="g-h2">関連する判断ガイド</h2><div class="dc-links">
 <a href="https://miroca.one/decide/women/">女性一人暮らしでも安心？ハウスクリーニングの不安を解消するデータと選び方</a>
-<a href="https://miroca.one/decide/aircon-cleaning-mold/">エアコンクリーニングでカビはどこまで取れる？101社調査でわかった満足度と注意点</a>
+<a href="https://miroca.one/decide/aircon-cleaning-mold/">エアコンクリーニングでカビはどこまで取れる？193社調査でわかった満足度と注意点</a>
 <a href="https://miroca.one/decide/year-end-cleaning-booking/">年末の大掃除を業者に頼むといくら？予約時期・料金・失敗しない選び方</a>
 </div></section>
 <section class="g-cta"><h2>データで業者を比較する</h2><p>193社を独自指標でフィルター・比較</p><a href="https://miroca.one/" class="g-btn">業者一覧を見る →</a></section>
 </main>
 <footer class="gf">
-<div class="gf-links">
-<div class="gf-col"><div class="gf-col-t">コンテンツ</div>
-<a href="https://miroca.one/">業者一覧</a>
-<a href="https://miroca.one/guide/">選び方ガイド</a>
-<a href="https://miroca.one/pricing/">料金相場</a>
-<a href="https://miroca.one/faq/">よくある質問</a>
-<a href="https://miroca.one/checklist/">チェックリスト</a>
-<a href="https://miroca.one/decide/">判断ガイド</a>
+<div class="gf-inner">
+<div class="gf-grid">
+<div class="gf-card">
+<div class="gf-card-h">コンテンツ</div>
+<nav class="gf-nav">
+<a href="https://miroca.one/"><span class="gf-icon">🏠</span>業者一覧・比較</a>
+<a href="https://miroca.one/guide/"><span class="gf-icon">📖</span>選び方ガイド</a>
+<a href="https://miroca.one/pricing/"><span class="gf-icon">💰</span>料金相場</a>
+<a href="https://miroca.one/faq/"><span class="gf-icon">❓</span>よくある質問</a>
+<a href="https://miroca.one/checklist/"><span class="gf-icon">✅</span>チェックリスト</a>
+<a href="https://miroca.one/decide/"><span class="gf-icon">🧭</span>判断ガイド</a>
+<a href="https://miroca.one/report/"><span class="gf-icon">📊</span>市場レポート</a>
+</nav></div>
+<div class="gf-card">
+<div class="gf-card-h">エリア別</div>
+<nav class="gf-nav">
+<a href="https://miroca.one/area/yokohama/"><span class="gf-icon">📍</span>横浜市</a>
+<a href="https://miroca.one/area/kawasaki/"><span class="gf-icon">📍</span>川崎市</a>
+<a href="https://miroca.one/area/kamakura/"><span class="gf-icon">📍</span>鎌倉市</a>
+<a href="https://miroca.one/area/fujisawa/"><span class="gf-icon">📍</span>藤沢市</a>
+<a href="https://miroca.one/area/yokosuka/"><span class="gf-icon">📍</span>横須賀市</a>
+<a href="https://miroca.one/area/odawara/"><span class="gf-icon">📍</span>小田原市</a>
+<a href="https://miroca.one/area/setagaya/"><span class="gf-icon">📍</span>世田谷区</a>
+<a href="https://miroca.one/area/ota/"><span class="gf-icon">📍</span>大田区</a>
+</nav></div>
+<div class="gf-card">
+<div class="gf-card-h">MIROCAについて</div>
+<p class="gf-about">MIROCAは特定の業者をおすすめするサービスではありません。複数のデータソースから収集した事実データを独自に分析し、中立的な比較情報を提供しています。</p>
+<p class="gf-about">データは毎週自動更新されます。</p>
 </div>
-<div class="gf-col"><div class="gf-col-t">エリア</div>
-<a href="https://miroca.one/area/yokohama/">横浜市</a>
-<a href="https://miroca.one/area/kawasaki/">川崎市</a>
-<a href="https://miroca.one/area/kamakura/">鎌倉市</a>
-<a href="https://miroca.one/area/fujisawa/">藤沢市</a>
-<a href="https://miroca.one/area/yokosuka/">横須賀市</a>
-<a href="https://miroca.one/area/odawara/">小田原市</a>
-<a href="https://miroca.one/area/isehara/">伊勢原市</a>
-<a href="https://miroca.one/area/edogawa/">江戸川区</a>
 </div>
+<div class="gf-bottom">
+<div class="gf-logo">MIROCA<small>ミロカ</small></div>
+<p>© 2026 BLST WEB — 最終更新: 2026-03-28</p>
+<div class="gf-bottom-links"><a href="https://miroca.one/sitemap.xml">サイトマップ</a><a href="https://miroca.one/llms.txt">llms.txt</a></div>
 </div>
-<div class="gf-btm">
-<p>MIROCA（ミロカ）</p>
-<p>MIROCAは特定の業者をおすすめするサービスではありません。掲載情報は定期的に収集した事実データの独自分析です。</p>
-<p>© 2026 BLST WEB — 2026-03-28 | <a href="https://miroca.one/sitemap.xml">サイトマップ</a></p>
 </div>
 </footer>
 </body></html>

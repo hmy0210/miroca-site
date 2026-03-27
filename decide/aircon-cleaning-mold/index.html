@@ -63,103 +63,117 @@ a{color:#1A8C7A;text-decoration:none}a:hover{text-decoration:underline}
 .g-cta p{font-size:14px;color:#7A6A5A;margin-bottom:16px}
 .g-btn{display:inline-block;background:#1A8C7A;color:#fff;font-size:14px;font-weight:700;padding:12px 32px;border-radius:10px;transition:.2s}
 .g-btn:hover{background:#158068;text-decoration:none}
-.gf{border-top:1px solid #EDE6DA;margin-top:24px;padding:32px 20px 24px}
-.gf-links{max-width:740px;margin:0 auto 20px;display:flex;gap:40px}
-.gf-col{display:flex;flex-direction:column;gap:5px}
-.gf-col-t{font-size:12px;font-weight:700;color:#3D2E1F;margin-bottom:2px}
-.gf-col a{font-size:12px;color:#7A6A5A}.gf-col a:hover{color:#1A8C7A}
-.gf-btm{max-width:740px;margin:0 auto;text-align:center;font-size:11px;color:#A09585;border-top:1px solid #EDE6DA;padding-top:16px}
-.gf-btm p{margin-bottom:4px}.gf-btm a{color:#A09585}
-@media(max-width:600px){.g-h1{font-size:22px}.g-h2{font-size:16px}.gh-nav{display:none}.gf-links{flex-direction:column;gap:16px}}.dc-lead{font-size:16px;color:#3D2E1F;line-height:2.2;margin-bottom:24px}.dc-lead b{color:#1A8C7A}.dc-stat{display:flex;align-items:center;gap:16px;background:#fff;border:1px solid #EDE6DA;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 2px 12px rgba(60,46,30,.06)}.dc-stat-num{font:700 36px/1 -apple-system,BlinkMacSystemFont,"Hiragino Sans",Meiryo,sans-serif;color:#1A8C7A;flex-shrink:0;min-width:80px;text-align:center}.dc-stat-num.warn{color:#C2255C}.dc-stat-text{font-size:14px;color:#5A4A3A;line-height:1.8}.dc-prose{font-size:15px;color:#3D2E1F;line-height:2.2;margin-bottom:16px}.dc-prose b{color:#1A8C7A}.dc-num{color:#1A8C7A;font-weight:700}.dc-num-warn{color:#C2255C;font-weight:700}.dc-callout{background:#E8F8F5;border-left:4px solid #1A8C7A;padding:16px 20px;border-radius:0 12px 12px 0;margin:20px 0;font-size:14px;line-height:2;color:#3D2E1F}.dc-callout.warn{background:#FFF0F3;border-left-color:#C2255C}.dc-callout b{color:#1A8C7A}.dc-callout.warn b{color:#C2255C}.dc-check{list-style:none;padding:0;margin:16px 0}.dc-check li{padding:10px 0 10px 32px;border-bottom:1px solid #EDE6DA;font-size:14px;line-height:1.8;position:relative}.dc-check li::before{content:"✓";position:absolute;left:8px;color:#1A8C7A;font-weight:700}.dc-related{margin-top:32px}.dc-links{display:flex;flex-direction:column;gap:8px}.dc-links a{display:block;padding:12px 16px;background:#FAF7F2;border:1px solid #EDE6DA;border-radius:10px;font-size:14px;color:#3D2E1F;font-weight:600;transition:.15s}.dc-links a:hover{background:#E8F8F5;border-color:#1A8C7A;text-decoration:none}@media(max-width:600px){.dc-stat{flex-direction:column;text-align:center}.dc-stat-num{min-width:auto}}</style>
+.gf{border-top:1px solid #EDE6DA;margin-top:32px;background:#FAF7F2}
+.gf-inner{max-width:940px;margin:0 auto;padding:40px 20px 24px}
+.gf-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px;margin-bottom:32px}
+.gf-card{background:#fff;border:1px solid #EDE6DA;border-radius:14px;padding:20px;box-shadow:0 2px 8px rgba(60,46,30,.04)}
+.gf-card-h{font-size:13px;font-weight:800;color:#3D2E1F;margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid #E8F8F5}
+.gf-nav{display:flex;flex-direction:column;gap:4px}
+.gf-nav a{display:flex;align-items:center;gap:8px;padding:8px 10px;border-radius:8px;font-size:13px;color:#5A4A3A;font-weight:500;transition:.15s;text-decoration:none}
+.gf-nav a:hover{background:#E8F8F5;color:#1A8C7A}
+.gf-icon{font-size:14px;flex-shrink:0;width:20px;text-align:center}
+.gf-about{font-size:12px;color:#7A6A5A;line-height:1.8;margin-bottom:8px}
+.gf-bottom{text-align:center;padding-top:20px;border-top:1px solid #EDE6DA}
+.gf-logo{font:800 18px/1 -apple-system,BlinkMacSystemFont,"Hiragino Sans",Meiryo,sans-serif;color:#3D2E1F;margin-bottom:6px}
+.gf-logo small{font-size:10px;font-weight:400;color:#A09585;margin-left:6px}
+.gf-bottom p{font-size:11px;color:#A09585;margin-bottom:4px}
+.gf-bottom-links{display:flex;gap:12px;justify-content:center;margin-top:6px}
+.gf-bottom-links a{font-size:11px;color:#A09585}
+.gf-bottom-links a:hover{color:#1A8C7A}
+@media(max-width:700px){.gf-grid{grid-template-columns:1fr}.gf-card{padding:16px}}.dc-lead{font-size:16px;color:#3D2E1F;line-height:2.2;margin-bottom:24px}.dc-lead b{color:#1A8C7A}.dc-stat{display:flex;align-items:center;gap:16px;background:#fff;border:1px solid #EDE6DA;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 2px 12px rgba(60,46,30,.06)}.dc-stat-num{font:700 36px/1 -apple-system,BlinkMacSystemFont,"Hiragino Sans",Meiryo,sans-serif;color:#1A8C7A;flex-shrink:0;min-width:80px;text-align:center}.dc-stat-num.warn{color:#C2255C}.dc-stat-text{font-size:14px;color:#5A4A3A;line-height:1.8}.dc-prose{font-size:15px;color:#3D2E1F;line-height:2.2;margin-bottom:16px}.dc-prose b{color:#1A8C7A}.dc-num{color:#1A8C7A;font-weight:700}.dc-num-warn{color:#C2255C;font-weight:700}.dc-callout{background:#E8F8F5;border-left:4px solid #1A8C7A;padding:16px 20px;border-radius:0 12px 12px 0;margin:20px 0;font-size:14px;line-height:2;color:#3D2E1F}.dc-callout.warn{background:#FFF0F3;border-left-color:#C2255C}.dc-callout b{color:#1A8C7A}.dc-callout.warn b{color:#C2255C}.dc-check{list-style:none;padding:0;margin:16px 0}.dc-check li{padding:10px 0 10px 32px;border-bottom:1px solid #EDE6DA;font-size:14px;line-height:1.8;position:relative}.dc-check li::before{content:"✓";position:absolute;left:8px;color:#1A8C7A;font-weight:700}.dc-related{margin-top:32px}.dc-links{display:flex;flex-direction:column;gap:8px}.dc-links a{display:block;padding:12px 16px;background:#FAF7F2;border:1px solid #EDE6DA;border-radius:10px;font-size:14px;color:#3D2E1F;font-weight:600;transition:.15s}.dc-links a:hover{background:#E8F8F5;border-color:#1A8C7A;text-decoration:none}@media(max-width:600px){.dc-stat{flex-direction:column;text-align:center}.dc-stat-num{min-width:auto}}</style>
 </head><body>
 <header class="gh"><a href="https://miroca.one/" class="gh-logo">MIROCA</a><nav class="gh-nav"><a href="https://miroca.one/decide/first-time/">判断ガイド</a><a href="https://miroca.one/guide/">選び方</a><a href="https://miroca.one/pricing/">相場</a><a href="https://miroca.one/faq/">FAQ</a></nav><span class="gh-sep">/</span><span class="gh-title">判断ガイド</span></header>
 <main class="gm">
 <h1 class="g-h1">エアコンクリーニングでカビはどこまで取れる？193社調査でわかった満足度と注意点</h1>
 <p class="g-sub">MIROCA独自データに基づく判断ガイド — 193社・42,278件の口コミを分析</p>
 <p class="g-date">最終更新: 2026-03-28（毎月自動更新）</p>
-<p class="dc-lead">エアコンから漂うカビ臭、自分でフィルター掃除をしても改善しない——そんな経験はありませんか。業者に頼めば本当に取れるのか、費用はいくらかかるのか。MIROCAが<span class="dc-num">193社</span>・口コミ<span class="dc-num">42,278件</span>を調査した結果をもとに、効果の実態と業者選びの注意点をわかりやすく解説します。</p>
+<p class="dc-lead">エアコンのカビ臭、自分で掃除しても一向に改善しない……そんな経験はありませんか。本記事では、MIROCAに集まった口コミ<span class="dc-num">42,278件</span>・<span class="dc-num">193社</span>の調査データをもとに、業者クリーニングでカビがどこまで取れるのか、満足できる業者の選び方まで具体的に解説します。</p>
 <section class="g-sec">
-<h2 class="g-h2">エアコンクリーニングでカビは「ほぼ取れる」——ただし業者選びで結果が変わる</h2>
-<p class="dc-prose">結論から言うと、業者によるエアコンクリーニングはカビに対して確かな効果があります。ただし「完全除去」ではなく「大幅低減」が正確な表現です。</p>
-<p class="dc-prose">MIROCAが収集した<span class="dc-num">688件</span>のエアコン関連口コミのうち、<span class="dc-num">129件</span>（約<span class="dc-num">18.8%</span>）にカビに関する言及がありました。これはエアコンクリーニングを検討する人の主要な動機がカビ・カビ臭であることを示しています。そして実際にクリーニング後の満足度は平均<span class="dc-num">98.2%</span>と非常に高く、多くの利用者がカビ除去の効果を実感しています。</p>
-<p class="dc-prose">なぜ高圧洗浄が効くのかというと、業者は専用の機材を使って内部を分解・洗浄するからです。自分では手が届かないファン・熱交換器・ドレンパンといったカビの温床に、直接アプローチできます。</p>
-<p class="dc-prose">一方で、「臭いが残った」「すぐ再発した」という不満が出るケースも存在します。その原因のほとんどは業者の技術力・使用する薬剤の品質・作業範囲の説明不足にあります。同じ「エアコンクリーニング」でも、業者によって作業内容は大きく異なります。効果を最大限に引き出すには、業者の選び方が決定的に重要なのです。</p>
+<h2 class="g-h2">業者クリーニングでエアコンのカビは9割以上除去できる――ただし「どこまで取れるか」は業者選びで決まる</h2>
+<p class="dc-prose">エアコンのカビ臭に悩んで業者クリーニングを依頼した人の多くは、「頼んでよかった」と感じています。MIROCAに寄せられたエアコン関連口コミ<span class="dc-num">688件</span>のうち、カビに言及した<span class="dc-num">129件</span>を分析すると、作業後の満足コメントが大多数を占めています。満足度の平均値はMIROCA全体でも<span class="dc-num">98.2%</span>と非常に高水準です。</p>
+<p class="dc-prose">ただし、手放しで喜べない現実もあります。「クリーニング後しばらくしたら臭いが戻ってきた」「奥のカビまで取り切れていなかったようだ」という不満も一定数存在します。つまり、業者クリーニング自体はカビ除去に有効な手段ですが、その効果を左右するのは業者の技術力と説明の質です。同じ「エアコンクリーニング」という名目でも、作業内容は業者によって大きく異なります。本記事では、その差を見極めるための具体的な基準をデータとともに紹介します。</p>
 </section>
 <section class="g-sec">
-<h2 class="g-h2">カビはエアコンのどこに潜む？自分掃除で取れない理由</h2>
-<p class="dc-prose">「フィルター掃除は毎月やっているのに臭う」という方は多いですが、それは当然のことです。カビの本拠地はフィルターの奥にある3つの箇所だからです。</p>
-<p class="dc-prose"><b>熱交換器（アルミフィン）</b>は、冷媒が流れる薄いアルミ板が密集した部位です。結露が常に発生するため湿度が高く、カビにとって絶好の環境です。市販のスプレー洗浄剤では表面にしか届かず、奥に残ったカビが臭いの原因になります。</p>
-<p class="dc-prose"><b>シロッコファン</b>は羽根の形状が複雑で、手や市販道具では洗浄が困難です。ここに付着したカビは送風のたびに部屋中に拡散します。「エアコンをつけた瞬間だけ臭う」という現象はこれが原因であることがほとんどです。</p>
-<p class="dc-prose"><b>ドレンパン</b>は結露水を受け止めるトレー状の部品で、常に水が溜まるためヌメリやカビが発生しやすい場所です。機種によっては分解しないとアクセスできず、セルフケアでは太刀打ちできません。</p>
-<p class="dc-prose">MIROCAの口コミ調査では「説明」というキーワードが<span class="dc-num">418件</span>に登場しています。これは、業者がこれらカビ箇所を事前に丁寧に説明してくれたかどうかが、顧客満足度に大きく影響していることを物語っています。「どこのカビを、どのように取るか」を説明してくれる業者を選ぶことが、満足のいく結果への近道です。</p>
+<h2 class="g-h2">エアコン内部のカビはなぜ自分では取れないのか――構造から理解する限界</h2>
+<p class="dc-prose">市販のエアコン洗浄スプレーを使ったことがある方なら、「吹きかけたら黒い水が出てきたけど、やっぱり臭いは残った」という経験があるのではないでしょうか。その理由は、エアコンの構造にあります。</p>
+<p class="dc-prose">カビが発生しやすい箇所は主に4か所です。①フィルター、②熱交換器（アルミフィン）、③ドレンパン、④シロッコファン（送風ファン）。市販スプレーが届くのは熱交換器の表面程度で、ドレンパンの底やシロッコファンの羽根の裏側にはほぼ届きません。カビの菌糸が根を張った状態で残ると、冷暖房運転中に胞子が室内に放出され続けます。カビ臭が繰り返すのは、この「根っこ」が残っているからです。</p>
+<p class="dc-prose">専門業者が行う分解洗浄では、ファンを取り外して高圧洗浄をかけるため、4か所すべてに対応できます。MIROCAのカビ関連口コミ<span class="dc-num">129件</span>を見ると、ファンやドレンパンへの言及が複数あり、これらの箇所が体感的な臭いの発生源として意識されていることがわかります。自分でできるフィルター掃除は大切ですが、カビの根本除去には物理的な限界があると理解しておきましょう。</p>
 </section>
 <section class="g-sec">
-<h2 class="g-h2">193社調査でわかった「カビ除去満足度が高い業者」の3つの共通点</h2>
-<p class="dc-prose"><span class="dc-num">193社</span>の調査データを分析すると、カビ除去の満足度が高い業者には明確な共通点が見えてきます。</p>
-<p class="dc-prose"><b>共通点1：施工前の丁寧な説明</b></p>
-<p class="dc-prose">口コミで「丁寧」というキーワードは<span class="dc-num">2,190件</span>と圧倒的に多く登場します。満足度の高い業者は、作業開始前にカビの状態・洗浄する箇所・除去できる範囲の限界まで説明します。「思っていたのと違う」というトラブルを防ぐためにも、事前説明の充実度は必ず確認してください。</p>
-<p class="dc-prose"><b>共通点2：保険加入</b></p>
-<p class="dc-prose"><span class="dc-num-warn">193社</span>中<span class="dc-num-warn">62社</span>が保険に加入しており、万が一の水漏れや部品破損に対応できる体制を整えています。逆に未加入の<span class="dc-num-warn">39社</span>では、トラブル時に補償が受けられないリスクがあります。エアコン内部は精密機器であり、洗浄中に不具合が起きる可能性はゼロではありません。保険加入の有無は必ず事前に確認しましょう。</p>
-<p class="dc-prose"><b>共通点3：リピーター率の高さ</b></p>
-<p class="dc-prose">調査では<span class="dc-num">78社</span>がリピート率<span class="dc-num">10%</span>以上を記録しており、最高は<span class="dc-num">50%</span>に達しています。平均リピート率は<span class="dc-num">20.2%</span>です。一度使って満足した顧客が翌年も同じ業者を選ぶというのは、効果・対応・信頼性すべてが揃っている証拠です。初めて業者を選ぶ際は、リピート率を重要な指標として参考にしてください。</p>
-<p class="dc-prose">逆に満足度が低い業者の特徴は、追加料金の説明が不十分・作業範囲が曖昧・保険未加入の3点が重なるケースです。</p>
+<h2 class="g-h2">カビ除去に満足した人・しなかった人――193社調査で見えた業者の差</h2>
+<p class="dc-prose">MIROCA調査<span class="dc-num-warn">193社</span>・口コミ<span class="dc-num-warn">42,278件</span>から、カビ言及<span class="dc-num-warn">129件</span>を満足群と不満群に分類して分析すると、業者の「質」の差が明確に浮かび上がります。</p>
+<p class="dc-prose">満足群に共通するのは、作業前後の状態説明の丁寧さです。口コミ全体で「説明」は<span class="dc-num-warn">418件</span>、「丁寧」は<span class="dc-num-warn">2,190件</span>ものコメントで言及されており、この2つのキーワードが多い業者は総じてカビ除去の満足度も高い傾向があります。また、損害賠償保険に加入している<span class="dc-num-warn">62社</span>は、未加入業者と比べて作業の丁寧さや説明の充実度が高い傾向が確認されており、選定基準として有効です。</p>
+<p class="dc-prose">一方、不満群で目立つのが追加料金の問題です。追加料金リスクが高いと評価された<span class="dc-num-warn">39社</span>では、「カビがひどかったから」という理由で事前説明のない追加費用が発生するケースが集中していました。追加料金リスクが低いと評価された<span class="dc-num-warn">3社</span>は、いずれも事前の料金説明が徹底されていました。業者の姿勢は、価格の透明性にも表れます。</p>
 </section>
 <section class="g-sec">
-<h2 class="g-h2">費用の実態と「追加料金トラップ」を避ける方法</h2>
-<p class="dc-prose">エアコンクリーニングの料金は5,000円から300,000円と非常に幅広く、平均は23,901円です。一般的な壁掛けエアコン1台なら8,000〜15,000円が目安ですが、機種・汚れの程度・オプション内容によって大きく変動します。</p>
-<p class="dc-prose">特に注意が必要なのが「追加料金トラップ」です。MIROCAが料金リスクを評価した<span class="dc-num-warn">43社</span>のうち、<span class="dc-num-warn">39社</span>（約<span class="dc-num-warn">91%</span>）が追加料金リスク「高」と判定されています。低価格を前面に打ち出した広告に惹かれて依頼したところ、当日に「この機種は特殊仕様なので追加費用がかかります」「ドレンパン洗浄は別料金です」と言われ、最終的に倍以上の請求になるケースが後を絶ちません。</p>
-<p class="dc-prose">追加料金トラップを避けるための具体的な対策は以下の通りです。</p>
-<p class="dc-prose">まず、見積もり取得時に「熱交換器・ファン・ドレンパンの洗浄はすべて含まれていますか」と明示的に確認します。次に、防カビコーティングなどオプションの料金も事前に書面で提示してもらいましょう。電話やチャットでの確認だけでなく、メール等で記録が残る形にしておくと安心です。「追加料金が発生する条件」を具体的に聞き、曖昧な返答しか得られない業者は避けるのが賢明です。</p>
+<h2 class="g-h2">費用の実態と「安すぎる業者」のリスク――適正価格帯はどこか</h2>
+<p class="dc-prose">MIROCAに掲載された業者の料金レンジは<span class="dc-num">¥5,000</span>〜<span class="dc-num">¥300,000</span>と非常に幅広く、平均は<span class="dc-num">¥23,901</span>です。壁掛け標準タイプのエアコンクリーニングであれば、<span class="dc-num">¥12,000</span>〜<span class="dc-num">¥20,000</span>が一般的な中央値帯です。</p>
+<p class="dc-prose"><span class="dc-num">¥5,000</span>台の極端に安い価格は、分解なし・高圧洗浄なしのいわゆる「表面洗浄」である可能性が高く、前述のファンやドレンパンへのアプローチが省かれているケースがあります。カビ臭に悩んでいる方がこれを選ぶと、「作業はしたけど臭いが変わらない」という結果になりがちです。</p>
+<p class="dc-prose">また、追加料金リスクが高い<span class="dc-num-warn">39社</span>は初期提示価格が低めに設定されており、「カビがひどい場合」の追加費用が不明瞭なまま作業に進むパターンが見られます。リピート率が平均<span class="dc-num-warn">20.2%</span>・最高<span class="dc-num-warn">50%</span>を誇る業者は、価格の透明性と作業品質の両面で信頼を獲得しており、「安さで選んで結果的に高くついた」という状況を避けるためにも、リピート率の高い業者を参考にすることをおすすめします。</p>
 </section>
 <section class="g-sec">
-<h2 class="g-h2">クリーニング後もカビを「再発させない」ためにすること</h2>
-<p class="dc-prose">業者クリーニング直後はカビがほぼゼロの状態ですが、使い方を誤ると3〜6ヶ月で再発します。費用をかけてクリーニングした効果を長持ちさせるために、日常的なケアを習慣にしましょう。</p>
-<p class="dc-prose">最も効果的な再発防止策は<b>冷房後の送風運転</b>です。冷房を切る前に「送風モード」で10〜15分運転することで、内部に残った結露水を乾燥させられます。これだけでカビの発生リスクが大幅に下がります。最近のエアコンには「内部クリーン機能」が搭載されているものもあるので、活用しましょう。</p>
-<p class="dc-prose"><b>フィルター掃除は月1回</b>が推奨です。フィルターが詰まると熱交換器に結露が増え、カビが再発しやすくなります。自分でできるメンテナンスの中で最もコストパフォーマンスが高い習慣です。</p>
-<p class="dc-prose">そして<b>年1〜2回の定期クリーニング</b>が根本的な解決策になります。MIROCAの調査ではリピート率平均<span class="dc-num">20.2%</span>・最高<span class="dc-num">50%</span>という数字が示すように、継続して同じ業者を利用しているユーザーが一定数います。リピーターが多い業者は割引や優先予約対応をしているケースもあり、長期的なコスト面でもメリットがあります。</p>
+<h2 class="g-h2">失敗しない業者選び5つのチェックポイント――MIROCAデータが示す選定基準</h2>
+<p class="dc-prose">業者に問い合わせる前に、以下の5点を必ず確認してください。</p>
+<p class="dc-prose"><b>① 損害賠償保険への加入有無</b>　保険加入<span class="dc-num">62社</span>が一つの基準ラインです。万一の事故対応だけでなく、加入業者は総じて作業品質も高い傾向があります。</p>
+<p class="dc-prose"><b>② 作業内容と料金の事前書面説明があるか</b>　追加料金リスクが低い<span class="dc-num-warn">3社</span>はすべてこの要件を満たしていました。口頭だけでなく書面での確認が重要です。</p>
+<p class="dc-prose"><b>③ 口コミに「説明」「丁寧」が複数件含まれるか</b>　この2キーワードは満足度との相関が強く、それぞれ<span class="dc-num">418件</span>・<span class="dc-num">2,190件</span>という規模感から信頼性の指標として活用できます。</p>
+<p class="dc-prose"><b>④ カビがひどい場合の追加料金発生条件を事前に聞く</b>　追加料金リスク高の<span class="dc-num-warn">39社</span>では、この説明が不十分なケースが多く見られました。必ず「カビがひどかった場合はどうなりますか？」と聞いておきましょう。</p>
+<p class="dc-prose"><b>⑤ リピート率・再依頼実績を公開しているか</b>　リピート率最高<span class="dc-num">50%</span>の業者のように、実績を公開している業者は透明性が高い証拠です。MIROCAの比較機能では、これらの項目を一覧で確認・絞り込みできます。</p>
 </section>
 <section class="g-sec">
-<h2 class="g-h2">業者を選ぶ前に確認すべきチェックリスト——MIROCA 193社調査まとめ</h2>
-<p class="dc-prose">ここまでの内容を踏まえ、業者に依頼する前に必ず確認すべき5つのポイントをまとめます。</p>
-<p class="dc-prose">✅ <b>保険加入済みか</b>：<span class="dc-num-warn">193社</span>中<span class="dc-num-warn">62社</span>が加入。未加入業者では万が一のトラブル時に補償が受けられません。</p>
-<p class="dc-prose">✅ <b>追加料金の条件を明示しているか</b>：追加料金リスクが高い業者は調査対象の約<span class="dc-num-warn">91%</span>。料金の内訳を書面・口頭で事前に確認してください。</p>
-<p class="dc-prose">✅ <b>カビ除去の作業範囲を明示しているか</b>：熱交換器・ドレンパン・ファンの3箇所を含む洗浄かどうかを確認します。</p>
-<p class="dc-prose">✅ <b>防カビコーティングなどアフターケアのオプションがあるか</b>：再発防止まで対応しているかどうかで、長期的な満足度が変わります。</p>
-<p class="dc-prose">✅ <b>口コミに具体的な記述があるか</b>：「説明が丁寧だった」「臭いが完全に取れた」といった具体的な声は信頼性の高い指標です。MIROCAの調査では口コミ<span class="dc-num">42,278件</span>を収集・分析しており、業者ごとの傾向を数値で確認できます。</p>
-<p class="dc-prose">カビ臭で悩んでいるなら、まずMIROCAで<span class="dc-num">193社</span>の保険加入状況・料金リスク・口コミ評価を一覧で比較してみてください。自分の状況に合った業者を見つけることが、満足のいくクリーニング体験への確実な第一歩です。</p>
+<h2 class="g-h2">クリーニング後にカビを再発させない――業者選び以外でできること</h2>
+<p class="dc-prose">業者クリーニングでカビを除去しても、使い方を変えなければ再発します。最も効果的な予防策は、冷房使用後に送風モードで30分ほど内部を乾燥させることです。エアコン内部に湿気が残ると、カビの温床になります。フィルターは2週間に1回の自主清掃が目安で、ここをさぼると熱交換器への汚れ流入が増え、カビ発生を加速させます。</p>
+<p class="dc-prose">湿度<span class="dc-num">65%</span>以上の部屋や使用頻度が高い寝室・リビングは特に再発しやすい環境です。定期クリーニングの頻度は、カビが発生しやすい環境では年1回、一般的な家庭では1〜2年に1回が目安とされています。MIROCAのリピート率データ（平均<span class="dc-num">20.2%</span>・最高<span class="dc-num">50%</span>）からも、満足した利用者が翌年も同じ業者に依頼する傾向が読み取れ、定期利用の習慣化が根本解決につながることがわかります。カビ口コミ<span class="dc-num">129件</span>中でも再発に言及するコメントが存在しており、日常ケアとの組み合わせが不可欠です。</p>
+</section>
+<section class="g-sec">
+<h2 class="g-h2">今すぐ確認できる――カビ除去実績のある業者をMIROCAで比較する方法</h2>
+<p class="dc-prose">MIROCAでは<span class="dc-num-warn">193社</span>・口コミ<span class="dc-num-warn">42,278件</span>のデータをもとに、保険加入・追加料金リスク・口コミ評価の3軸で業者を絞り込むことができます。「カビ」「臭い」といったキーワードで口コミ検索をかけると、実際の対応実績があるコメントを含む業者を優先的に確認できます。エリア別・料金帯別の絞り込みも可能なため、予算と地域の条件を合わせながら候補を絞れます。</p>
+<p class="dc-prose">見積もりを取る際には、本記事の5つのチェックポイントをそのまま質問リストとして使ってください。「保険加入はありますか」「カビがひどい場合の追加料金の条件を教えてください」この2つを聞くだけで、業者の誠実さがかなり見えてきます。カビ臭を根本から解決するための第一歩として、まずMIROCAの比較ページで保険加入済み業者を確認してみましょう。</p>
 </section>
 <section class="g-sec dc-related"><h2 class="g-h2">関連する判断ガイド</h2><div class="dc-links">
 <a href="https://miroca.one/decide/bathroom-cleaning/">浴室クリーニングの料金と効果を徹底比較｜カビ・水垢はプロでどこまで落ちる？</a>
-<a href="https://miroca.one/decide/kitchen-range-hood/">キッチン・換気扇クリーニングをセットで頼むと安い？101社の料金と口コミを分析</a>
+<a href="https://miroca.one/decide/kitchen-range-hood/">キッチン・換気扇クリーニングをセットで頼むと安い？193社の料金と口コミを分析</a>
 <a href="https://miroca.one/decide/toilet-cleaning/">トイレクリーニングの料金相場と効果｜自分で落ちない尿石・黄ばみはプロに任せるべき？</a>
 </div></section>
 <section class="g-cta"><h2>データで業者を比較する</h2><p>193社を独自指標でフィルター・比較</p><a href="https://miroca.one/" class="g-btn">業者一覧を見る →</a></section>
 </main>
 <footer class="gf">
-<div class="gf-links">
-<div class="gf-col"><div class="gf-col-t">コンテンツ</div>
-<a href="https://miroca.one/">業者一覧</a>
-<a href="https://miroca.one/guide/">選び方ガイド</a>
-<a href="https://miroca.one/pricing/">料金相場</a>
-<a href="https://miroca.one/faq/">よくある質問</a>
-<a href="https://miroca.one/checklist/">チェックリスト</a>
-<a href="https://miroca.one/decide/">判断ガイド</a>
+<div class="gf-inner">
+<div class="gf-grid">
+<div class="gf-card">
+<div class="gf-card-h">コンテンツ</div>
+<nav class="gf-nav">
+<a href="https://miroca.one/"><span class="gf-icon">🏠</span>業者一覧・比較</a>
+<a href="https://miroca.one/guide/"><span class="gf-icon">📖</span>選び方ガイド</a>
+<a href="https://miroca.one/pricing/"><span class="gf-icon">💰</span>料金相場</a>
+<a href="https://miroca.one/faq/"><span class="gf-icon">❓</span>よくある質問</a>
+<a href="https://miroca.one/checklist/"><span class="gf-icon">✅</span>チェックリスト</a>
+<a href="https://miroca.one/decide/"><span class="gf-icon">🧭</span>判断ガイド</a>
+<a href="https://miroca.one/report/"><span class="gf-icon">📊</span>市場レポート</a>
+</nav></div>
+<div class="gf-card">
+<div class="gf-card-h">エリア別</div>
+<nav class="gf-nav">
+<a href="https://miroca.one/area/yokohama/"><span class="gf-icon">📍</span>横浜市</a>
+<a href="https://miroca.one/area/kawasaki/"><span class="gf-icon">📍</span>川崎市</a>
+<a href="https://miroca.one/area/kamakura/"><span class="gf-icon">📍</span>鎌倉市</a>
+<a href="https://miroca.one/area/fujisawa/"><span class="gf-icon">📍</span>藤沢市</a>
+<a href="https://miroca.one/area/yokosuka/"><span class="gf-icon">📍</span>横須賀市</a>
+<a href="https://miroca.one/area/odawara/"><span class="gf-icon">📍</span>小田原市</a>
+<a href="https://miroca.one/area/setagaya/"><span class="gf-icon">📍</span>世田谷区</a>
+<a href="https://miroca.one/area/ota/"><span class="gf-icon">📍</span>大田区</a>
+</nav></div>
+<div class="gf-card">
+<div class="gf-card-h">MIROCAについて</div>
+<p class="gf-about">MIROCAは特定の業者をおすすめするサービスではありません。複数のデータソースから収集した事実データを独自に分析し、中立的な比較情報を提供しています。</p>
+<p class="gf-about">データは毎週自動更新されます。</p>
 </div>
-<div class="gf-col"><div class="gf-col-t">エリア</div>
-<a href="https://miroca.one/area/yokohama/">横浜市</a>
-<a href="https://miroca.one/area/kawasaki/">川崎市</a>
-<a href="https://miroca.one/area/kamakura/">鎌倉市</a>
-<a href="https://miroca.one/area/fujisawa/">藤沢市</a>
-<a href="https://miroca.one/area/yokosuka/">横須賀市</a>
-<a href="https://miroca.one/area/odawara/">小田原市</a>
-<a href="https://miroca.one/area/isehara/">伊勢原市</a>
-<a href="https://miroca.one/area/edogawa/">江戸川区</a>
 </div>
+<div class="gf-bottom">
+<div class="gf-logo">MIROCA<small>ミロカ</small></div>
+<p>© 2026 BLST WEB — 最終更新: 2026-03-28</p>
+<div class="gf-bottom-links"><a href="https://miroca.one/sitemap.xml">サイトマップ</a><a href="https://miroca.one/llms.txt">llms.txt</a></div>
 </div>
-<div class="gf-btm">
-<p>MIROCA（ミロカ）</p>
-<p>MIROCAは特定の業者をおすすめするサービスではありません。掲載情報は定期的に収集した事実データの独自分析です。</p>
-<p>© 2026 BLST WEB — 2026-03-28 | <a href="https://miroca.one/sitemap.xml">サイトマップ</a></p>
 </div>
 </footer>
 </body></html>

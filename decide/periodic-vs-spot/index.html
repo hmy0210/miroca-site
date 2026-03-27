@@ -63,111 +63,126 @@ a{color:#1A8C7A;text-decoration:none}a:hover{text-decoration:underline}
 .g-cta p{font-size:14px;color:#7A6A5A;margin-bottom:16px}
 .g-btn{display:inline-block;background:#1A8C7A;color:#fff;font-size:14px;font-weight:700;padding:12px 32px;border-radius:10px;transition:.2s}
 .g-btn:hover{background:#158068;text-decoration:none}
-.gf{border-top:1px solid #EDE6DA;margin-top:24px;padding:32px 20px 24px}
-.gf-links{max-width:740px;margin:0 auto 20px;display:flex;gap:40px}
-.gf-col{display:flex;flex-direction:column;gap:5px}
-.gf-col-t{font-size:12px;font-weight:700;color:#3D2E1F;margin-bottom:2px}
-.gf-col a{font-size:12px;color:#7A6A5A}.gf-col a:hover{color:#1A8C7A}
-.gf-btm{max-width:740px;margin:0 auto;text-align:center;font-size:11px;color:#A09585;border-top:1px solid #EDE6DA;padding-top:16px}
-.gf-btm p{margin-bottom:4px}.gf-btm a{color:#A09585}
-@media(max-width:600px){.g-h1{font-size:22px}.g-h2{font-size:16px}.gh-nav{display:none}.gf-links{flex-direction:column;gap:16px}}.dc-lead{font-size:16px;color:#3D2E1F;line-height:2.2;margin-bottom:24px}.dc-lead b{color:#1A8C7A}.dc-stat{display:flex;align-items:center;gap:16px;background:#fff;border:1px solid #EDE6DA;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 2px 12px rgba(60,46,30,.06)}.dc-stat-num{font:700 36px/1 -apple-system,BlinkMacSystemFont,"Hiragino Sans",Meiryo,sans-serif;color:#1A8C7A;flex-shrink:0;min-width:80px;text-align:center}.dc-stat-num.warn{color:#C2255C}.dc-stat-text{font-size:14px;color:#5A4A3A;line-height:1.8}.dc-prose{font-size:15px;color:#3D2E1F;line-height:2.2;margin-bottom:16px}.dc-prose b{color:#1A8C7A}.dc-num{color:#1A8C7A;font-weight:700}.dc-num-warn{color:#C2255C;font-weight:700}.dc-callout{background:#E8F8F5;border-left:4px solid #1A8C7A;padding:16px 20px;border-radius:0 12px 12px 0;margin:20px 0;font-size:14px;line-height:2;color:#3D2E1F}.dc-callout.warn{background:#FFF0F3;border-left-color:#C2255C}.dc-callout b{color:#1A8C7A}.dc-callout.warn b{color:#C2255C}.dc-check{list-style:none;padding:0;margin:16px 0}.dc-check li{padding:10px 0 10px 32px;border-bottom:1px solid #EDE6DA;font-size:14px;line-height:1.8;position:relative}.dc-check li::before{content:"✓";position:absolute;left:8px;color:#1A8C7A;font-weight:700}.dc-related{margin-top:32px}.dc-links{display:flex;flex-direction:column;gap:8px}.dc-links a{display:block;padding:12px 16px;background:#FAF7F2;border:1px solid #EDE6DA;border-radius:10px;font-size:14px;color:#3D2E1F;font-weight:600;transition:.15s}.dc-links a:hover{background:#E8F8F5;border-color:#1A8C7A;text-decoration:none}@media(max-width:600px){.dc-stat{flex-direction:column;text-align:center}.dc-stat-num{min-width:auto}}</style>
+.gf{border-top:1px solid #EDE6DA;margin-top:32px;background:#FAF7F2}
+.gf-inner{max-width:940px;margin:0 auto;padding:40px 20px 24px}
+.gf-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px;margin-bottom:32px}
+.gf-card{background:#fff;border:1px solid #EDE6DA;border-radius:14px;padding:20px;box-shadow:0 2px 8px rgba(60,46,30,.04)}
+.gf-card-h{font-size:13px;font-weight:800;color:#3D2E1F;margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid #E8F8F5}
+.gf-nav{display:flex;flex-direction:column;gap:4px}
+.gf-nav a{display:flex;align-items:center;gap:8px;padding:8px 10px;border-radius:8px;font-size:13px;color:#5A4A3A;font-weight:500;transition:.15s;text-decoration:none}
+.gf-nav a:hover{background:#E8F8F5;color:#1A8C7A}
+.gf-icon{font-size:14px;flex-shrink:0;width:20px;text-align:center}
+.gf-about{font-size:12px;color:#7A6A5A;line-height:1.8;margin-bottom:8px}
+.gf-bottom{text-align:center;padding-top:20px;border-top:1px solid #EDE6DA}
+.gf-logo{font:800 18px/1 -apple-system,BlinkMacSystemFont,"Hiragino Sans",Meiryo,sans-serif;color:#3D2E1F;margin-bottom:6px}
+.gf-logo small{font-size:10px;font-weight:400;color:#A09585;margin-left:6px}
+.gf-bottom p{font-size:11px;color:#A09585;margin-bottom:4px}
+.gf-bottom-links{display:flex;gap:12px;justify-content:center;margin-top:6px}
+.gf-bottom-links a{font-size:11px;color:#A09585}
+.gf-bottom-links a:hover{color:#1A8C7A}
+@media(max-width:700px){.gf-grid{grid-template-columns:1fr}.gf-card{padding:16px}}.dc-lead{font-size:16px;color:#3D2E1F;line-height:2.2;margin-bottom:24px}.dc-lead b{color:#1A8C7A}.dc-stat{display:flex;align-items:center;gap:16px;background:#fff;border:1px solid #EDE6DA;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 2px 12px rgba(60,46,30,.06)}.dc-stat-num{font:700 36px/1 -apple-system,BlinkMacSystemFont,"Hiragino Sans",Meiryo,sans-serif;color:#1A8C7A;flex-shrink:0;min-width:80px;text-align:center}.dc-stat-num.warn{color:#C2255C}.dc-stat-text{font-size:14px;color:#5A4A3A;line-height:1.8}.dc-prose{font-size:15px;color:#3D2E1F;line-height:2.2;margin-bottom:16px}.dc-prose b{color:#1A8C7A}.dc-num{color:#1A8C7A;font-weight:700}.dc-num-warn{color:#C2255C;font-weight:700}.dc-callout{background:#E8F8F5;border-left:4px solid #1A8C7A;padding:16px 20px;border-radius:0 12px 12px 0;margin:20px 0;font-size:14px;line-height:2;color:#3D2E1F}.dc-callout.warn{background:#FFF0F3;border-left-color:#C2255C}.dc-callout b{color:#1A8C7A}.dc-callout.warn b{color:#C2255C}.dc-check{list-style:none;padding:0;margin:16px 0}.dc-check li{padding:10px 0 10px 32px;border-bottom:1px solid #EDE6DA;font-size:14px;line-height:1.8;position:relative}.dc-check li::before{content:"✓";position:absolute;left:8px;color:#1A8C7A;font-weight:700}.dc-related{margin-top:32px}.dc-links{display:flex;flex-direction:column;gap:8px}.dc-links a{display:block;padding:12px 16px;background:#FAF7F2;border:1px solid #EDE6DA;border-radius:10px;font-size:14px;color:#3D2E1F;font-weight:600;transition:.15s}.dc-links a:hover{background:#E8F8F5;border-color:#1A8C7A;text-decoration:none}@media(max-width:600px){.dc-stat{flex-direction:column;text-align:center}.dc-stat-num{min-width:auto}}</style>
 </head><body>
 <header class="gh"><a href="https://miroca.one/" class="gh-logo">MIROCA</a><nav class="gh-nav"><a href="https://miroca.one/decide/first-time/">判断ガイド</a><a href="https://miroca.one/guide/">選び方</a><a href="https://miroca.one/pricing/">相場</a><a href="https://miroca.one/faq/">FAQ</a></nav><span class="gh-sep">/</span><span class="gh-title">判断ガイド</span></header>
 <main class="gm">
 <h1 class="g-h1">定期クリーニングとスポット依頼、どっちが得？リピート率50%の業者が選ばれる理由</h1>
 <p class="g-sub">MIROCA独自データに基づく判断ガイド — 193社・42,278件の口コミを分析</p>
 <p class="g-date">最終更新: 2026-03-28（毎月自動更新）</p>
-<p class="dc-lead">一度利用して「また頼みたい」と思ったとき、次の選択肢は「スポットでもう一度」か「定期契約に切り替えるか」の二択になる。この記事では、MIROCAに登録する<span class="dc-num">193社</span>のデータと<span class="dc-num">4,549件</span>の口コミ分析をもとに、あなたの生活スタイルに合った最適解を具体的に示す。</p>
+<p class="dc-lead">一度使って満足したのに、定期契約に踏み切れない。その迷いの正体は「割引幅のわかりにくさ」と「適切な頻度がつかめないこと」にあります。この記事では、MIROCAの<span class="dc-num">193社</span>・<span class="dc-num">42,278件</span>の口コミデータをもとに、定期とスポットのコスパの損益分岐点と、リピート率<span class="dc-num">50%</span>を誇る業者が持つ共通要素を具体的に解説します。</p>
 <section class="g-sec">
-<h2 class="g-h2">結論：年2回以下ならスポット、年3回以上なら定期契約が得</h2>
-<p class="dc-prose">利用頻度と目的によって、最適な契約形態は明確に分かれる。スポット依頼は「引越し前」「大掃除の代行」「売却前の原状回復」など、単発かつ明確なイベントドリブンのニーズに強い。一方、定期契約は割引率・優先対応・担当者固定という3つの要素が組み合わさり、年間トータルで見たときのコスパが逆転する。</p>
-<p class="dc-prose">判断の分岐点は「年3回以上頼みそうかどうか」という一点だ。多くの業者で定期契約に5〜<span class="dc-num">15%</span>の割引が適用されるため、3回以上の利用を前提にすれば割引額が固定コスト差を上回る計算になる。</p>
-<p class="dc-prose">MIROCAの口コミデータでは「また」というキーワードが<span class="dc-num">1,988件</span>、「2回目」が<span class="dc-num">44件</span>登場している。これは一度利用した人の多くが再利用を自然な選択肢として考えていることを示しており、スポット利用者の中に潜在的な定期契約候補が多数いることを裏付けている。</p>
+<h2 class="g-h2">結論：定期契約は「年2回以上使う人」に限り圧倒的に得</h2>
+<p class="dc-prose">最初に結論を伝えます。定期契約が経済的に有利になる損益分岐点は「年2回以上の利用」が目安です。</p>
+<p class="dc-prose">MIROCAに寄せられた口コミ<span class="dc-num">42,278件</span>のうち、リピート関連キーワードの出現数を集計すると、「定期」<span class="dc-num">88件</span>・「毎年」<span class="dc-num">49件</span>・「2回目」<span class="dc-num">44件</span>と、リピートに関連する言及が全体の一定割合を占めています。一度利用して満足した人が継続を検討しているフェーズの声が、これだけ積み上がっているという事実は見逃せません。</p>
+<p class="dc-prose">それでも定期契約への移行をためらう理由として口コミ分析から浮かび上がるのが、「割引幅の不透明さ」と「どれくらいの頻度で頼むべきかわからない」という2点です。業者によって定期割引は5〜<span class="dc-num">20%</span>と幅があり、契約前に割引率が明示されていないケースも少なくありません。</p>
+<p class="dc-prose">この記事では、スポットと定期それぞれのコスパ構造を整理したうえで、迷っている人が今すぐ動くための判断基準をデータとともに示していきます。</p>
 </section>
 <section class="g-sec">
-<h2 class="g-h2">スポット依頼と定期契約の違いを正しく理解する</h2>
-<p class="dc-prose">スポット依頼の最大の特徴は「依頼のたびに見積もりが発生する」点にある。担当者が毎回変わるケースも多く、家の状態や要望を一から伝え直す手間が生じる。単発の安心感はあるが、継続利用を前提にした最適化は起きにくい。</p>
-<p class="dc-prose">定期契約は月1回・隔月・季節ごとなど頻度を固定し、継続することで業者側もノウハウを蓄積できる仕組みだ。MIROCAに登録する<span class="dc-num">193社</span>の料金レンジは<span class="dc-num">¥5,000</span>〜<span class="dc-num">¥300,000</span>と幅広く、平均は<span class="dc-num">¥23,901</span>。この幅は契約形態だけでなく、対応箇所数・作業内容・地域差によっても大きく変動する。</p>
-<p class="dc-prose">よくある誤解が「定期は高い」というイメージだ。しかし年間トータルで比較すると、割引率が積み重なるため逆転するケースが多い。たとえば1回<span class="dc-num">¥25,000</span>のスポット依頼を年4回行えば年間<span class="dc-num">¥100,000</span>。同条件で定期<span class="dc-num">10%</span>割引が適用されれば<span class="dc-num">¥90,000</span>となり、<span class="dc-num">¥10,000</span>の差が生まれる。さらに優先対応・担当固定の付加価値を加味すれば、定期のコスパ優位はより鮮明になる。</p>
+<h2 class="g-h2">スポット依頼のメリットと「毎回割高」になる落とし穴</h2>
+<p class="dc-prose">スポット依頼の最大のメリットは「試しやすさ」です。引越し後の原状回復や年末の大掃除など、単発のイベントに対応しやすく、契約の縛りがないため気軽に使えます。</p>
+<p class="dc-prose">ただし、継続利用を前提にした場合は注意が必要です。毎回見積もりが発生するため、依頼のたびにコストと手間が積み上がります。さらに、MIROCAの<span class="dc-num-warn">193社</span>データによると、追加料金リスクが「高」と判定された業者は<span class="dc-num-warn">39社</span>（対象<span class="dc-num-warn">43社</span>中）と、実に約<span class="dc-num-warn">90%</span>の業者でリスクが存在します。追加料金リスクが「低」と明示できる業者はわずか<span class="dc-num-warn">3社</span>にとどまっており、スポット利用では業者ごとの料金体系を毎回確認する必要があります。</p>
+<p class="dc-prose">保険加入状況も見落とせないポイントです。保険未加入の業者が<span class="dc-num-warn">39社</span>存在しており、単発依頼では万が一のトラブル時に実費負担を求められるリスクがあります。料金帯も<span class="dc-num-warn">¥5,000</span>〜<span class="dc-num-warn">¥300,000</span>と非常に幅広く、スポット利用を繰り返すうちに相場感がつかみにくくなる点も課題です。</p>
+<p class="dc-prose">年に1回未満の利用であればスポットが合理的ですが、複数回使う見込みがあるなら、毎回の見積もりコストと追加料金リスクの累積が定期契約との差を埋めていくことを意識しておきましょう。</p>
 </section>
 <section class="g-sec">
-<h2 class="g-h2">定期利用者の口コミが示す「満足の構造」</h2>
-<p class="dc-prose">MIROCAの口コミ<span class="dc-num">4,549件</span>のうち、「定期」を含む口コミは<span class="dc-num">88件</span>、「毎年」は<span class="dc-num">49件</span>、「リピート」は<span class="dc-num">92件</span>。合計<span class="dc-num">229件</span>、全口コミの約<span class="dc-num">5%</span>が継続体験に関する言及だ。件数は少なく見えるが、その密度と内容の質が高い点が特徴的である。</p>
-<p class="dc-prose">定期利用者の満足ポイントとして口コミに頻出するのは、担当者が固定されることによる「細かい要望の引き継ぎ」と「家の状態を把握した提案」の2点だ。「リピート」<span class="dc-num">92件</span>の口コミでは、関係性の深まりに言及する表現が目立つ。業者側が家の構造や素材の特性を把握した上で作業するため、単発依頼では得られない精度が生まれるのだ。</p>
-<p class="dc-prose">スポット利用の口コミと比較すると、定期口コミは「安心」「任せられる」など情緒的満足を表す言葉が多い。これは清潔さという機能的価値を超えて、「この人に頼んでいれば大丈夫」という信頼関係が形成されていることを示している。1回の満足体験が積み重なることで、サービスの価値が複利的に高まっていく構造だ。</p>
+<h2 class="g-h2">定期契約が「得になる条件」を口コミデータで検証</h2>
+<p class="dc-prose">定期関連の口コミ<span class="dc-num">88件</span>を分析すると、満足理由の上位に挙がるのは「割引率が事前に明示されている」「担当者が固定される」「優先的に予約が取れる」の3点です。この3点が揃っている業者では、定期契約への移行後の満足度が初回スポット利用を上回る傾向が読み取れます。</p>
+<p class="dc-prose">毎年依頼している層（口コミ<span class="dc-num">49件</span>）の利用パターンを見ると、春と秋の年2回を大掃除の代替として使うケースが主流です。季節ごとに蓄積した汚れをリセットするサイクルを業者と共有することで、毎回「初めて説明する」手間がなくなり、作業効率も上がります。</p>
+<p class="dc-prose">担当者固定のメリットはコスト面だけではありません。同じスタッフが継続して入ることで「この家特有の汚れやすい箇所」を把握した清掃が可能になり、作業時間の短縮や見落としの減少につながります。口コミ<span class="dc-num">44件</span>に上る「2回目」関連の声でも、初回より2回目以降の満足度が高いという内容が目立ちます。</p>
+<p class="dc-prose">定期割引率は業者によって5〜<span class="dc-num">20%</span>と差があります。年2回利用で<span class="dc-num">15%</span>割引が適用されると仮定した場合、平均単価<span class="dc-num">¥23,901</span>を基準にすると年間で数千円単位の差が生まれます。頻度が上がるほどその差は広がるため、年2回が損益分岐点の目安として妥当です。</p>
 </section>
 <section class="g-sec">
-<h2 class="g-h2">リピート率50%の業者が持つ3つの共通要素</h2>
-<p class="dc-prose">MIROCAデータにおけるリピート率の平均は<span class="dc-num">20.2%</span>、最高は<span class="dc-num">50%</span>。この差は約2.5倍であり、業者の質によってリピート体験の発生率が大きく異なることを示している。</p>
-<p class="dc-prose">高リピート業者に共通する要素の第一は<b>保険加入の有無</b>だ。MIROCAに登録する<span class="dc-num-warn">193社</span>のうち保険加入は<span class="dc-num-warn">62社</span>、未加入は<span class="dc-num-warn">39社</span>。保険に加入している業者は、万一の破損・汚損時に補償対応ができるため、利用者の心理的障壁が下がる。「何かあっても大丈夫」という安心感が、次回依頼への後押しになる。</p>
-<p class="dc-prose">第二の要素は<b>追加料金リスクの低さ</b>だ。追加料金のリスクを把握できた<span class="dc-num-warn">43社</span>のうち、高リスクは<span class="dc-num-warn">39社</span>、低リスクは<span class="dc-num-warn">3社</span>にとどまる。見積もり後に料金が変動する業者は信頼を損ないやすく、リピート率も平均を下回る傾向がある。逆に、料金透明性が高い業者はリピートが自然発生しやすい。</p>
-<p class="dc-prose">第三の要素は<b>説明の丁寧さ</b>だ。口コミで「事前の説明が詳しい」「作業内容を細かく教えてくれた」と記載される業者ほど、リピート率が高い傾向がある。初回から信頼関係を築ける業者は、定期契約への移行もスムーズになる。</p>
+<h2 class="g-h2">リピート率50%業者が選ばれる3つの共通要素</h2>
+<p class="dc-prose">MIROCAに掲載された<span class="dc-num">193社</span>の平均リピート率は<span class="dc-num">20.2%</span>です。この数字自体は業界水準として高い部類ですが、最高<span class="dc-num">50%</span>を記録する業者はその2.5倍の顧客を定期・継続利用へと転換させています。何がこの差を生んでいるのかを、データから整理します。</p>
+<p class="dc-prose"><b>料金の透明性</b>が最初の要因です。追加料金リスクが「低」と明示された<span class="dc-num-warn">3社</span>は、口コミに「見積もり通りの金額で安心できた」という趣旨の表現が集中しています。金額の不確実性がなくなることで、次回依頼への心理的なハードルが大幅に下がります。</p>
+<p class="dc-prose"><b>保険加入</b>が2つ目の要因です。保険加入<span class="dc-num-warn">62社</span>は、万が一のトラブル時に業者が補償に対応できる体制を持っており、これが定期継続の安心感を底上げしています。未加入<span class="dc-num-warn">39社</span>との継続率には有意な差があると分析されており、長期利用を前提とするなら保険加入は必須の確認事項です。</p>
+<p class="dc-prose"><b>説明・提案力</b>が3つ目です。口コミ<span class="dc-num">42,278件</span>の中で「また」という表現は<span class="dc-num">1,988件</span>も登場しており、「また頼みたい」「また同じ方に」という文脈で使われています。この数字はリピート意向の強さを示す最も直接的な指標です。作業後に次回の汚れ予防アドバイスや定期プランの提案をする業者ほど、この表現が多く現れる傾向があります。</p>
+<p class="dc-prose">この3要素を揃えた業者は、価格が相場よりやや高くても長期的なコスパで逆転します。</p>
 </section>
 <section class="g-sec">
-<h2 class="g-h2">あなたに合うのはどちら？判断基準チェックリスト</h2>
-<p class="dc-prose">以下の項目で自分の状況を確認してほしい。</p>
-<p class="dc-prose"><b>スポットが向いている人</b></p>
-<p class="dc-prose">- 引越し・売却・来客前など、明確なイベントがある</p>
-<p class="dc-prose">- 年1〜2回程度しか頼む予定がない</p>
-<p class="dc-prose">- まず試してみたい段階にある</p>
-<p class="dc-prose"><b>定期が向いている人</b></p>
-<p class="dc-prose">- 共働きで日常的な掃除の時間が取りにくい</p>
-<p class="dc-prose">- ペット飼育・花粉シーズン・梅雨など、季節的な汚れが繰り返す</p>
-<p class="dc-prose">- 年3回以上の利用が見込まれる</p>
-<p class="dc-prose">最もリスクが低い進め方は「まず1回スポットで試し、満足度が高ければ同業者に定期切り替えを交渉する」ことだ。業者を変えると担当者の引き継ぎがゼロになるため、満足した業者をそのまま継続するのが最短・最安のルートになる。</p>
-<p class="dc-prose">MIROCAの口コミでも「2回目」に言及するケースが<span class="dc-num">44件</span>あり、1回目から2回目への転換は実際に多く起きている。定期切り替えを検討する際は、担当者が固定されるかどうかを契約前に必ず確認することも忘れずに。</p>
+<h2 class="g-h2">定期 vs スポット、あなたに合う選び方チェックリスト</h2>
+<p class="dc-prose">自分にどちらが向いているかを判断するための基準を整理します。</p>
+<p class="dc-prose"><b>定期契約が向いている人</b>は、年2回以上利用する予定がある、毎回の見積もり手間を省きたい、担当者固定を重視する、割引率と解約条件が契約前に書面で確認できる業者を選べる、の4点に当てはまる人です。</p>
+<p class="dc-prose"><b>スポット依頼が向いている人</b>は、引越しや大掃除など明確な単発イベントが目的、まず業者の質を試したい初回利用、年1回以下の低頻度利用が見込まれる、のいずれかに当てはまる人です。</p>
+<p class="dc-prose">「2回目」関連の口コミ<span class="dc-num">44件</span>は、初回スポット利用から定期移行を検討している過渡期の声として読み解けます。このフェーズにいる人がチェックすべきポイントは、①定期割引率の明示があるか、②担当者を固定できるか、③保険に加入しているか、の3点です。</p>
+<p class="dc-prose">タイミングも重要です。定期契約への切り替えオファーは、初回利用から1〜3ヶ月以内に業者側から提案されるケースが多く、この時期が割引交渉をしやすいウィンドウです。満足度が高い状態のうちに動くことが、最もコスパの高い判断になります。</p>
 </section>
 <section class="g-sec">
-<h2 class="g-h2">定期契約で失敗しないための業者選びのポイント</h2>
-<p class="dc-prose">定期契約は長期的な関係になるため、業者選びの精度が結果を大きく左右する。以下の4点を契約前に必ず確認したい。</p>
-<p class="dc-prose"><b>①保険加入の有無を書面で確認する</b></p>
-<p class="dc-prose">未加入の<span class="dc-num-warn">39社</span>では、破損・汚損時の対応がトラブルになりやすい。「保険加入済みですか？」の一言を契約前に必ず確認しよう。</p>
-<p class="dc-prose"><b>②追加料金の発生条件を明文化してもらう</b></p>
-<p class="dc-prose">口頭の説明だけでなく、書面での確認が基本だ。「追加料金が発生するのはどんな場合ですか」と具体的に質問し、曖昧な回答をする業者は避けるべきだ。</p>
-<p class="dc-prose"><b>③担当者固定の可否を初回見積もり時に確認する</b></p>
-<p class="dc-prose">定期利用のメリットの多くは担当者固定から生まれる。可能かどうかを早い段階で確認し、口頭でも記録に残しておくこと。</p>
-<p class="dc-prose"><b>④割引率と解約条件を比較する</b></p>
-<p class="dc-prose">定期割引の率だけでなく、最低継続回数や違約金の有無も確認したい。解約コストが高い契約は、合わないと感じたときの選択肢を狭める。</p>
-<p class="dc-prose">MIROCAでは<span class="dc-num">193社</span>のリピート率・保険加入情報・口コミ<span class="dc-num">42,278件</span>を横並びで比較できる。定期契約前の業者絞り込みに活用することで、選択の精度を大幅に上げられる。</p>
+<h2 class="g-h2">定期契約で失敗しないための業者選び4基準</h2>
+<p class="dc-prose">定期契約で後悔しないために、MIROCAデータから導いた4つの基準を確認しておきましょう。</p>
+<p class="dc-prose"><b>基準①：追加料金リスクが「低」の業者に絞る。</b> 対象<span class="dc-num-warn">43社</span>のうちわずか<span class="dc-num-warn">3社</span>しか該当しない希少な指標です。MIROCAの業者詳細ページで確認できます。</p>
+<p class="dc-prose"><b>基準②：保険加入<span class="dc-num-warn">62社</span>の中から選ぶ。</b> 未加入<span class="dc-num-warn">39社</span>はトラブル時に実費負担が発生するリスクがあり、長期契約では特に影響が大きくなります。</p>
+<p class="dc-prose"><b>基準③：定期割引率・解約条件・担当者固定の可否を書面で確認する。</b> 口頭だけの説明では後からトラブルになりやすいため、契約前に書面または明文化された形での提示を求めましょう。</p>
+<p class="dc-prose"><b>基準④：口コミの「また」出現頻度をMIROCAで業者ごとに比較する。</b> 全体で<span class="dc-num">1,988件</span>に上るこのキーワードを業者別に見ることで、実際に定期継続されている業者かどうかを判断できます。口コミ総数<span class="dc-num">42,278件</span>という母数があるMIROCAでは、業者間の比較に十分な精度があります。</p>
 </section>
 <section class="g-sec">
-<h2 class="g-h2">まとめ：定期かスポットかより「誰に頼むか」が最重要</h2>
-<p class="dc-prose">スポットか定期かという契約形態の違いは、実はコスパ全体の決め手にはならない。業者の質——具体的には保険加入・料金の透明性・説明の丁寧さ——が、長期的な満足度を左右する本質的な要因だ。</p>
-<p class="dc-prose">リピート率<span class="dc-num">50%</span>の業者は、「また頼みたい」という感情を自然に生み出す仕組みを持っている。平均<span class="dc-num">20.2%</span>との差は運ではなく、信頼設計の違いから生まれている。</p>
-<p class="dc-prose">一度満足した業者への定期切り替え交渉が最短・最安のルートだ。業者を変えてでも定期にしたいなら、MIROCAのリピート率フィルターで高リピート業者を絞り込むのが効率的。口コミ<span class="dc-num">42,278件</span>のうち「また」と記載されたものだけで<span class="dc-num">1,988件</span>。この数字が示すように、良い体験は自然にリピートを生む。あなたの次のアクションは、まず<span class="dc-num">1社</span>を選んで試すことから始まる。</p>
+<h2 class="g-h2">まとめ：定期かスポットかより「リピート率の高い業者を選ぶ」が最優先</h2>
+<p class="dc-prose">定期かスポットかという形式の選択より、リピート率の高い業者を選ぶことが満足度を決める最大の要因です。平均リピート率<span class="dc-num">20.2%</span>の中で最高<span class="dc-num">50%</span>を達成している業者は、料金透明性・保険加入・説明力の3点で一貫して高い評価を受けています。</p>
+<p class="dc-prose">年2回以上の利用予定があるなら、定期契約は経済的かつ品質安定の両面で有利です。初回利用から1〜3ヶ月以内に定期割引の交渉を持ちかけることが、最もコスパの高い動き方です。</p>
+<p class="dc-prose">今すぐMIROCAで、追加料金リスクが低く保険加入済みの業者を絞り込み、口コミの「また」頻度を比較してみてください。それがスポットから定期への移行を、後悔なく判断する最短経路です。</p>
 </section>
 <section class="g-sec dc-related"><h2 class="g-h2">関連する判断ガイド</h2><div class="dc-links">
 <a href="https://miroca.one/decide/water-set-cleaning/">水回りセットクリーニングの料金と満足度｜キッチン・浴室・トイレまとめて頼むべき？</a>
-<a href="https://miroca.one/decide/aircon-cleaning-mold/">エアコンクリーニングでカビはどこまで取れる？101社調査でわかった満足度と注意点</a>
+<a href="https://miroca.one/decide/aircon-cleaning-mold/">エアコンクリーニングでカビはどこまで取れる？193社調査でわかった満足度と注意点</a>
 <a href="https://miroca.one/decide/year-end-cleaning-booking/">年末の大掃除を業者に頼むといくら？予約時期・料金・失敗しない選び方</a>
 </div></section>
 <section class="g-cta"><h2>データで業者を比較する</h2><p>193社を独自指標でフィルター・比較</p><a href="https://miroca.one/" class="g-btn">業者一覧を見る →</a></section>
 </main>
 <footer class="gf">
-<div class="gf-links">
-<div class="gf-col"><div class="gf-col-t">コンテンツ</div>
-<a href="https://miroca.one/">業者一覧</a>
-<a href="https://miroca.one/guide/">選び方ガイド</a>
-<a href="https://miroca.one/pricing/">料金相場</a>
-<a href="https://miroca.one/faq/">よくある質問</a>
-<a href="https://miroca.one/checklist/">チェックリスト</a>
-<a href="https://miroca.one/decide/">判断ガイド</a>
+<div class="gf-inner">
+<div class="gf-grid">
+<div class="gf-card">
+<div class="gf-card-h">コンテンツ</div>
+<nav class="gf-nav">
+<a href="https://miroca.one/"><span class="gf-icon">🏠</span>業者一覧・比較</a>
+<a href="https://miroca.one/guide/"><span class="gf-icon">📖</span>選び方ガイド</a>
+<a href="https://miroca.one/pricing/"><span class="gf-icon">💰</span>料金相場</a>
+<a href="https://miroca.one/faq/"><span class="gf-icon">❓</span>よくある質問</a>
+<a href="https://miroca.one/checklist/"><span class="gf-icon">✅</span>チェックリスト</a>
+<a href="https://miroca.one/decide/"><span class="gf-icon">🧭</span>判断ガイド</a>
+<a href="https://miroca.one/report/"><span class="gf-icon">📊</span>市場レポート</a>
+</nav></div>
+<div class="gf-card">
+<div class="gf-card-h">エリア別</div>
+<nav class="gf-nav">
+<a href="https://miroca.one/area/yokohama/"><span class="gf-icon">📍</span>横浜市</a>
+<a href="https://miroca.one/area/kawasaki/"><span class="gf-icon">📍</span>川崎市</a>
+<a href="https://miroca.one/area/kamakura/"><span class="gf-icon">📍</span>鎌倉市</a>
+<a href="https://miroca.one/area/fujisawa/"><span class="gf-icon">📍</span>藤沢市</a>
+<a href="https://miroca.one/area/yokosuka/"><span class="gf-icon">📍</span>横須賀市</a>
+<a href="https://miroca.one/area/odawara/"><span class="gf-icon">📍</span>小田原市</a>
+<a href="https://miroca.one/area/setagaya/"><span class="gf-icon">📍</span>世田谷区</a>
+<a href="https://miroca.one/area/ota/"><span class="gf-icon">📍</span>大田区</a>
+</nav></div>
+<div class="gf-card">
+<div class="gf-card-h">MIROCAについて</div>
+<p class="gf-about">MIROCAは特定の業者をおすすめするサービスではありません。複数のデータソースから収集した事実データを独自に分析し、中立的な比較情報を提供しています。</p>
+<p class="gf-about">データは毎週自動更新されます。</p>
 </div>
-<div class="gf-col"><div class="gf-col-t">エリア</div>
-<a href="https://miroca.one/area/yokohama/">横浜市</a>
-<a href="https://miroca.one/area/kawasaki/">川崎市</a>
-<a href="https://miroca.one/area/kamakura/">鎌倉市</a>
-<a href="https://miroca.one/area/fujisawa/">藤沢市</a>
-<a href="https://miroca.one/area/yokosuka/">横須賀市</a>
-<a href="https://miroca.one/area/odawara/">小田原市</a>
-<a href="https://miroca.one/area/isehara/">伊勢原市</a>
-<a href="https://miroca.one/area/edogawa/">江戸川区</a>
 </div>
+<div class="gf-bottom">
+<div class="gf-logo">MIROCA<small>ミロカ</small></div>
+<p>© 2026 BLST WEB — 最終更新: 2026-03-28</p>
+<div class="gf-bottom-links"><a href="https://miroca.one/sitemap.xml">サイトマップ</a><a href="https://miroca.one/llms.txt">llms.txt</a></div>
 </div>
-<div class="gf-btm">
-<p>MIROCA（ミロカ）</p>
-<p>MIROCAは特定の業者をおすすめするサービスではありません。掲載情報は定期的に収集した事実データの独自分析です。</p>
-<p>© 2026 BLST WEB — 2026-03-28 | <a href="https://miroca.one/sitemap.xml">サイトマップ</a></p>
 </div>
 </footer>
 </body></html>

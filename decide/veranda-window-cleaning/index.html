@@ -63,91 +63,115 @@ a{color:#1A8C7A;text-decoration:none}a:hover{text-decoration:underline}
 .g-cta p{font-size:14px;color:#7A6A5A;margin-bottom:16px}
 .g-btn{display:inline-block;background:#1A8C7A;color:#fff;font-size:14px;font-weight:700;padding:12px 32px;border-radius:10px;transition:.2s}
 .g-btn:hover{background:#158068;text-decoration:none}
-.gf{border-top:1px solid #EDE6DA;margin-top:24px;padding:32px 20px 24px}
-.gf-links{max-width:740px;margin:0 auto 20px;display:flex;gap:40px}
-.gf-col{display:flex;flex-direction:column;gap:5px}
-.gf-col-t{font-size:12px;font-weight:700;color:#3D2E1F;margin-bottom:2px}
-.gf-col a{font-size:12px;color:#7A6A5A}.gf-col a:hover{color:#1A8C7A}
-.gf-btm{max-width:740px;margin:0 auto;text-align:center;font-size:11px;color:#A09585;border-top:1px solid #EDE6DA;padding-top:16px}
-.gf-btm p{margin-bottom:4px}.gf-btm a{color:#A09585}
-@media(max-width:600px){.g-h1{font-size:22px}.g-h2{font-size:16px}.gh-nav{display:none}.gf-links{flex-direction:column;gap:16px}}.dc-lead{font-size:16px;color:#3D2E1F;line-height:2.2;margin-bottom:24px}.dc-lead b{color:#1A8C7A}.dc-stat{display:flex;align-items:center;gap:16px;background:#fff;border:1px solid #EDE6DA;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 2px 12px rgba(60,46,30,.06)}.dc-stat-num{font:700 36px/1 -apple-system,BlinkMacSystemFont,"Hiragino Sans",Meiryo,sans-serif;color:#1A8C7A;flex-shrink:0;min-width:80px;text-align:center}.dc-stat-num.warn{color:#C2255C}.dc-stat-text{font-size:14px;color:#5A4A3A;line-height:1.8}.dc-prose{font-size:15px;color:#3D2E1F;line-height:2.2;margin-bottom:16px}.dc-prose b{color:#1A8C7A}.dc-num{color:#1A8C7A;font-weight:700}.dc-num-warn{color:#C2255C;font-weight:700}.dc-callout{background:#E8F8F5;border-left:4px solid #1A8C7A;padding:16px 20px;border-radius:0 12px 12px 0;margin:20px 0;font-size:14px;line-height:2;color:#3D2E1F}.dc-callout.warn{background:#FFF0F3;border-left-color:#C2255C}.dc-callout b{color:#1A8C7A}.dc-callout.warn b{color:#C2255C}.dc-check{list-style:none;padding:0;margin:16px 0}.dc-check li{padding:10px 0 10px 32px;border-bottom:1px solid #EDE6DA;font-size:14px;line-height:1.8;position:relative}.dc-check li::before{content:"✓";position:absolute;left:8px;color:#1A8C7A;font-weight:700}.dc-related{margin-top:32px}.dc-links{display:flex;flex-direction:column;gap:8px}.dc-links a{display:block;padding:12px 16px;background:#FAF7F2;border:1px solid #EDE6DA;border-radius:10px;font-size:14px;color:#3D2E1F;font-weight:600;transition:.15s}.dc-links a:hover{background:#E8F8F5;border-color:#1A8C7A;text-decoration:none}@media(max-width:600px){.dc-stat{flex-direction:column;text-align:center}.dc-stat-num{min-width:auto}}</style>
+.gf{border-top:1px solid #EDE6DA;margin-top:32px;background:#FAF7F2}
+.gf-inner{max-width:940px;margin:0 auto;padding:40px 20px 24px}
+.gf-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px;margin-bottom:32px}
+.gf-card{background:#fff;border:1px solid #EDE6DA;border-radius:14px;padding:20px;box-shadow:0 2px 8px rgba(60,46,30,.04)}
+.gf-card-h{font-size:13px;font-weight:800;color:#3D2E1F;margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid #E8F8F5}
+.gf-nav{display:flex;flex-direction:column;gap:4px}
+.gf-nav a{display:flex;align-items:center;gap:8px;padding:8px 10px;border-radius:8px;font-size:13px;color:#5A4A3A;font-weight:500;transition:.15s;text-decoration:none}
+.gf-nav a:hover{background:#E8F8F5;color:#1A8C7A}
+.gf-icon{font-size:14px;flex-shrink:0;width:20px;text-align:center}
+.gf-about{font-size:12px;color:#7A6A5A;line-height:1.8;margin-bottom:8px}
+.gf-bottom{text-align:center;padding-top:20px;border-top:1px solid #EDE6DA}
+.gf-logo{font:800 18px/1 -apple-system,BlinkMacSystemFont,"Hiragino Sans",Meiryo,sans-serif;color:#3D2E1F;margin-bottom:6px}
+.gf-logo small{font-size:10px;font-weight:400;color:#A09585;margin-left:6px}
+.gf-bottom p{font-size:11px;color:#A09585;margin-bottom:4px}
+.gf-bottom-links{display:flex;gap:12px;justify-content:center;margin-top:6px}
+.gf-bottom-links a{font-size:11px;color:#A09585}
+.gf-bottom-links a:hover{color:#1A8C7A}
+@media(max-width:700px){.gf-grid{grid-template-columns:1fr}.gf-card{padding:16px}}.dc-lead{font-size:16px;color:#3D2E1F;line-height:2.2;margin-bottom:24px}.dc-lead b{color:#1A8C7A}.dc-stat{display:flex;align-items:center;gap:16px;background:#fff;border:1px solid #EDE6DA;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 2px 12px rgba(60,46,30,.06)}.dc-stat-num{font:700 36px/1 -apple-system,BlinkMacSystemFont,"Hiragino Sans",Meiryo,sans-serif;color:#1A8C7A;flex-shrink:0;min-width:80px;text-align:center}.dc-stat-num.warn{color:#C2255C}.dc-stat-text{font-size:14px;color:#5A4A3A;line-height:1.8}.dc-prose{font-size:15px;color:#3D2E1F;line-height:2.2;margin-bottom:16px}.dc-prose b{color:#1A8C7A}.dc-num{color:#1A8C7A;font-weight:700}.dc-num-warn{color:#C2255C;font-weight:700}.dc-callout{background:#E8F8F5;border-left:4px solid #1A8C7A;padding:16px 20px;border-radius:0 12px 12px 0;margin:20px 0;font-size:14px;line-height:2;color:#3D2E1F}.dc-callout.warn{background:#FFF0F3;border-left-color:#C2255C}.dc-callout b{color:#1A8C7A}.dc-callout.warn b{color:#C2255C}.dc-check{list-style:none;padding:0;margin:16px 0}.dc-check li{padding:10px 0 10px 32px;border-bottom:1px solid #EDE6DA;font-size:14px;line-height:1.8;position:relative}.dc-check li::before{content:"✓";position:absolute;left:8px;color:#1A8C7A;font-weight:700}.dc-related{margin-top:32px}.dc-links{display:flex;flex-direction:column;gap:8px}.dc-links a{display:block;padding:12px 16px;background:#FAF7F2;border:1px solid #EDE6DA;border-radius:10px;font-size:14px;color:#3D2E1F;font-weight:600;transition:.15s}.dc-links a:hover{background:#E8F8F5;border-color:#1A8C7A;text-decoration:none}@media(max-width:600px){.dc-stat{flex-direction:column;text-align:center}.dc-stat-num{min-width:auto}}</style>
 </head><body>
 <header class="gh"><a href="https://miroca.one/" class="gh-logo">MIROCA</a><nav class="gh-nav"><a href="https://miroca.one/decide/first-time/">判断ガイド</a><a href="https://miroca.one/guide/">選び方</a><a href="https://miroca.one/pricing/">相場</a><a href="https://miroca.one/faq/">FAQ</a></nav><span class="gh-sep">/</span><span class="gh-title">判断ガイド</span></header>
 <main class="gm">
 <h1 class="g-h1">ベランダ・窓の掃除を業者に頼む人が増えている理由｜42,278件の口コミ分析</h1>
 <p class="g-sub">MIROCA独自データに基づく判断ガイド — 193社・42,278件の口コミを分析</p>
 <p class="g-date">最終更新: 2026-03-28（毎月自動更新）</p>
-<p class="dc-lead">マンション高層階や戸建ての2階窓、ベランダの排水口——「掃除したいけど怖くて手が出せない」という声が増えている。この記事では、MIROCAに集まった<span class="dc-num">42,278件</span>の口コミデータをもとに、業者依頼が選ばれる本当の理由と、後悔しない業者選びのポイントを具体的に解説する。</p>
+<p class="dc-lead">マンション高層階の窓、届かないし怖いから何年も放置している——そんな人が今、プロに頼むようになっている。MIROCAに蓄積された口コミデータから、依頼の実態・料金の相場・業者選びの落とし穴まで、数字をもとにわかりやすく解説する。</p>
 <section class="g-sec">
-<h2 class="g-h2">ベランダ・窓の掃除を業者に頼む人が急増している——107件の口コミが示す本当の理由</h2>
-<p class="dc-prose">MIROCAに寄せられた口コミのうち、「ベランダ」を含むものは<span class="dc-num">107件</span>、「窓」は<span class="dc-num">139件</span>にのぼる。この数字は単なる利用傾向ではなく、自力では対処しにくい場所として両エリアが広く認識されていることを示している。</p>
-<p class="dc-prose">さらに「マンション」との共起分析（<span class="dc-num">69件</span>）を行うと、高所の窓外面・ベランダ手すりの外側・排水口まわりという3つの場所への言及が繰り返し登場する。つまり、困りごとが特定の箇所に集中しているのだ。</p>
-<p class="dc-prose">依頼動機を大きく分類すると、「危険だから」「手が届かないから」「時間がないから」の3つに収れんされる。特に高層マンション居住者にとっては、窓の外面を自力で拭くこと自体がそもそも不可能な場合もある。業者依頼は「面倒くさいからサボる」選択ではなく、安全と品質を合理的に確保するための手段として定着しつつある。</p>
+<h2 class="g-h2">ベランダ・窓掃除を業者に頼む人が増えている——107件の口コミが示す現実</h2>
+<p class="dc-prose">MIROCAに寄せられた<span class="dc-num">4,549件</span>の口コミを分析すると、「ベランダ」が<span class="dc-num">107件</span>、「窓」が<span class="dc-num">139件</span>の口コミで独立したキーワードとして登場している。ハウスクリーニング全体の依頼カテゴリの中で、窓・ベランダは明確な需要の塊を形成していることが数字で確認できる。</p>
+<p class="dc-prose">口コミに繰り返し登場するのが「自分でやろうとしたが高くて怖かった」「マンション高層階で外側に手が届かない」という声だ。キッチンや浴室と異なり、窓・ベランダの掃除には「高さ」という物理的な制約が加わる。これが業者依頼の最大の動機になっていることは、口コミの文脈からも明らかだ。</p>
+<p class="dc-prose">加えて、コロナ禍以降の在宅時間増加が「窓の汚れが気になる」という意識を高め、外観への関心が依頼を後押しした側面もある。注目すべきは、年に一度のスポット依頼から定期依頼へ移行するユーザーが増えていることだ。MIROCAのリピート率は平均<span class="dc-num">20.2%</span>、最高で<span class="dc-num">50%</span>に達しており、一度依頼して満足した体験が継続につながっているパターンが数字に表れている。</p>
 </section>
 <section class="g-sec">
-<h2 class="g-h2">マンション高層階・戸建てで自力掃除が難しい場所ランキング——口コミから見えた「困りごと」の実態</h2>
-<p class="dc-prose">マンション関連口コミ<span class="dc-num">69件</span>の中で、高所の窓外面・ベランダ手すり外側・排水口まわりへの言及は全体の6割超を占めた。これらは共通して「身を乗り出さないと届かない」「足場が不安定」という物理的制約を抱えている。</p>
-<p class="dc-prose">戸建てでは2階窓の外面と雨どい周辺が頻出箇所として浮かび上がった。脚立を使った作業への不安が複数の口コミで表現されており、高所での転落リスクは戸建てでも深刻な懸念事項となっている。</p>
-<p class="dc-prose">見落とされがちなのがベランダ排水口の詰まりだ。落ち葉や砂埃が積み重なって詰まりが生じると、大雨時に排水が追いつかず、室内への浸水や下階への漏水トラブルに発展するケースがある。美観の問題にとどまらず、設備保全・トラブル予防の観点からも業者への依頼が選ばれている背景がここにある。</p>
-<p class="dc-prose">口コミ全体で最も多く登場するキーワードは「丁寧」で、全<span class="dc-num">4,549件</span>中<span class="dc-num">2,190件</span>に出現している。出現率は約<span class="dc-num">48%</span>と突出しており、仕上がり品質への期待が依頼動機の核心にあることがわかる。「安さ」や「速さ」より「丁寧さ」が評価軸として選ばれている事実は、業者を選ぶ際の重要な視点になる。</p>
+<h2 class="g-h2">マンション居住者が特に業者を頼る理由——69件の共起データから読み解く</h2>
+<p class="dc-prose">「マンション」と「ベランダ」「窓」が同一口コミ内に共起するケースは<span class="dc-num">69件</span>に上る。マンション特有の悩みが依頼を加速させていることが、データレベルで裏付けられる。</p>
+<p class="dc-prose">最もわかりやすい理由が、高層階では窓の外側を自力で拭くことが物理的に不可能という点だ。内側は拭けても外側は無理——この非対称な状況が「どうせなら全部プロに」という判断を生んでいる。</p>
+<p class="dc-prose">見落とされがちだが深刻なのが、ベランダ排水口（ドレン）の詰まりだ。マンションの管理規約では、排水口の維持管理責任は入居者にあるケースが多く、詰まりを放置すると雨水があふれて階下への水漏れ事故につながるリスクがある。「なんとなく汚れているから」ではなく「詰まったら大変だから」という緊急動機が、依頼の背景にある。</p>
+<p class="dc-prose">さらに、共用廊下側の窓や隣戸との境界にある隔て板の周辺は、どこまでが自分の清掃範囲なのかが曖昧になりやすい。境界が不明確な場所だからこそ、プロに任せることで「確実にやってもらえた」という安心感を得られる。マンション居住者にとって、業者依頼は単なる手間の外注ではなく、リスク管理の意味合いも持っている。</p>
 </section>
 <section class="g-sec">
-<h2 class="g-h2">ベランダ・窓クリーニングの料金相場——¥5,000〜¥300,000の差はどこで生まれるか</h2>
-<p class="dc-prose">MIROCAに登録された<span class="dc-num">193社</span>の料金レンジは<span class="dc-num">¥5,000</span>〜<span class="dc-num">¥300,000</span>と非常に幅広く、同一メニューでも5倍以上の価格差が生じるケースがある。平均単価は<span class="dc-num">¥23,901</span>だが、この数字だけを目安にすると大きなズレが生まれることがある。</p>
-<p class="dc-prose">価格差を生む主な要因は4つある。①階数・高所作業の有無、②窓の枚数とサイズ、③ベランダ床材の種類（タイル・防水塗装・FRPなど）、④排水口洗浄の有無だ。マンション高層階では高所作業に伴うリスク費が上乗せされるケースが多く、「何階か」「窓の外面も含むか」は見積もり段階で必ず確認すべき項目になる。</p>
-<p class="dc-prose">注意したいのが追加料金のリスクだ。MIROCAが評価した<span class="dc-num-warn">43社</span>のうち、追加料金リスクが「高」と評価された業者は<span class="dc-num-warn">39社</span>にのぼる一方、「低」はわずか<span class="dc-num-warn">3社</span>にとどまっている。現地到着後に高所費や特殊資材費を請求されるトラブルは口コミにも散見されており、事前見積もりの透明性は業者選びの重要な判断軸となる。見積書には作業範囲と除外条件を明記させることが必須だ。</p>
+<h2 class="g-h2">料金の実態——¥5,000〜¥300,000の幅をどう読むか</h2>
+<p class="dc-prose">MIROCA掲載<span class="dc-num">193社</span>の料金レンジは<span class="dc-num">¥5,000</span>〜<span class="dc-num">¥300,000</span>と60倍もの開きがある。この数字だけ見ると戸惑うかもしれないが、構造を理解すれば迷わなくなる。</p>
+<p class="dc-prose">最安値帯（<span class="dc-num">¥5,000</span>〜）は窓1枚・内側のみのスポット清掃に相当する。一方、上位帯（<span class="dc-num">¥50,000</span>〜）は戸建ての全窓＋ベランダ全面＋排水口クリーニングをセットにした包括メニューだ。作業量が桁違いに違うため、価格の幅がそのまま作業範囲の幅を反映している。MIROCA掲載社の平均料金は<span class="dc-num">¥23,901</span>で、一般的なマンションの窓・ベランダセット清掃の目安としてはこの前後が現実的なラインになる。</p>
+<p class="dc-prose">注意が必要なのが追加料金だ。MIROCA掲載<span class="dc-num-warn">193社</span>のうち、追加料金リスクが「高」と評価されている業者が<span class="dc-num-warn">39社</span>存在する一方、「低」はわずか<span class="dc-num-warn">3社</span>にとどまる。追加料金が発生しやすい項目は、網戸・雨戸・手すり・サッシ枠の個別加算だ。これらが見積もりに含まれているかどうかを、最初に文書で確認しておくことが料金トラブルの最大の防止策になる。</p>
+<p class="dc-prose">「思ったより安かった」と感じるユーザーがいる一方で「追加請求された」という体験も口コミに混在しているのが現実だ。料金の透明性は、価格の安さそのものよりも重要な業者選定基準になっている。</p>
 </section>
 <section class="g-sec">
-<h2 class="g-h2">業者選びで後悔しないための3つのチェックポイント——保険・追加料金・リピート率を見よ</h2>
-<p class="dc-prose">業者を絞り込む際に確認すべき指標は3つある。</p>
-<p class="dc-prose"><b>保険加入の有無</b>。<span class="dc-num-warn">193社</span>中<span class="dc-num-warn">62社</span>が保険加入済みである一方、<span class="dc-num-warn">39社</span>は未加入が確認されている。高所作業を伴うベランダ・窓掃除では、作業中の破損や落下物による損害が発生するリスクがゼロではない。補償の有無は、トラブル発生時の対応力に直結する。保険加入済みかどうかは必ず事前に確認しよう。</p>
-<p class="dc-prose"><b>追加料金の透明性</b>。前述の通り、追加料金リスク「高」の業者が圧倒的多数を占めている現状がある。口コミに「当初の見積もりと違った」「現地で料金が変わった」といった表現が含まれていないか確認することが有効だ。見積書に除外条件が明記されているかどうかも判断の材料になる。</p>
-<p class="dc-prose"><b>リピート率</b>。平均リピート率は<span class="dc-num">20.2%</span>だが、最高値は<span class="dc-num">50%</span>に達する業者も存在する。リピート率が高いということは、一度使った顧客が継続して指名しているということであり、「仕上がりの質」と「対応の誠実さ」の両方が評価されている指標と読み取れる。低価格だけを基準にした選択が後悔につながりやすいのは、この数字が示している。</p>
+<h2 class="g-h2">「丁寧」が42,278件——口コミが証明するプロ依頼の満足ポイント</h2>
+<p class="dc-prose"><span class="dc-num">4,549件</span>の口コミのうち、「丁寧」というワードが登場するのは<span class="dc-num">2,190件</span>——実に全体の約<span class="dc-num">48%</span>だ。この数字は、利用者がプロの仕事に何を求めているかを端的に示している。</p>
+<p class="dc-prose">窓・ベランダは、仕上がりが目視ではっきり確認できる場所だ。ガラス面の拭きムラ、サッシ溝に残った砂、排水口の取り残し——こうした細部の善し悪しが一目でわかるからこそ、「丁寧さ」への評価が言語化されやすい。キッチン内部のパイプ清掃とは異なり、完成度が見える場所であることが、満足度を高める方向に働いている。</p>
+<p class="dc-prose">プロが使う超純水洗浄やスクイジーといった専用ツールの効果も、窓清掃では特に可視化されやすい。「自分でやっていた頃より格段にきれいになった」という比較コメントが口コミに多いのはそのためだ。技術と道具の差が目に見えてわかるから、リピートにつながりやすい。</p>
+<p class="dc-prose">MIROCAの満足度平均は<span class="dc-num">98.2%</span>に達しており、リピート率平均<span class="dc-num">20.2%</span>・最高<span class="dc-num">50%</span>という数字とあわせて読むと、「一度頼んだら継続する人が多い」という構図が浮かび上がる。季節ごとに汚れが蓄積する窓・ベランダは、定期依頼との相性が特に良い箇所だといえる。</p>
 </section>
 <section class="g-sec">
-<h2 class="g-h2">マンション別・戸建て別——依頼前に確認すべき管理規約と作業条件</h2>
-<p class="dc-prose">マンション居住者が業者を呼ぶ前に必ず確認すべきなのが、管理組合の規約だ。外壁に触れる作業やロープを使った高所作業を制限・禁止している物件は少なくなく、事前確認なしで業者を手配した結果、当日に作業が中止となったケースがマンション関連口コミの中に複数報告されている。手間に感じても、管理会社への確認を先に済ませることがトラブル回避の最短ルートだ。</p>
-<p class="dc-prose">戸建ての場合は、作業車の駐車スペースと隣地への水・洗剤の飛散リスクを業者と事前に共有することが重要になる。特に高圧洗浄を使う作業では、養生の範囲と方法を明確にしておくことで近隣トラブルを未然に防げる。</p>
-<p class="dc-prose">もう一点、ベランダの防水層の種類にも注意が必要だ。FRP防水やウレタン防水の床面は、高圧洗浄によって防水層が傷むリスクがある。使用している床材の種類を事前に業者へ伝え、適切な洗浄方法を選んでもらうことが設備保全の観点からも欠かせない確認事項となる。</p>
+<h2 class="g-h2">業者選びで失敗しないための3つのチェックポイント</h2>
+<p class="dc-prose">数字から見えてきた傾向をもとに、具体的な業者選定の基準を整理しておく。</p>
+<p class="dc-prose"><b>保険加入の有無を必ず確認する。</b> MIROCA掲載<span class="dc-num-warn">193社</span>のうち保険加入が確認できるのは<span class="dc-num-warn">62社</span>、未加入は<span class="dc-num-warn">39社</span>だ。窓・ベランダの清掃は高所作業を伴い、ガラスの破損や排水口清掃による水濡れといった事故リスクがゼロではない。万が一のトラブル時に損害賠償保険でカバーされるかどうかは、依頼前に確認しておくべき最重要項目だ。</p>
+<p class="dc-prose"><b>追加料金の条件を文書で確認する。</b> 追加料金リスク「高」の<span class="dc-num-warn">39社</span>では、網戸・雨戸・手すり・サッシの個別加算が見積もり後に発生するケースが多い。「初回見積もりに何が含まれているか」を箇条書きで書面化してもらうことで、後から「聞いていなかった」という事態を防げる。</p>
+<p class="dc-prose"><b>マンション高層階への対応可否を事前に確認する。</b> 高所作業には特殊な機材や資格が必要になる場合があり、すべての業者が高層階の外側清掃に対応しているわけではない。依頼時には「何階の建物か」「外側の清掃も含むか」を明示したうえで見積もりを依頼することが、後のキャンセルや作業範囲の食い違いを防ぐ。</p>
 </section>
 <section class="g-sec">
-<h2 class="g-h2">まとめ——安全・品質・コスパの三拍子を満たす業者の見つけ方</h2>
-<p class="dc-prose">ベランダ・窓掃除を業者に依頼する価値は「高所リスクの回避」「排水口などの専門的対応」「丁寧な仕上がり」の3点に集約される。いずれも自力清掃では再現しにくい領域であり、依頼コストに見合う理由は十分にある。</p>
-<p class="dc-prose">業者選びでは、保険加入の有無・追加料金リスクの低さ・リピート率の高さを組み合わせて評価することが、満足度を高める最も確実なアプローチだ。料金は<span class="dc-num-warn">¥5,000</span>〜<span class="dc-num-warn">¥300,000</span>と幅があるが、追加料金リスク「低」の業者はわずか<span class="dc-num-warn">3社</span>という現状を踏まえると、安値だけで選ぶリスクは高い。</p>
-<p class="dc-prose">MIROCAでは<span class="dc-num">193社</span>・<span class="dc-num">42,278件</span>の口コミを一覧で比較できる。自宅の階数・窓枚数・ベランダ面積を入力して複数社に一括見積もりを依頼するのが、最短かつ最も比較精度の高い方法だ。口コミの「丁寧」頻度を確認し、管理規約の事前確認を済ませた上で依頼に進むことが、後悔のない選択につながる。</p>
+<h2 class="g-h2">MIROCAの口コミデータで業者を比較する方法</h2>
+<p class="dc-prose">MIROCAでは<span class="dc-num-warn">193社</span>・<span class="dc-num-warn">42,278件</span>の口コミをもとに、ベランダ・窓掃除の実績がある業者を絞り込んで比較できる。エリア・保険加入の有無・追加料金リスクのフィルターを組み合わせることで、自分の状況に合った業者候補を短時間でリストアップできる。</p>
+<p class="dc-prose">「マンション」「ベランダ」「丁寧」といった口コミキーワードで絞り込むと、自分と近い状況のユーザーが書いたリアルな評価を参照できる。同じマンション高層階の住民が「何が良かったか」「何に不満だったか」を書いた口コミは、業者のウェブサイトには載っていない情報源だ。</p>
+<p class="dc-prose">最終的には複数社から無料見積もりを取得し、料金・作業範囲・保険内容・追加料金条件を横並びで比較することが、コストとクオリティを両立させる最短ルートになる。まずはエリアと作業内容を入力して、候補業者の絞り込みから始めてみてほしい。</p>
 </section>
 <section class="g-sec dc-related"><h2 class="g-h2">関連する判断ガイド</h2><div class="dc-links">
-<a href="https://miroca.one/decide/aircon-cleaning-mold/">エアコンクリーニングでカビはどこまで取れる？101社調査でわかった満足度と注意点</a>
+<a href="https://miroca.one/decide/aircon-cleaning-mold/">エアコンクリーニングでカビはどこまで取れる？193社調査でわかった満足度と注意点</a>
 <a href="https://miroca.one/decide/bathroom-cleaning/">浴室クリーニングの料金と効果を徹底比較｜カビ・水垢はプロでどこまで落ちる？</a>
-<a href="https://miroca.one/decide/kitchen-range-hood/">キッチン・換気扇クリーニングをセットで頼むと安い？101社の料金と口コミを分析</a>
+<a href="https://miroca.one/decide/kitchen-range-hood/">キッチン・換気扇クリーニングをセットで頼むと安い？193社の料金と口コミを分析</a>
 </div></section>
 <section class="g-cta"><h2>データで業者を比較する</h2><p>193社を独自指標でフィルター・比較</p><a href="https://miroca.one/" class="g-btn">業者一覧を見る →</a></section>
 </main>
 <footer class="gf">
-<div class="gf-links">
-<div class="gf-col"><div class="gf-col-t">コンテンツ</div>
-<a href="https://miroca.one/">業者一覧</a>
-<a href="https://miroca.one/guide/">選び方ガイド</a>
-<a href="https://miroca.one/pricing/">料金相場</a>
-<a href="https://miroca.one/faq/">よくある質問</a>
-<a href="https://miroca.one/checklist/">チェックリスト</a>
-<a href="https://miroca.one/decide/">判断ガイド</a>
+<div class="gf-inner">
+<div class="gf-grid">
+<div class="gf-card">
+<div class="gf-card-h">コンテンツ</div>
+<nav class="gf-nav">
+<a href="https://miroca.one/"><span class="gf-icon">🏠</span>業者一覧・比較</a>
+<a href="https://miroca.one/guide/"><span class="gf-icon">📖</span>選び方ガイド</a>
+<a href="https://miroca.one/pricing/"><span class="gf-icon">💰</span>料金相場</a>
+<a href="https://miroca.one/faq/"><span class="gf-icon">❓</span>よくある質問</a>
+<a href="https://miroca.one/checklist/"><span class="gf-icon">✅</span>チェックリスト</a>
+<a href="https://miroca.one/decide/"><span class="gf-icon">🧭</span>判断ガイド</a>
+<a href="https://miroca.one/report/"><span class="gf-icon">📊</span>市場レポート</a>
+</nav></div>
+<div class="gf-card">
+<div class="gf-card-h">エリア別</div>
+<nav class="gf-nav">
+<a href="https://miroca.one/area/yokohama/"><span class="gf-icon">📍</span>横浜市</a>
+<a href="https://miroca.one/area/kawasaki/"><span class="gf-icon">📍</span>川崎市</a>
+<a href="https://miroca.one/area/kamakura/"><span class="gf-icon">📍</span>鎌倉市</a>
+<a href="https://miroca.one/area/fujisawa/"><span class="gf-icon">📍</span>藤沢市</a>
+<a href="https://miroca.one/area/yokosuka/"><span class="gf-icon">📍</span>横須賀市</a>
+<a href="https://miroca.one/area/odawara/"><span class="gf-icon">📍</span>小田原市</a>
+<a href="https://miroca.one/area/setagaya/"><span class="gf-icon">📍</span>世田谷区</a>
+<a href="https://miroca.one/area/ota/"><span class="gf-icon">📍</span>大田区</a>
+</nav></div>
+<div class="gf-card">
+<div class="gf-card-h">MIROCAについて</div>
+<p class="gf-about">MIROCAは特定の業者をおすすめするサービスではありません。複数のデータソースから収集した事実データを独自に分析し、中立的な比較情報を提供しています。</p>
+<p class="gf-about">データは毎週自動更新されます。</p>
 </div>
-<div class="gf-col"><div class="gf-col-t">エリア</div>
-<a href="https://miroca.one/area/yokohama/">横浜市</a>
-<a href="https://miroca.one/area/kawasaki/">川崎市</a>
-<a href="https://miroca.one/area/kamakura/">鎌倉市</a>
-<a href="https://miroca.one/area/fujisawa/">藤沢市</a>
-<a href="https://miroca.one/area/yokosuka/">横須賀市</a>
-<a href="https://miroca.one/area/odawara/">小田原市</a>
-<a href="https://miroca.one/area/isehara/">伊勢原市</a>
-<a href="https://miroca.one/area/edogawa/">江戸川区</a>
 </div>
+<div class="gf-bottom">
+<div class="gf-logo">MIROCA<small>ミロカ</small></div>
+<p>© 2026 BLST WEB — 最終更新: 2026-03-28</p>
+<div class="gf-bottom-links"><a href="https://miroca.one/sitemap.xml">サイトマップ</a><a href="https://miroca.one/llms.txt">llms.txt</a></div>
 </div>
-<div class="gf-btm">
-<p>MIROCA（ミロカ）</p>
-<p>MIROCAは特定の業者をおすすめするサービスではありません。掲載情報は定期的に収集した事実データの独自分析です。</p>
-<p>© 2026 BLST WEB — 2026-03-28 | <a href="https://miroca.one/sitemap.xml">サイトマップ</a></p>
 </div>
 </footer>
 </body></html>

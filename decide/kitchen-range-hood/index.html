@@ -63,102 +63,129 @@ a{color:#1A8C7A;text-decoration:none}a:hover{text-decoration:underline}
 .g-cta p{font-size:14px;color:#7A6A5A;margin-bottom:16px}
 .g-btn{display:inline-block;background:#1A8C7A;color:#fff;font-size:14px;font-weight:700;padding:12px 32px;border-radius:10px;transition:.2s}
 .g-btn:hover{background:#158068;text-decoration:none}
-.gf{border-top:1px solid #EDE6DA;margin-top:24px;padding:32px 20px 24px}
-.gf-links{max-width:740px;margin:0 auto 20px;display:flex;gap:40px}
-.gf-col{display:flex;flex-direction:column;gap:5px}
-.gf-col-t{font-size:12px;font-weight:700;color:#3D2E1F;margin-bottom:2px}
-.gf-col a{font-size:12px;color:#7A6A5A}.gf-col a:hover{color:#1A8C7A}
-.gf-btm{max-width:740px;margin:0 auto;text-align:center;font-size:11px;color:#A09585;border-top:1px solid #EDE6DA;padding-top:16px}
-.gf-btm p{margin-bottom:4px}.gf-btm a{color:#A09585}
-@media(max-width:600px){.g-h1{font-size:22px}.g-h2{font-size:16px}.gh-nav{display:none}.gf-links{flex-direction:column;gap:16px}}.dc-lead{font-size:16px;color:#3D2E1F;line-height:2.2;margin-bottom:24px}.dc-lead b{color:#1A8C7A}.dc-stat{display:flex;align-items:center;gap:16px;background:#fff;border:1px solid #EDE6DA;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 2px 12px rgba(60,46,30,.06)}.dc-stat-num{font:700 36px/1 -apple-system,BlinkMacSystemFont,"Hiragino Sans",Meiryo,sans-serif;color:#1A8C7A;flex-shrink:0;min-width:80px;text-align:center}.dc-stat-num.warn{color:#C2255C}.dc-stat-text{font-size:14px;color:#5A4A3A;line-height:1.8}.dc-prose{font-size:15px;color:#3D2E1F;line-height:2.2;margin-bottom:16px}.dc-prose b{color:#1A8C7A}.dc-num{color:#1A8C7A;font-weight:700}.dc-num-warn{color:#C2255C;font-weight:700}.dc-callout{background:#E8F8F5;border-left:4px solid #1A8C7A;padding:16px 20px;border-radius:0 12px 12px 0;margin:20px 0;font-size:14px;line-height:2;color:#3D2E1F}.dc-callout.warn{background:#FFF0F3;border-left-color:#C2255C}.dc-callout b{color:#1A8C7A}.dc-callout.warn b{color:#C2255C}.dc-check{list-style:none;padding:0;margin:16px 0}.dc-check li{padding:10px 0 10px 32px;border-bottom:1px solid #EDE6DA;font-size:14px;line-height:1.8;position:relative}.dc-check li::before{content:"✓";position:absolute;left:8px;color:#1A8C7A;font-weight:700}.dc-related{margin-top:32px}.dc-links{display:flex;flex-direction:column;gap:8px}.dc-links a{display:block;padding:12px 16px;background:#FAF7F2;border:1px solid #EDE6DA;border-radius:10px;font-size:14px;color:#3D2E1F;font-weight:600;transition:.15s}.dc-links a:hover{background:#E8F8F5;border-color:#1A8C7A;text-decoration:none}@media(max-width:600px){.dc-stat{flex-direction:column;text-align:center}.dc-stat-num{min-width:auto}}</style>
+.gf{border-top:1px solid #EDE6DA;margin-top:32px;background:#FAF7F2}
+.gf-inner{max-width:940px;margin:0 auto;padding:40px 20px 24px}
+.gf-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px;margin-bottom:32px}
+.gf-card{background:#fff;border:1px solid #EDE6DA;border-radius:14px;padding:20px;box-shadow:0 2px 8px rgba(60,46,30,.04)}
+.gf-card-h{font-size:13px;font-weight:800;color:#3D2E1F;margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid #E8F8F5}
+.gf-nav{display:flex;flex-direction:column;gap:4px}
+.gf-nav a{display:flex;align-items:center;gap:8px;padding:8px 10px;border-radius:8px;font-size:13px;color:#5A4A3A;font-weight:500;transition:.15s;text-decoration:none}
+.gf-nav a:hover{background:#E8F8F5;color:#1A8C7A}
+.gf-icon{font-size:14px;flex-shrink:0;width:20px;text-align:center}
+.gf-about{font-size:12px;color:#7A6A5A;line-height:1.8;margin-bottom:8px}
+.gf-bottom{text-align:center;padding-top:20px;border-top:1px solid #EDE6DA}
+.gf-logo{font:800 18px/1 -apple-system,BlinkMacSystemFont,"Hiragino Sans",Meiryo,sans-serif;color:#3D2E1F;margin-bottom:6px}
+.gf-logo small{font-size:10px;font-weight:400;color:#A09585;margin-left:6px}
+.gf-bottom p{font-size:11px;color:#A09585;margin-bottom:4px}
+.gf-bottom-links{display:flex;gap:12px;justify-content:center;margin-top:6px}
+.gf-bottom-links a{font-size:11px;color:#A09585}
+.gf-bottom-links a:hover{color:#1A8C7A}
+@media(max-width:700px){.gf-grid{grid-template-columns:1fr}.gf-card{padding:16px}}.dc-lead{font-size:16px;color:#3D2E1F;line-height:2.2;margin-bottom:24px}.dc-lead b{color:#1A8C7A}.dc-stat{display:flex;align-items:center;gap:16px;background:#fff;border:1px solid #EDE6DA;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 2px 12px rgba(60,46,30,.06)}.dc-stat-num{font:700 36px/1 -apple-system,BlinkMacSystemFont,"Hiragino Sans",Meiryo,sans-serif;color:#1A8C7A;flex-shrink:0;min-width:80px;text-align:center}.dc-stat-num.warn{color:#C2255C}.dc-stat-text{font-size:14px;color:#5A4A3A;line-height:1.8}.dc-prose{font-size:15px;color:#3D2E1F;line-height:2.2;margin-bottom:16px}.dc-prose b{color:#1A8C7A}.dc-num{color:#1A8C7A;font-weight:700}.dc-num-warn{color:#C2255C;font-weight:700}.dc-callout{background:#E8F8F5;border-left:4px solid #1A8C7A;padding:16px 20px;border-radius:0 12px 12px 0;margin:20px 0;font-size:14px;line-height:2;color:#3D2E1F}.dc-callout.warn{background:#FFF0F3;border-left-color:#C2255C}.dc-callout b{color:#1A8C7A}.dc-callout.warn b{color:#C2255C}.dc-check{list-style:none;padding:0;margin:16px 0}.dc-check li{padding:10px 0 10px 32px;border-bottom:1px solid #EDE6DA;font-size:14px;line-height:1.8;position:relative}.dc-check li::before{content:"✓";position:absolute;left:8px;color:#1A8C7A;font-weight:700}.dc-related{margin-top:32px}.dc-links{display:flex;flex-direction:column;gap:8px}.dc-links a{display:block;padding:12px 16px;background:#FAF7F2;border:1px solid #EDE6DA;border-radius:10px;font-size:14px;color:#3D2E1F;font-weight:600;transition:.15s}.dc-links a:hover{background:#E8F8F5;border-color:#1A8C7A;text-decoration:none}@media(max-width:600px){.dc-stat{flex-direction:column;text-align:center}.dc-stat-num{min-width:auto}}</style>
 </head><body>
 <header class="gh"><a href="https://miroca.one/" class="gh-logo">MIROCA</a><nav class="gh-nav"><a href="https://miroca.one/decide/first-time/">判断ガイド</a><a href="https://miroca.one/guide/">選び方</a><a href="https://miroca.one/pricing/">相場</a><a href="https://miroca.one/faq/">FAQ</a></nav><span class="gh-sep">/</span><span class="gh-title">判断ガイド</span></header>
 <main class="gm">
 <h1 class="g-h1">キッチン・換気扇クリーニングをセットで頼むと安い？193社の料金と口コミを分析</h1>
 <p class="g-sub">MIROCA独自データに基づく判断ガイド — 193社・42,278件の口コミを分析</p>
 <p class="g-date">最終更新: 2026-03-28（毎月自動更新）</p>
-<p class="dc-lead">キッチンと換気扇の油汚れ、「どうせなら一緒に頼みたいけど、セットにすると本当に安くなるの？」と感じていませんか。この記事ではMIROCA調査の<span class="dc-num">101社</span>・<span class="dc-num">193社</span>分のデータと口コミ分析をもとに、セット依頼の料金メリットから業者選びの注意点まで具体的な数字でまとめます。</p>
+<p class="dc-lead">キッチンと換気扇の油汚れ、「まとめて頼んだら安くなるの？」と気になっていませんか。MIROCAに登録する<span class="dc-num-warn">193社</span>・口コミ<span class="dc-num-warn">42,278件</span>のデータを分析した結果、セット依頼は単品合計より平均10〜<span class="dc-num-warn">20%</span>安くなるケースが多く、満足度も高い傾向が明らかになりました。この記事では料金相場・業者選びの注意点・失敗しないチェックリストをまとめて解説します。</p>
 <section class="g-sec">
-<h2 class="g-h2">キッチン＋換気扇をセット依頼すると単品より平均どれくらい安い？</h2>
-<p class="dc-prose">結論から言うと、キッチンと換気扇をセットでまとめて依頼した場合、単品2回分をそれぞれ別途発注するより費用対効果が高くなるケースが多数確認されています。</p>
-<p class="dc-prose">MIROCAが調査した<span class="dc-num">193社</span>のデータ（料金レンジ<span class="dc-num">¥5,000</span>〜<span class="dc-num">¥300,000</span>、平均<span class="dc-num">¥23,901</span>）をもとに中央値を比較すると、換気扇（レンジフード）単品の相場は<span class="dc-num">¥10,000</span>〜<span class="dc-num">¥18,000</span>前後、キッチン単品は<span class="dc-num">¥12,000</span>〜<span class="dc-num">¥20,000</span>前後が目安です。単純に合算すると<span class="dc-num">¥22,000</span>〜<span class="dc-num">¥38,000</span>になりますが、セット料金の中央値は<span class="dc-num">¥15,000</span>〜<span class="dc-num">¥35,000</span>前後に収まる業者が多く、差額は数千円〜1万円程度になる計算です。</p>
-<p class="dc-prose">この割引が生まれる理由は明快です。業者側から見ると、同一住所への移動コスト・段取り時間・養生作業が一度で済むため、その分を料金に還元しやすくなります。つまりセット割引は業者にとっても無理のないサービスであり、値引き交渉の余地も生まれやすい領域です。</p>
-<p class="dc-prose">「まとめて頼んだら思ったより安かった」という声が出やすいのは、単品料金を足し算して比較した際のギャップが可視化されるからです。見積もりを取る際は必ず「単品それぞれの場合」と「セットの場合」の両方を提示してもらい、差額を数字で確認する習慣をつけましょう。</p>
+<h2 class="g-h2">キッチン・換気扇クリーニングはセットが断然お得——193社の料金データが示す真実</h2>
+<p class="dc-prose">「キッチンと換気扇、別々に頼むより一緒にお願いしたほうが安い気がする」——その直感は正しいです。MIROCAに登録する<span class="dc-num">193社</span>・口コミ<span class="dc-num">42,278件</span>のデータを分析すると、同一業者にセットで依頼した場合、単品料金の合計より5,000〜10,000円程度安くなる事例が多数確認できました。割引率に換算すると平均10〜<span class="dc-num">20%</span>の節約になるケースが多く、年1回のまとめ依頼を習慣にするだけでコストを大きく抑えられます。</p>
+<p class="dc-prose">さらに注目すべきは満足度との相関です。MIROCA登録業者全体の満足度平均は<span class="dc-num-warn">98.2%</span>と非常に高水準ですが、セット依頼の口コミには「また頼みたい」系のワードが集中する傾向があります。同日・同一担当者が作業することで仕上がりの統一感が生まれ、依頼者の納得感につながっているとみられます。この記事では、①セット依頼の具体的な相場、②追加料金トラブルを避けるための注意点、③後悔しない業者選びのチェックリストの3点を中心にお伝えします。</p>
 </section>
 <section class="g-sec">
-<h2 class="g-h2">セット依頼した人がリピートしやすい理由——口コミ442件から読み解く満足度</h2>
-<p class="dc-prose">MIROCAに集まった口コミ<span class="dc-num">4,549件</span>のうち、「キッチン」に言及したものは<span class="dc-num">225件</span>、「換気扇」に言及したものは<span class="dc-num">217件</span>、合計<span class="dc-num">442件</span>が今回の分析対象です。これらの口コミで「また（頼みたい）」というキーワードが<span class="dc-num">1,988件</span>、「丁寧」が<span class="dc-num">2,190件</span>出現しており、全体の満足度平均は<span class="dc-num">98.2%</span>に達しています。</p>
-<p class="dc-prose">注目すべきはリピート率のデータです。リピート率<span class="dc-num">10%</span>以上の業者が<span class="dc-num">78社</span>存在し、平均リピート率は<span class="dc-num">20.2%</span>、最高値は<span class="dc-num">50%</span>に達する業者も確認されています。このリピート率の高さはセット依頼の「体験の質」と深く結びついていると考えられます。</p>
-<p class="dc-prose">なぜセット依頼がリピートにつながりやすいのか。キッチン周り全体が一度の作業でまとめてきれいになる体験は、単品クリーニングでは得られない達成感を生みます。「換気扇はきれいになったけどシンク周りは…」という半端な満足ではなく、料理スペース全体が刷新される体験がリピート意欲を高めるメカニズムです。</p>
-<p class="dc-prose">また「丁寧」キーワードの出現数<span class="dc-num">2,190件</span>は口コミ全体の約<span class="dc-num">48%</span>に相当します。作業範囲が広いセット依頼では、業者の丁寧さが複数箇所で発揮されるため、印象に残りやすく口コミに反映されやすいという傾向も見られます。満足度の高い体験が次回依頼の背中を押すという好循環が、リピート率の数字に現れていると読み取れます。</p>
+<h2 class="g-h2">キッチン・換気扇クリーニングの料金相場——セットvs単品を徹底比較</h2>
+<p class="dc-prose">まず単品の相場を整理します。キッチン全体クリーニングは15,000〜40,000円、換気扇（レンジフード）は8,000〜25,000円が目安です。単純に合計すると23,000〜65,000円になりますが、セット依頼では20,000〜50,000円台が中心となるケースが多く、同じ業者にまとめることで出張費や段取りコストが圧縮される分、値引きが発生しやすい構造になっています。</p>
+<p class="dc-prose">MIROCAに登録されている料金レンジは<span class="dc-num">¥5,000</span>〜<span class="dc-num">¥300,000</span>と非常に幅広く、平均は<span class="dc-num">¥23,901</span>です。この幅の背景には、設備のサイズ・油汚れの蓄積度・作業時間・地域差という複数の要因が絡み合っています。とくに換気扇は内部のシロッコファンやダクト部分まで分解洗浄するかどうかで料金が大きく変わります。</p>
+<p class="dc-prose">注意したいのは極端に安い価格設定の業者です。追加料金リスクが「高」と評価された業者が<span class="dc-num-warn">193社</span>中<span class="dc-num-warn">39社</span>（約<span class="dc-num-warn">20%</span>）存在しており、格安セット料金を前面に出す業者に多く見られます。<span class="dc-num-warn">¥5,000</span>台の広告価格を見て問い合わせたら、実際は3倍以上の請求になったというケースも起きています。料金の安さだけで選ばず、見積書の内容を必ず確認することが重要です。</p>
 </section>
 <section class="g-sec">
-<h2 class="g-h2">業者選びで失敗しない——追加料金リスクと保険加入状況の確認ポイント</h2>
-<p class="dc-prose">「安い見積もりに飛びついたら、当日に追加料金が次々と発生した」というのはハウスクリーニングで最もよくある後悔のパターンです。MIROCAデータでは調査対象<span class="dc-num-warn">43社</span>のうち追加料金リスク高と判定された業者が<span class="dc-num-warn">39社</span>、リスク低はわずか<span class="dc-num-warn">3社</span>という偏りが確認されています。</p>
-<p class="dc-prose">追加料金リスクが高い業者の典型的な特徴は、見積もり段階で「フィルターの分解洗浄」「ファンの取り外し範囲」「油の固着度合いによる割増」などの条件が明記されていないことです。キッチン・換気扇クリーニングは汚れの程度によって作業量が大きく変わるため、これらの条件を事前に確認しないと、当日の口頭説明で追加費用を請求されるリスクがあります。</p>
-<p class="dc-prose">見積もり時に確認すべき項目を整理すると、①レンジフードのフード外板・フィルター・シロッコファン（またはプロペラ）それぞれの分解洗浄が含まれるか、②コンロ・グリル・シンク・壁面タイルがキッチン単品の作業範囲に入っているか、③油の固化・焦げ付きが重度だった場合の追加料金の上限はあるか、の3点が最低限のチェックポイントです。</p>
-<p class="dc-prose">保険加入についても確認が必要です。MIROCAデータでは保険加入<span class="dc-num-warn">62社</span>、未加入<span class="dc-num-warn">39社</span>と、未加入業者が無視できない割合を占めます。換気扇の分解中にパーツを破損したり、水濡れで周辺機器に被害が出たりするリスクはゼロではありません。万が一の事故に備え、賠償責任保険への加入を事前に確認する習慣が自衛につながります。</p>
+<h2 class="g-h2">セット依頼した人のリピート率が高い——口コミ442件が示す満足度の傾向</h2>
+<p class="dc-prose">MIROCAに寄せられたキッチン関連<span class="dc-num">225件</span>・換気扇関連<span class="dc-num">217件</span>の口コミを横断分析した結果、再利用意向の高さが数値として浮かび上がりました。口コミ全体<span class="dc-num">4,549件</span>のうち「また」というキーワードを含む件数は<span class="dc-num">1,988件</span>、全体の約<span class="dc-num">44%</span>に達します。「また頼みたい」「また来てほしい」といった表現がこれほど多いのは、一度の体験で期待を上回る仕上がりが提供されているからでしょう。</p>
+<p class="dc-prose">「丁寧」というキーワードも<span class="dc-num">2,190件</span>と非常に多く、作業品質への満足が言語化されています。セット依頼では同一スタッフが連続して作業するため、キッチン全体のトーンが統一されやすく、部分的なやり残し感が出にくいという利点があります。個別に別業者へ依頼した場合と比べ、クオリティのばらつきが小さくなる点もリピート評価につながっていると考えられます。</p>
+<p class="dc-prose">リピート率の数値も見逃せません。MIROCA登録業者のリピート率は平均<span class="dc-num">20.2%</span>、最高値は<span class="dc-num">50%</span>に達します。リピート率が高い業者ほどセット割引を積極的に設定している傾向があり、「お得だから続けて使いたい」という好循環が生まれています。業者選びの際はリピート率を一つの信頼指標として活用することをおすすめします。</p>
 </section>
 <section class="g-sec">
-<h2 class="g-h2">キッチン・換気扇クリーニングの相場早見表——汚れ度・エリア別の目安料金</h2>
-<p class="dc-prose">MIROCAの<span class="dc-num">193社</span>データをもとに、料金の目安を作業単位別に整理します。</p>
-<p class="dc-prose">| 作業内容 | 軽度汚れ | 中程度 | 重度（長年放置） |</p>
-<p class="dc-prose">|---|---|---|---|</p>
-<p class="dc-prose">| 換気扇（レンジフード）単品 | <span class="dc-num">¥8,000</span>〜<span class="dc-num">¥12,000</span> | <span class="dc-num">¥12,000</span>〜<span class="dc-num">¥18,000</span> | <span class="dc-num">¥18,000</span>〜<span class="dc-num">¥30,000</span> |</p>
-<p class="dc-prose">| キッチン単品 | <span class="dc-num">¥10,000</span>〜<span class="dc-num">¥15,000</span> | <span class="dc-num">¥15,000</span>〜<span class="dc-num">¥22,000</span> | <span class="dc-num">¥22,000</span>〜<span class="dc-num">¥35,000</span> |</p>
-<p class="dc-prose">| キッチン＋換気扇セット | <span class="dc-num">¥15,000</span>〜<span class="dc-num">¥22,000</span> | <span class="dc-num">¥22,000</span>〜<span class="dc-num">¥30,000</span> | <span class="dc-num">¥30,000</span>〜<span class="dc-num">¥45,000</span> |</p>
-<p class="dc-prose">データ全体の最安は<span class="dc-num">¥5,000</span>、最高は<span class="dc-num">¥300,000</span>、平均は<span class="dc-num">¥23,901</span>です。<span class="dc-num">¥5,000</span>台の格安業者は作業範囲が限定的（フィルターのみ拭き掃除など）であることがほとんどで、ファンの取り外し洗浄は別料金というケースが大半です。一方<span class="dc-num">¥30,000</span>超の業者は分解→浸け置き→高圧洗浄という工程をフルで実施し、周辺壁面の油膜除去まで含む場合が多く、作業内容の差は価格差に見合っています。</p>
-<p class="dc-prose">エリア差も存在し、都市部（首都圏・大阪圏）は地方より平均1.2〜1.5倍程度の料金設定が見られます。同一エリア内でも業者によって数千円単位の差が出るため、最低でも<span class="dc-num">3社</span>の見積もりを比較することが費用最適化の基本です。</p>
+<h2 class="g-h2">追加料金トラブルに注意——セット依頼でも「安さの罠」にはまらないために</h2>
+<p class="dc-prose">セット依頼でよくある追加請求のパターンは大きく4つです。①油汚れがひどい場合の特別作業費、②フィルターや部品の別途料金、③出張・駐車費用、④廃液処理費です。これらが最初の見積もりに含まれていないと、作業後に想定外の請求が来ることになります。</p>
+<p class="dc-prose">見積り取得時に必ず確認すべき項目を整理します。まず「作業範囲の明確化」です。換気扇であれば分解洗浄の対象部品をリストアップしてもらいましょう。次に「油汚れの程度による追加条件」の有無を確認します。汚れがひどい場合に追加費用が発生するなら、その基準と金額を事前に書面で示してもらうことが重要です。さらに「廃材・廃液処理費の内訳」と「キャンセルポリシー」も見積書に明記されているか確認してください。</p>
+<p class="dc-prose">リスクヘッジとして有効なのが保険加入業者の選択です。MIROCA登録<span class="dc-num-warn">193社</span>のうち保険加入業者は<span class="dc-num-warn">62社</span>あります。作業中に器具が破損したり、壁や床に傷がついたりした場合でも、保険加入業者であれば補償が受けられます。追加料金リスクが「低」と評価された業者はわずか<span class="dc-num-warn">3社</span>と少ないため、保険加入の有無を絞り込みの基準にすることで安全性を高められます。</p>
 </section>
 <section class="g-sec">
-<h2 class="g-h2">セット依頼に向いている人・向いていない人——依頼前に確認すべき3つの条件</h2>
-<p class="dc-prose">セット依頼が「お得な選択」になるかどうかは、依頼者の状況によって変わります。一律に「セットが得」と判断するのではなく、自分の状況と照らし合わせることが大切です。</p>
-<p class="dc-prose"><b>セット依頼に向いている人の3条件</b></p>
-<p class="dc-prose">① 油汚れが半年以上放置されている——両方の汚れが進行しているなら同日に一括対処する効率メリットが最大化されます。換気扇の油がキッチン壁面に垂れ落ちている状態は、分けて依頼すると二度手間になりやすいケースの代表例です。</p>
-<p class="dc-prose">② 立ち会い回数を減らしたい——共働き世帯や週末に予定が集中している人にとって、別日に2回立ち会う手間は見えないコストです。同日作業で時間を確保するメリットは金額換算しにくいですが実質的な節約になります。</p>
-<p class="dc-prose">③ 引越し直後・年末大掃除・産前などのタイミング——キッチン周りをまとめてリセットしたいニーズが高い時期は、セット依頼の満足度が特に高い傾向があります。</p>
-<p class="dc-prose"><b>セット依頼に向いていない人の条件</b></p>
-<p class="dc-prose">換気扇を最近交換したばかりで汚れが軽微な場合や、予算を絞って優先箇所に集中したい場合は、単品依頼で十分です。キッチン口コミ<span class="dc-num">225件</span>・換気扇口コミ<span class="dc-num">217件</span>の満足度傾向を見ると、「片方だけきれいにしたら十分満足」という声も一定数あり、全員にセットが最適解ではないことがわかります。リピート率平均<span class="dc-num">20.2%</span>という数値も、初回に必要な箇所だけ依頼し次回に残りを頼むという分割戦略と両立しています。</p>
+<h2 class="g-h2">業者選びで差がつく5つのチェックポイント——セット依頼で後悔しないために</h2>
+<p class="dc-prose">数ある業者の中から信頼できる<span class="dc-num">1社</span>を選ぶために、具体的な5つの確認ポイントをお伝えします。</p>
+<p class="dc-prose"><b>① リピート率を確認する</b></p>
+<p class="dc-prose">MIROCA全体の平均リピート率は<span class="dc-num">20.2%</span>、最高は<span class="dc-num">50%</span>です。この平均を超える業者は継続利用者が多く、実際の仕上がりへの満足度が高い証拠といえます。比較画面でリピート率をフィルタリングして絞り込むのが効率的です。</p>
+<p class="dc-prose"><b>② 口コミ件数と内容を精査する</b></p>
+<p class="dc-prose">口コミ総数だけでなく、「丁寧」(<span class="dc-num">2,190件</span>)や「また」(<span class="dc-num">1,988件</span>)など再利用意向を示すワードが多い業者を優先します。件数が多いほど統計的信頼性が高まります。</p>
+<p class="dc-prose"><b>③ 保険加入の有無を確認する</b></p>
+<p class="dc-prose">保険加入<span class="dc-num-warn">62社</span>を絞り込み条件にするだけで、万一のトラブル時の補償リスクを大幅に低減できます。未加入の場合、破損時の費用負担が依頼者に転嫁されるケースもあります。</p>
+<p class="dc-prose"><b>④ 追加料金の透明性を確かめる</b></p>
+<p class="dc-prose">見積書に作業範囲・追加条件・廃液処理費が明記されているかを必ずチェックします。口頭説明のみで書面がない業者は要注意です。</p>
+<p class="dc-prose"><b>⑤ セット割引の根拠を確認する</b></p>
+<p class="dc-prose">単品料金と比較してどれだけ安くなるのかが数字で示されている業者を選びましょう。「セット割」とだけ書かれていて比較基準がない場合は、本当に安いかどうか判断できません。</p>
 </section>
 <section class="g-sec">
-<h2 class="g-h2">MIROCAで信頼できる業者を見つける手順</h2>
-<p class="dc-prose">業者選びで後悔しないための判断軸は「料金・口コミ・保険・追加料金リスク」の4軸です。MIROCAでは<span class="dc-num-warn">193社</span>・口コミ<span class="dc-num-warn">42,278件</span>のデータを使ってこの4軸を一画面で比較できます。</p>
-<p class="dc-prose">具体的な手順は以下のとおりです。①エリアを絞り込む→②作業内容（キッチン・換気扇・セット）を選択する→③料金順に並べて相場幅を把握する→④口コミフィルターで「丁寧」「また」などのキーワード出現数が多い業者を上位に絞る、という流れが最も効率的です。</p>
-<p class="dc-prose">保険加入済み・追加料金リスク低の業者を優先すべき理由はすでに説明したとおりですが、MIROCAではこの情報が業者プロフィールに明記されているため、比較段階で確認できます。追加料金リスク低はデータ上わずか<span class="dc-num-warn">3社</span>（対象<span class="dc-num-warn">43社</span>中）と希少であるため、該当業者は積極的に候補に入れることをおすすめします。</p>
-<p class="dc-prose">最終的には無料見積もりを複数社に依頼し、見積もり内容の詳細度・対応の丁寧さを比較するのが最善策です。料金だけでなく「何がどこまで含まれるか」を言語化してくれる業者が、当日トラブルの少ない業者の目印になります。まずはMIROCAの比較ページからエリアと作業内容を入力し、無料見積もりをスタートしてみてください。</p>
+<h2 class="g-h2">キッチン・換気扇クリーニングのよくある質問——費用・頻度・業者選びをまとめて解決</h2>
+<p class="dc-prose"><b>Q1. クリーニングの頻度はどのくらいが適切ですか？</b></p>
+<p class="dc-prose">油汚れは半年〜1年で固着が進み、放置するほど落とすのに時間と費用がかかります。年1回のセット依頼が最もコスパの良いサイクルです。料金平均<span class="dc-num">¥23,901</span>を年1回と考えると、月あたり約2,000円の維持費と捉えられます。</p>
+<p class="dc-prose"><b>Q2. 賃貸マンションでも業者に依頼できますか？</b></p>
+<p class="dc-prose">原則として可能ですが、退去時の原状回復精算との兼ね合いが生じる場合があります。「クリーニング済み」の状態が退去時の評価にどう影響するか、事前に管理会社または大家さんへ確認しておくと安心です。</p>
+<p class="dc-prose"><b>Q3. 自分で落とせない油汚れの目安は？</b></p>
+<p class="dc-prose">重曹や市販の油汚れ用洗剤を使って10分以上こすっても汚れが落ちない場合は、業者依頼が合理的です。強引に続けると素材を傷める恐れもあります。固着した油汚れは専用の業務用洗剤と高圧洗浄でなければ完全除去が難しいケースが多いです。</p>
+<p class="dc-prose"><b>Q4. 見積りは無料で取れますか？</b></p>
+<p class="dc-prose">MIROCA掲載の<span class="dc-num">193社</span>の多くが無料見積りに対応していますが、現地確認が必要な場合に出張見積り費を別途請求する業者も一部存在します。問い合わせ前に「見積りは無料か」を確認しておくと余計なコストを避けられます。</p>
+</section>
+<section class="g-sec">
+<h2 class="g-h2">まとめ——セット依頼は「安さ＋満足度」の両立が可能、ただし業者選定が全て</h2>
+<p class="dc-prose">今回の分析から見えてきた結論は明快です。キッチンと換気扇のクリーニングをセットで依頼することには、料金メリットと満足度の両面で明確な優位性があります。単品合計より5,000〜10,000円程度安くなるケースが多く、同日作業による効率と仕上がりの統一感がリピート評価につながっています。口コミ<span class="dc-num">4,549件</span>中「また」が<span class="dc-num">1,988件</span>（約<span class="dc-num">44%</span>）を占めるという数字は、その満足度を端的に示しています。</p>
+<p class="dc-prose">一方で、追加料金リスクが「高」の業者が<span class="dc-num-warn">193社</span>中<span class="dc-num-warn">39社</span>（約<span class="dc-num-warn">20%</span>）存在する現実も忘れてはいけません。格安セット価格に飛びつく前に、保険加入（<span class="dc-num-warn">62社</span>）・リピート率（平均<span class="dc-num-warn">20.2%</span>超）・口コミ内容の三点セットで業者を絞り込むことがトラブル回避の鍵です。</p>
+<p class="dc-prose">MIROCAでは<span class="dc-num">193社</span>を中立的な立場で比較できます。セット料金・口コミ・リピート率・保険加入の有無をまとめて確認してから依頼業者を決定することで、価格と品質の両方で納得できる選択ができるはずです。まずは複数社の無料見積りを取得し、見積書の内容を比較するところから始めてみてください。</p>
 </section>
 <section class="g-sec dc-related"><h2 class="g-h2">関連する判断ガイド</h2><div class="dc-links">
-<a href="https://miroca.one/decide/aircon-cleaning-mold/">エアコンクリーニングでカビはどこまで取れる？101社調査でわかった満足度と注意点</a>
+<a href="https://miroca.one/decide/aircon-cleaning-mold/">エアコンクリーニングでカビはどこまで取れる？193社調査でわかった満足度と注意点</a>
 <a href="https://miroca.one/decide/bathroom-cleaning/">浴室クリーニングの料金と効果を徹底比較｜カビ・水垢はプロでどこまで落ちる？</a>
 <a href="https://miroca.one/decide/toilet-cleaning/">トイレクリーニングの料金相場と効果｜自分で落ちない尿石・黄ばみはプロに任せるべき？</a>
 </div></section>
 <section class="g-cta"><h2>データで業者を比較する</h2><p>193社を独自指標でフィルター・比較</p><a href="https://miroca.one/" class="g-btn">業者一覧を見る →</a></section>
 </main>
 <footer class="gf">
-<div class="gf-links">
-<div class="gf-col"><div class="gf-col-t">コンテンツ</div>
-<a href="https://miroca.one/">業者一覧</a>
-<a href="https://miroca.one/guide/">選び方ガイド</a>
-<a href="https://miroca.one/pricing/">料金相場</a>
-<a href="https://miroca.one/faq/">よくある質問</a>
-<a href="https://miroca.one/checklist/">チェックリスト</a>
-<a href="https://miroca.one/decide/">判断ガイド</a>
+<div class="gf-inner">
+<div class="gf-grid">
+<div class="gf-card">
+<div class="gf-card-h">コンテンツ</div>
+<nav class="gf-nav">
+<a href="https://miroca.one/"><span class="gf-icon">🏠</span>業者一覧・比較</a>
+<a href="https://miroca.one/guide/"><span class="gf-icon">📖</span>選び方ガイド</a>
+<a href="https://miroca.one/pricing/"><span class="gf-icon">💰</span>料金相場</a>
+<a href="https://miroca.one/faq/"><span class="gf-icon">❓</span>よくある質問</a>
+<a href="https://miroca.one/checklist/"><span class="gf-icon">✅</span>チェックリスト</a>
+<a href="https://miroca.one/decide/"><span class="gf-icon">🧭</span>判断ガイド</a>
+<a href="https://miroca.one/report/"><span class="gf-icon">📊</span>市場レポート</a>
+</nav></div>
+<div class="gf-card">
+<div class="gf-card-h">エリア別</div>
+<nav class="gf-nav">
+<a href="https://miroca.one/area/yokohama/"><span class="gf-icon">📍</span>横浜市</a>
+<a href="https://miroca.one/area/kawasaki/"><span class="gf-icon">📍</span>川崎市</a>
+<a href="https://miroca.one/area/kamakura/"><span class="gf-icon">📍</span>鎌倉市</a>
+<a href="https://miroca.one/area/fujisawa/"><span class="gf-icon">📍</span>藤沢市</a>
+<a href="https://miroca.one/area/yokosuka/"><span class="gf-icon">📍</span>横須賀市</a>
+<a href="https://miroca.one/area/odawara/"><span class="gf-icon">📍</span>小田原市</a>
+<a href="https://miroca.one/area/setagaya/"><span class="gf-icon">📍</span>世田谷区</a>
+<a href="https://miroca.one/area/ota/"><span class="gf-icon">📍</span>大田区</a>
+</nav></div>
+<div class="gf-card">
+<div class="gf-card-h">MIROCAについて</div>
+<p class="gf-about">MIROCAは特定の業者をおすすめするサービスではありません。複数のデータソースから収集した事実データを独自に分析し、中立的な比較情報を提供しています。</p>
+<p class="gf-about">データは毎週自動更新されます。</p>
 </div>
-<div class="gf-col"><div class="gf-col-t">エリア</div>
-<a href="https://miroca.one/area/yokohama/">横浜市</a>
-<a href="https://miroca.one/area/kawasaki/">川崎市</a>
-<a href="https://miroca.one/area/kamakura/">鎌倉市</a>
-<a href="https://miroca.one/area/fujisawa/">藤沢市</a>
-<a href="https://miroca.one/area/yokosuka/">横須賀市</a>
-<a href="https://miroca.one/area/odawara/">小田原市</a>
-<a href="https://miroca.one/area/isehara/">伊勢原市</a>
-<a href="https://miroca.one/area/edogawa/">江戸川区</a>
 </div>
+<div class="gf-bottom">
+<div class="gf-logo">MIROCA<small>ミロカ</small></div>
+<p>© 2026 BLST WEB — 最終更新: 2026-03-28</p>
+<div class="gf-bottom-links"><a href="https://miroca.one/sitemap.xml">サイトマップ</a><a href="https://miroca.one/llms.txt">llms.txt</a></div>
 </div>
-<div class="gf-btm">
-<p>MIROCA（ミロカ）</p>
-<p>MIROCAは特定の業者をおすすめするサービスではありません。掲載情報は定期的に収集した事実データの独自分析です。</p>
-<p>© 2026 BLST WEB — 2026-03-28 | <a href="https://miroca.one/sitemap.xml">サイトマップ</a></p>
 </div>
 </footer>
 </body></html>

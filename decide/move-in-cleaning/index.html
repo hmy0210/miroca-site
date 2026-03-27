@@ -63,101 +63,122 @@ a{color:#1A8C7A;text-decoration:none}a:hover{text-decoration:underline}
 .g-cta p{font-size:14px;color:#7A6A5A;margin-bottom:16px}
 .g-btn{display:inline-block;background:#1A8C7A;color:#fff;font-size:14px;font-weight:700;padding:12px 32px;border-radius:10px;transition:.2s}
 .g-btn:hover{background:#158068;text-decoration:none}
-.gf{border-top:1px solid #EDE6DA;margin-top:24px;padding:32px 20px 24px}
-.gf-links{max-width:740px;margin:0 auto 20px;display:flex;gap:40px}
-.gf-col{display:flex;flex-direction:column;gap:5px}
-.gf-col-t{font-size:12px;font-weight:700;color:#3D2E1F;margin-bottom:2px}
-.gf-col a{font-size:12px;color:#7A6A5A}.gf-col a:hover{color:#1A8C7A}
-.gf-btm{max-width:740px;margin:0 auto;text-align:center;font-size:11px;color:#A09585;border-top:1px solid #EDE6DA;padding-top:16px}
-.gf-btm p{margin-bottom:4px}.gf-btm a{color:#A09585}
-@media(max-width:600px){.g-h1{font-size:22px}.g-h2{font-size:16px}.gh-nav{display:none}.gf-links{flex-direction:column;gap:16px}}.dc-lead{font-size:16px;color:#3D2E1F;line-height:2.2;margin-bottom:24px}.dc-lead b{color:#1A8C7A}.dc-stat{display:flex;align-items:center;gap:16px;background:#fff;border:1px solid #EDE6DA;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 2px 12px rgba(60,46,30,.06)}.dc-stat-num{font:700 36px/1 -apple-system,BlinkMacSystemFont,"Hiragino Sans",Meiryo,sans-serif;color:#1A8C7A;flex-shrink:0;min-width:80px;text-align:center}.dc-stat-num.warn{color:#C2255C}.dc-stat-text{font-size:14px;color:#5A4A3A;line-height:1.8}.dc-prose{font-size:15px;color:#3D2E1F;line-height:2.2;margin-bottom:16px}.dc-prose b{color:#1A8C7A}.dc-num{color:#1A8C7A;font-weight:700}.dc-num-warn{color:#C2255C;font-weight:700}.dc-callout{background:#E8F8F5;border-left:4px solid #1A8C7A;padding:16px 20px;border-radius:0 12px 12px 0;margin:20px 0;font-size:14px;line-height:2;color:#3D2E1F}.dc-callout.warn{background:#FFF0F3;border-left-color:#C2255C}.dc-callout b{color:#1A8C7A}.dc-callout.warn b{color:#C2255C}.dc-check{list-style:none;padding:0;margin:16px 0}.dc-check li{padding:10px 0 10px 32px;border-bottom:1px solid #EDE6DA;font-size:14px;line-height:1.8;position:relative}.dc-check li::before{content:"✓";position:absolute;left:8px;color:#1A8C7A;font-weight:700}.dc-related{margin-top:32px}.dc-links{display:flex;flex-direction:column;gap:8px}.dc-links a{display:block;padding:12px 16px;background:#FAF7F2;border:1px solid #EDE6DA;border-radius:10px;font-size:14px;color:#3D2E1F;font-weight:600;transition:.15s}.dc-links a:hover{background:#E8F8F5;border-color:#1A8C7A;text-decoration:none}@media(max-width:600px){.dc-stat{flex-direction:column;text-align:center}.dc-stat-num{min-width:auto}}</style>
+.gf{border-top:1px solid #EDE6DA;margin-top:32px;background:#FAF7F2}
+.gf-inner{max-width:940px;margin:0 auto;padding:40px 20px 24px}
+.gf-grid{display:grid;grid-template-columns:1fr 1fr 1fr;gap:24px;margin-bottom:32px}
+.gf-card{background:#fff;border:1px solid #EDE6DA;border-radius:14px;padding:20px;box-shadow:0 2px 8px rgba(60,46,30,.04)}
+.gf-card-h{font-size:13px;font-weight:800;color:#3D2E1F;margin-bottom:12px;padding-bottom:8px;border-bottom:2px solid #E8F8F5}
+.gf-nav{display:flex;flex-direction:column;gap:4px}
+.gf-nav a{display:flex;align-items:center;gap:8px;padding:8px 10px;border-radius:8px;font-size:13px;color:#5A4A3A;font-weight:500;transition:.15s;text-decoration:none}
+.gf-nav a:hover{background:#E8F8F5;color:#1A8C7A}
+.gf-icon{font-size:14px;flex-shrink:0;width:20px;text-align:center}
+.gf-about{font-size:12px;color:#7A6A5A;line-height:1.8;margin-bottom:8px}
+.gf-bottom{text-align:center;padding-top:20px;border-top:1px solid #EDE6DA}
+.gf-logo{font:800 18px/1 -apple-system,BlinkMacSystemFont,"Hiragino Sans",Meiryo,sans-serif;color:#3D2E1F;margin-bottom:6px}
+.gf-logo small{font-size:10px;font-weight:400;color:#A09585;margin-left:6px}
+.gf-bottom p{font-size:11px;color:#A09585;margin-bottom:4px}
+.gf-bottom-links{display:flex;gap:12px;justify-content:center;margin-top:6px}
+.gf-bottom-links a{font-size:11px;color:#A09585}
+.gf-bottom-links a:hover{color:#1A8C7A}
+@media(max-width:700px){.gf-grid{grid-template-columns:1fr}.gf-card{padding:16px}}.dc-lead{font-size:16px;color:#3D2E1F;line-height:2.2;margin-bottom:24px}.dc-lead b{color:#1A8C7A}.dc-stat{display:flex;align-items:center;gap:16px;background:#fff;border:1px solid #EDE6DA;border-radius:14px;padding:20px;margin:16px 0;box-shadow:0 2px 12px rgba(60,46,30,.06)}.dc-stat-num{font:700 36px/1 -apple-system,BlinkMacSystemFont,"Hiragino Sans",Meiryo,sans-serif;color:#1A8C7A;flex-shrink:0;min-width:80px;text-align:center}.dc-stat-num.warn{color:#C2255C}.dc-stat-text{font-size:14px;color:#5A4A3A;line-height:1.8}.dc-prose{font-size:15px;color:#3D2E1F;line-height:2.2;margin-bottom:16px}.dc-prose b{color:#1A8C7A}.dc-num{color:#1A8C7A;font-weight:700}.dc-num-warn{color:#C2255C;font-weight:700}.dc-callout{background:#E8F8F5;border-left:4px solid #1A8C7A;padding:16px 20px;border-radius:0 12px 12px 0;margin:20px 0;font-size:14px;line-height:2;color:#3D2E1F}.dc-callout.warn{background:#FFF0F3;border-left-color:#C2255C}.dc-callout b{color:#1A8C7A}.dc-callout.warn b{color:#C2255C}.dc-check{list-style:none;padding:0;margin:16px 0}.dc-check li{padding:10px 0 10px 32px;border-bottom:1px solid #EDE6DA;font-size:14px;line-height:1.8;position:relative}.dc-check li::before{content:"✓";position:absolute;left:8px;color:#1A8C7A;font-weight:700}.dc-related{margin-top:32px}.dc-links{display:flex;flex-direction:column;gap:8px}.dc-links a{display:block;padding:12px 16px;background:#FAF7F2;border:1px solid #EDE6DA;border-radius:10px;font-size:14px;color:#3D2E1F;font-weight:600;transition:.15s}.dc-links a:hover{background:#E8F8F5;border-color:#1A8C7A;text-decoration:none}@media(max-width:600px){.dc-stat{flex-direction:column;text-align:center}.dc-stat-num{min-width:auto}}</style>
 </head><body>
 <header class="gh"><a href="https://miroca.one/" class="gh-logo">MIROCA</a><nav class="gh-nav"><a href="https://miroca.one/decide/first-time/">判断ガイド</a><a href="https://miroca.one/guide/">選び方</a><a href="https://miroca.one/pricing/">相場</a><a href="https://miroca.one/faq/">FAQ</a></nav><span class="gh-sep">/</span><span class="gh-title">判断ガイド</span></header>
 <main class="gm">
 <h1 class="g-h1">入居前のハウスクリーニングは必要？42,278件の口コミでわかった頼んでよかった理由</h1>
 <p class="g-sub">MIROCA独自データに基づく判断ガイド — 193社・42,278件の口コミを分析</p>
 <p class="g-date">最終更新: 2026-03-28（毎月自動更新）</p>
-<p class="dc-lead">新居に引っ越す前、「前の住人の汚れが残っていないか不安」と感じたことはありませんか。この記事では、MIROCAに寄せられた入居関連の口コミ<span class="dc-num">90件</span>を分析し、どこを頼むべきか・費用はいくらか・業者の選び方まで、データをもとに具体的にお伝えします。</p>
+<p class="dc-lead">新居への引っ越しを控え、「前の住人の汚れが気になるけれど、業者に頼むべき？」と迷っている方は多いはず。この記事では、MIROCAに寄せられた入居関連の口コミ<span class="dc-num">90件</span>を分析し、入居前クリーニングが本当に必要かどうか、どこを頼むべきか、業者選びのポイントまで具体的なデータとともに解説します。</p>
 <section class="g-sec">
-<h2 class="g-h2">入居前のハウスクリーニングは必要か？口コミ90件が「頼んでよかった」と示している</h2>
-<p class="dc-prose">結論から言うと、入居前のハウスクリーニングは「やって損なし」です。MIROCAに寄せられた入居関連の口コミ<span class="dc-num">90件</span>を分析すると、満足度の高いコメントが大多数を占めており、依頼したことへの後悔はほぼ見られませんでした。</p>
-<p class="dc-prose">その背景には、「管理会社や大家が行う原状回復クリーニング」と「新居として快適に使うための衛生クリーニング」は目的がまったく異なるという現実があります。原状回復クリーニングはあくまで「次の入居者に渡せる状態」にすることが目的であり、水垢・カビ・油汚れといった生活汚れの完全除去まではカバーされないケースがほとんどです。</p>
-<p class="dc-prose">前の住人が数年間使用した水回りやエアコン内部には、通常の清掃では落とせない汚れが蓄積されています。特にエアコン内部は目視確認もできないため、気づかないまま入居初日からカビの胞子を室内に吸い込んでいるリスクがあります。衛生的な新生活をスタートさせるためには、専門業者によるクリーニングが有効な選択肢です。</p>
+<h2 class="g-h2">入居前クリーニングは「必要」——90件の口コミが示す明確な答え</h2>
+<p class="dc-prose">MIROCAに寄せられた入居関連の口コミ<span class="dc-num">90件</span>を分析すると、大多数のユーザーが「頼んでよかった」と回答しており、入居前クリーニングへの満足度は際立って高いことがわかります。さらに「引っ越し」に言及した口コミは<span class="dc-num">49件</span>、「空室」に言及したものは<span class="dc-num">84件</span>に上り、合計<span class="dc-num">223件</span>が入居前という文脈でプロの施工を評価しています。</p>
+<p class="dc-prose">なぜここまで評価が高いのか。理由のひとつは、前住人の「見えない汚れ」の深刻さです。カビ・水垢・タバコのヤニといった汚れは、表面を拭くだけでは除去できません。とくに中古物件では、内見時には気づかなかった汚れが入居後に発覚するケースが後を絶ちません。</p>
+<p class="dc-prose">そして口コミが強調するのが「空室状態での施工」という点です。荷物が何もない状態なら、業者は隅々まで作業でき、施工効率も仕上がり品質も最大化されます。家具や家電が搬入された後では届かない箇所も、入居前であれば完全にアクセス可能です。引っ越しの荷物が届く前——このタイミングこそ、プロに依頼する最大の好機といえます。</p>
 </section>
 <section class="g-sec">
-<h2 class="g-h2">口コミでわかった、依頼が多い箇所トップ3</h2>
-<p class="dc-prose"><span class="dc-num">90件</span>の口コミ分析から、入居前クリーニングの依頼が集中していた箇所は以下の3つです。</p>
-<p class="dc-prose"><b>① 水回り（キッチン・洗面台・トイレ）</b></p>
-<p class="dc-prose">水垢・排水口のぬめり・蛇口まわりのカルキ汚れは、前住人の使用年数に比例して蓄積されます。市販の洗剤では表面を落とすことはできても、こびりついたカルキ層や排水管内部の汚れまでは届きません。業者は専用の酸性洗剤や高圧洗浄機を使うため、自力では困難な汚れを根こそぎ除去できます。</p>
-<p class="dc-prose"><b>② 浴室</b></p>
-<p class="dc-prose">カビは目に見えるタイル表面だけでなく、目地の深部に菌糸が侵入しています。見た目を漂白しても菌糸が残っていれば再発するため、専門的なカビ取り処理が必要です。「掃除したつもりでも翌月にはカビが戻ってきた」という経験がある方は、菌糸レベルまで除去できていない可能性があります。</p>
-<p class="dc-prose"><b>③ エアコン内部</b></p>
-<p class="dc-prose">入居前の依頼動機として最も多かったのが「健康面への不安」です。前住人がエアコンをどう使っていたかはわかりません。内部にカビやホコリが堆積したまま使用すると、アレルギーや呼吸器への影響も考えられます。特に小さなお子さんがいるご家庭では、入居前のエアコン洗浄は優先度が高いと言えます。</p>
+<h2 class="g-h2">口コミ分析でわかった「依頼が集中する3箇所」——水回り・エアコン・浴室</h2>
+<p class="dc-prose"><span class="dc-num">90件</span>の入居関連口コミを箇所別に見ると、依頼が集中するのは水回り全般・エアコン内部・浴室の3カテゴリです。この3箇所には共通点があります。前住人の使用痕跡が蓄積しやすく、かつ自力では完全に落とせない汚れが残りやすいという点です。</p>
+<p class="dc-prose">水回りについては、キッチン・洗面台・トイレを複数まとめてセットで依頼するケースが多く、単体依頼より満足度が高い傾向があります。一度業者を呼ぶ手間とコストを考えれば、まとめて依頼するほうが合理的です。</p>
+<p class="dc-prose">エアコンは見落とされがちですが、内部に蓄積したカビやほこりは健康リスクに直結します。入居後にエアコンを使い始めてから内部汚染に気づくより、入居前の空室状態でクリーニングしておくほうが口コミでも特に高評価を得ています。エアコンの風が新居に入る最初の空気になる——その意識で依頼する方が増えています。</p>
+<p class="dc-prose">浴室はカビ取りと防カビコーティングをセットで依頼した口コミが、満足度の向上に直結していることが示唆されます。カビを除去するだけでなく、再発を抑えるコーティングまで施すことで、入居後の清潔な状態を長く保てるという評価です。全体の口コミで「丁寧」というキーワードが<span class="dc-num">2,190件</span>と最多で言及されていることも、施工品質へのこだわりが満足度を左右することを示しています。</p>
 </section>
 <section class="g-sec">
-<h2 class="g-h2">満足度が高かったセット内容と費用の目安</h2>
-<p class="dc-prose">口コミで特にコストパフォーマンスへの言及が多かったのは、「水回り3点セット（キッチン・浴室・トイレ）＋エアコン1台」の組み合わせです。単品依頼を繰り返すより、まとめてパッケージで依頼するほうが割引が適用されるケースが多く、業者側も一度に複数箇所を担当できるためスケジュールの効率も上がります。</p>
-<p class="dc-prose">MIROCAに登録する<span class="dc-num">193社</span>の料金レンジは<span class="dc-num">¥5,000</span>〜<span class="dc-num">¥300,000</span>と非常に幅広く、平均は<span class="dc-num">¥23,901</span>です。間取り別の参考価格帯としては、1LDK程度であれば<span class="dc-num">¥3</span>万〜<span class="dc-num">¥6</span>万、2LDKであれば<span class="dc-num">¥5</span>万〜<span class="dc-num">¥10</span>万が一般的な目安です。ただしこれはあくまで参考値であり、汚れの程度・依頼箇所数・築年数によって大きく変動します。</p>
-<p class="dc-prose">注意したいのが追加料金のリスクです。MIROCAの登録業者のうち、追加料金リスクが高いと評価される業者が<span class="dc-num-warn">39社</span>存在します。「見積もり金額で依頼したのに当日に追加費用を請求された」というケースが口コミでも報告されています。見積もり依頼時には必ず「この金額以外に発生する費用はあるか」を書面または明確な形で確認しておきましょう。</p>
+<h2 class="g-h2">満足度が高いセット内容とは——データで見るコスパ最強の組み合わせ</h2>
+<p class="dc-prose">口コミで高評価を得ているセット依頼の傾向として、浴室・洗面台・キッチン・トイレの水回り4点セット、もしくはそこにエアコン1台を加えた5点セットが中心となっています。MIROCAに掲載されている料金レンジは<span class="dc-num">¥5,000</span>〜<span class="dc-num">¥300,000</span>と幅広いものの、入居前セット依頼の中心価格帯は水回り4点で<span class="dc-num">¥30,000</span>〜<span class="dc-num">¥80,000</span>程度に集中しています。平均単価が<span class="dc-num">¥23,901</span>であることを考えると、複数箇所をまとめることでコストを抑えつつ高い効果を得られる構造といえます。</p>
+<p class="dc-prose">注目すべきは「説明」というキーワードが口コミで<span class="dc-num-warn">418件</span>言及されている点です。作業前の丁寧な説明や見積もり提示が、満足度を大きく左右する要因になっています。施工技術だけでなく、どんな作業をどんな順序で行うか、追加費用が発生する条件はどこかを事前に明示してくれる業者かどうかが、満足・不満を分ける分岐点になっています。</p>
+<p class="dc-prose">業者を選ぶ際は、セット料金が明示されているかを必ず確認しましょう。単品を積み上げるより割安になるケースが多く、見積もり段階でセット価格を提示してくれる業者のほうが、料金の透明性も高い傾向があります。</p>
 </section>
 <section class="g-sec">
-<h2 class="g-h2">業者選びで失敗しないために見るべき3つのポイント</h2>
-<p class="dc-prose"><b>ポイント① 保険加入の有無を確認する</b></p>
-<p class="dc-prose">MIROCA登録<span class="dc-num-warn">193社</span>のうち、保険加入済みの業者は<span class="dc-num-warn">62社</span>、未加入の業者は<span class="dc-num-warn">39社</span>です。入居前の新居では壁・床・設備が新品同様の状態であることも多く、万が一の破損リスクに備えて保険加入済みの業者を選ぶことが安心につながります。</p>
-<p class="dc-prose"><b>ポイント② 追加料金の条件を事前に確認する</b></p>
-<p class="dc-prose">前述のとおり、追加料金リスクが高い業者は<span class="dc-num-warn">39社</span>存在します。見積もりを依頼する際は、汚れの程度による変動条件・出張費・処理剤の追加使用など、金額が増える可能性のある項目をすべて確認しましょう。口頭だけでなく書面やメールでの記録を残すと安心です。</p>
-<p class="dc-prose"><b>ポイント③ 口コミの「丁寧」「説明」キーワードを確認する</b></p>
-<p class="dc-prose">MIROCAの口コミ全<span class="dc-num">4,549件</span>中、「丁寧」は<span class="dc-num">2,190件</span>、「説明」は<span class="dc-num">418件</span>登場しており、満足度の高い口コミに頻出するキーワードです。業者を選ぶ際は、これらのワードが口コミに多く登場するかどうかをチェックすることで、作業品質だけでなくコミュニケーション面での信頼性も判断できます。</p>
+<h2 class="g-h2">業者選びで失敗しないための3つのチェックポイント</h2>
+<p class="dc-prose">入居前クリーニングは「やり直し」が利きません。新居の設備を傷つけるリスクも考慮し、業者選びは慎重に行う必要があります。MIROCAのデータをもとに、確認すべき3つのポイントを整理します。</p>
+<p class="dc-prose"><b>チェック①保険加入の有無</b></p>
+<p class="dc-prose">MIROCA掲載<span class="dc-num-warn">193社</span>のうち、保険加入済みは<span class="dc-num-warn">62社</span>です。入居前クリーニングでは新居の設備を扱うため、万一の破損や水漏れに備えた保険加入の有無は必ず確認してください。保険未加入の業者ではトラブル発生時の補償が受けられない場合があります。</p>
+<p class="dc-prose"><b>チェック②追加料金リスクの透明性</b></p>
+<p class="dc-prose">追加料金リスクが「高」と評価される業者が<span class="dc-num-warn">39社</span>存在する一方、「低」はわずか<span class="dc-num-warn">3社</span>です（対象<span class="dc-num-warn">43社</span>）。見積もり後に想定外の追加請求が発生するトラブルを防ぐため、料金体系が事前に明示されているかを必ず確認しましょう。「説明」キーワードが多い業者は、この透明性が高い傾向にあります。</p>
+<p class="dc-prose"><b>チェック③リピート率</b></p>
+<p class="dc-prose">MIROCAに掲載される業者のリピート率は平均<span class="dc-num">20.2%</span>、最高は<span class="dc-num">50%</span>に達します。リピート率が高いということは、一度利用した顧客が再び選ぶほどの満足度を提供し続けている証拠です。入居前という一度きりの重要なタイミングこそ、継続的に支持されている業者を選んでください。</p>
 </section>
 <section class="g-sec">
-<h2 class="g-h2">リピート率から見えるハウスクリーニング業者の実力差</h2>
-<p class="dc-prose">業者を選ぶ際にもう一つ注目してほしいのが「リピート率」です。MIROCAに登録する業者のリピート率は平均<span class="dc-num">20.2%</span>、最高<span class="dc-num">50%</span>と、業者間で大きな開きがあります。</p>
-<p class="dc-prose">リピート率が高い業者は、入居前クリーニングの後も定期清掃やエアコン洗浄で再依頼されているケースが多く、初回の作業品質に対する信頼の高さを示しています。口コミは書いてくれる人が限られますが、リピート率は「また頼んだかどうか」という行動データであるため、満足度をより直接的に反映する指標と言えます。</p>
-<p class="dc-prose">入居前は初めて使う業者になることがほとんどです。そのため口コミの評価と合わせて、リピート率という客観的な数値で業者の実力を比較することをおすすめします。MIROCAの業者一覧ではリピート率を確認できますので、比較検討の際にぜひ活用してください。</p>
+<h2 class="g-h2">自分で掃除した場合との比較——プロに頼む「差額以上の価値」</h2>
+<p class="dc-prose">「自分で掃除すれば費用を節約できる」と考える方も多いでしょう。しかし、自力清掃には明確な限界があります。市販の洗剤では落とせない水垢のバイオフィルムやカビの菌糸は、プロ専用の薬剤と機材なしには完全除去できません。表面をきれいに見せることはできても、根本的な衛生状態はリセットできないのです。</p>
+<p class="dc-prose">時間コストも無視できません。水回り4箇所を自力で清掃した場合、平均6〜10時間を要します。一方、プロなら2〜4時間で仕上がります。引っ越し当日前後のスケジュールが詰まっている状況で、半日以上を掃除に費やすことは現実的ではありません。荷物搬入のスケジュールへの影響を最小化できる点も、プロ依頼の大きなメリットです。</p>
+<p class="dc-prose">そして口コミが繰り返し言及するのが「精神的なコスト」の解放です。前住人の汚れへの不安や嫌悪感を完全に払拭できたという声は、入居後の生活満足度に直結しています。「丁寧」という言葉が<span class="dc-num">2,190件</span>もの口コミで使われていることは、プロの施工が単なる清掃以上の安心感を提供していることを示しています。</p>
 </section>
 <section class="g-sec">
-<h2 class="g-h2">入居前クリーニングを依頼するベストなタイミングと手順</h2>
-<p class="dc-prose">依頼に最適なタイミングは「鍵の引き渡し後・家具搬入前」の空室状態です。家具や荷物が入ってしまうと作業できる範囲が狭まり、クリーニングの効果が大きく下がります。MIROCAには空室関連の口コミが<span class="dc-num">84件</span>・引っ越し関連が<span class="dc-num">49件</span>あり、賃貸入居・中古物件購入いずれの場面でも入居前クリーニングの需要が高いことがわかります。</p>
-<p class="dc-prose">手順としては、①依頼したい箇所をリストアップする、②MIROCAなど比較サイトで複数社に見積もりを依頼する、③保険加入の有無と追加料金条件を確認する、④口コミとリピート率で最終的な業者を選定する、という流れが最もトラブルが少なく、コストパフォーマンスも高くなります。</p>
-<p class="dc-prose">なお、引き渡し日前後は業者の予約が集中しやすい時期です。「希望日に予約が取れなかった」という口コミも複数寄せられていますので、引き渡し日が決まった時点でなるべく早く動くことをおすすめします。</p>
+<h2 class="g-h2">MIROCA経由で業者を選ぶメリットと比較の手順</h2>
+<p class="dc-prose">MIROCAは<span class="dc-num">193社</span>・口コミ<span class="dc-num">42,278件</span>を掲載する中立比較サイトです。特定の業者に誘導することなく、データに基づいた客観的な比較ができる点が最大の特徴です。</p>
+<p class="dc-prose">比較の手順はシンプルです。まずエリアと施工希望箇所で業者を絞り込み、次に保険加入・追加料金リスクのフィルタを適用します。そのうえで口コミ件数と「丁寧」「説明」のキーワード頻度で品質を確認し、最後に複数社へ一括見積もりを依頼します。この手順を踏むだけで、自分で一社一社調べる手間を大幅に削減できます。</p>
+<p class="dc-prose">注意点として、入居前クリーニングの需要は引っ越しシーズンの2〜4月に集中します。この時期は業者の予約が埋まりやすいため、少なくとも2〜3週間前には業者を確保しておくことを強くお勧めします。リピート率最高<span class="dc-num">50%</span>の業者は引っ越し後の定期清掃も含めた長期パートナーとして選ぶ視点も有効です。</p>
 </section>
 <section class="g-sec">
-<h2 class="g-h2">まとめ：入居前クリーニングは「衛生的な新生活のスタート」への投資</h2>
-<p class="dc-prose"><span class="dc-num">90件</span>の口コミが示すように、入居前クリーニングへの満足度は高く、特に水回り・浴室・エアコンの3箇所は優先度が高い箇所です。費用は<span class="dc-num">¥5,000</span>〜<span class="dc-num">¥300,000</span>と幅広いですが、水回り3点セット＋エアコンのセット依頼でコストを抑えながら満足度を上げることができます。</p>
-<p class="dc-prose">業者選びでは、保険加入の有無・追加料金リスクの確認・口コミの「丁寧」「説明」キーワード・リピート率の4点を押さえることでリスクを最小化できます。MIROCAでは<span class="dc-num-warn">193社</span>を一括比較でき、口コミ<span class="dc-num-warn">4,549件</span>の閲覧・見積もり依頼がすべて無料で行えます。引き渡し日が決まったら、まず複数社への見積もり依頼から始めてみてください。</p>
+<h2 class="g-h2">まとめ——入居前クリーニングを依頼すべき人・見送っていい人</h2>
+<p class="dc-prose">入居前クリーニングを依頼すべきなのは、中古物件の購入者、築年数が古い賃貸の入居者、エアコンや浴室のカビが不安な方、アレルギー持ちの家族がいる方、そして前住人の生活感を完全にリセットしたい方です。MIROCAの口コミ<span class="dc-num">90件</span>が示す「頼んでよかった」という声の多さは、これらの層にとって入居前クリーニングがほぼ必須といえることを裏付けています。</p>
+<p class="dc-prose">一方、新築物件でハウスメーカーによるクリーニングが実施済みの場合や、管理会社の原状回復クリーニングが高品質で行われた場合は、見送っても問題ないケースもあります。ただし口コミで品質を確認することは推奨します。</p>
+<p class="dc-prose">依頼前の最終確認は3点です。保険加入済みか、追加料金の条件が明示されているか、口コミに「丁寧」「説明」の言及があるか。この3点を確認したうえで、MIROCAのエリア検索から複数業者の見積もりを比較することが、最短・最安・最安心の選択です。</p>
 </section>
 <section class="g-sec dc-related"><h2 class="g-h2">関連する判断ガイド</h2><div class="dc-links">
-<a href="https://miroca.one/decide/rental-move-out-cleaning/">退去時のハウスクリーニングは自分で頼むべき？賃貸101社データで判断基準を解説</a>
+<a href="https://miroca.one/decide/rental-move-out-cleaning/">退去時のハウスクリーニングは自分で頼むべき？賃貸193社データで判断基準を解説</a>
 <a href="https://miroca.one/decide/elderly-parents-home/">実家の掃除を業者に頼む人が急増中｜高齢の親の家をきれいにする選び方と費用</a>
-<a href="https://miroca.one/decide/aircon-cleaning-mold/">エアコンクリーニングでカビはどこまで取れる？101社調査でわかった満足度と注意点</a>
+<a href="https://miroca.one/decide/aircon-cleaning-mold/">エアコンクリーニングでカビはどこまで取れる？193社調査でわかった満足度と注意点</a>
 </div></section>
 <section class="g-cta"><h2>データで業者を比較する</h2><p>193社を独自指標でフィルター・比較</p><a href="https://miroca.one/" class="g-btn">業者一覧を見る →</a></section>
 </main>
 <footer class="gf">
-<div class="gf-links">
-<div class="gf-col"><div class="gf-col-t">コンテンツ</div>
-<a href="https://miroca.one/">業者一覧</a>
-<a href="https://miroca.one/guide/">選び方ガイド</a>
-<a href="https://miroca.one/pricing/">料金相場</a>
-<a href="https://miroca.one/faq/">よくある質問</a>
-<a href="https://miroca.one/checklist/">チェックリスト</a>
-<a href="https://miroca.one/decide/">判断ガイド</a>
+<div class="gf-inner">
+<div class="gf-grid">
+<div class="gf-card">
+<div class="gf-card-h">コンテンツ</div>
+<nav class="gf-nav">
+<a href="https://miroca.one/"><span class="gf-icon">🏠</span>業者一覧・比較</a>
+<a href="https://miroca.one/guide/"><span class="gf-icon">📖</span>選び方ガイド</a>
+<a href="https://miroca.one/pricing/"><span class="gf-icon">💰</span>料金相場</a>
+<a href="https://miroca.one/faq/"><span class="gf-icon">❓</span>よくある質問</a>
+<a href="https://miroca.one/checklist/"><span class="gf-icon">✅</span>チェックリスト</a>
+<a href="https://miroca.one/decide/"><span class="gf-icon">🧭</span>判断ガイド</a>
+<a href="https://miroca.one/report/"><span class="gf-icon">📊</span>市場レポート</a>
+</nav></div>
+<div class="gf-card">
+<div class="gf-card-h">エリア別</div>
+<nav class="gf-nav">
+<a href="https://miroca.one/area/yokohama/"><span class="gf-icon">📍</span>横浜市</a>
+<a href="https://miroca.one/area/kawasaki/"><span class="gf-icon">📍</span>川崎市</a>
+<a href="https://miroca.one/area/kamakura/"><span class="gf-icon">📍</span>鎌倉市</a>
+<a href="https://miroca.one/area/fujisawa/"><span class="gf-icon">📍</span>藤沢市</a>
+<a href="https://miroca.one/area/yokosuka/"><span class="gf-icon">📍</span>横須賀市</a>
+<a href="https://miroca.one/area/odawara/"><span class="gf-icon">📍</span>小田原市</a>
+<a href="https://miroca.one/area/setagaya/"><span class="gf-icon">📍</span>世田谷区</a>
+<a href="https://miroca.one/area/ota/"><span class="gf-icon">📍</span>大田区</a>
+</nav></div>
+<div class="gf-card">
+<div class="gf-card-h">MIROCAについて</div>
+<p class="gf-about">MIROCAは特定の業者をおすすめするサービスではありません。複数のデータソースから収集した事実データを独自に分析し、中立的な比較情報を提供しています。</p>
+<p class="gf-about">データは毎週自動更新されます。</p>
 </div>
-<div class="gf-col"><div class="gf-col-t">エリア</div>
-<a href="https://miroca.one/area/yokohama/">横浜市</a>
-<a href="https://miroca.one/area/kawasaki/">川崎市</a>
-<a href="https://miroca.one/area/kamakura/">鎌倉市</a>
-<a href="https://miroca.one/area/fujisawa/">藤沢市</a>
-<a href="https://miroca.one/area/yokosuka/">横須賀市</a>
-<a href="https://miroca.one/area/odawara/">小田原市</a>
-<a href="https://miroca.one/area/isehara/">伊勢原市</a>
-<a href="https://miroca.one/area/edogawa/">江戸川区</a>
 </div>
+<div class="gf-bottom">
+<div class="gf-logo">MIROCA<small>ミロカ</small></div>
+<p>© 2026 BLST WEB — 最終更新: 2026-03-28</p>
+<div class="gf-bottom-links"><a href="https://miroca.one/sitemap.xml">サイトマップ</a><a href="https://miroca.one/llms.txt">llms.txt</a></div>
 </div>
-<div class="gf-btm">
-<p>MIROCA（ミロカ）</p>
-<p>MIROCAは特定の業者をおすすめするサービスではありません。掲載情報は定期的に収集した事実データの独自分析です。</p>
-<p>© 2026 BLST WEB — 2026-03-28 | <a href="https://miroca.one/sitemap.xml">サイトマップ</a></p>
 </div>
 </footer>
 </body></html>

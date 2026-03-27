@@ -82,12 +82,15 @@
 .p-bottom-cta{text-align:center;padding:24px 0}
 .p-bottom-btn{display:inline-block;background:var(--warm);color:var(--cream);font-size:14px;font-weight:700;padding:12px 32px;border-radius:10px;text-decoration:none;transition:.2s}
 .p-bottom-btn:hover{background:var(--warm2);text-decoration:none}
-.pf{text-align:center;padding:24px 20px;font-size:11px;color:var(--warm4);border-top:1px solid var(--cream3);margin-top:8px}.pf a{margin:0 4px;color:var(--warm4)}
-.ph-nav{display:flex;gap:8px;margin-left:auto}
-.ph-nav a{font-size:12px;color:var(--warm3);padding:4px 8px;border-radius:6px;transition:.15s}
-.ph-nav a:hover{background:var(--teal-l);color:var(--teal);text-decoration:none}
-.pf-links{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-bottom:8px}
-.pf-links a{font-size:12px;color:var(--warm4);padding:2px 6px}
+.pf{border-top:1px solid var(--cream3);margin-top:16px;padding:24px 20px;background:var(--cream)}
+.pf-grid{max-width:740px;margin:0 auto;display:flex;gap:32px;flex-wrap:wrap;margin-bottom:16px}
+.pf-col{display:flex;flex-direction:column;gap:4px}
+.pf-col-h{font-size:11px;font-weight:700;color:var(--warm);margin-bottom:4px}
+.pf-links{display:flex;flex-direction:column;gap:3px}
+.pf-links a{font-size:12px;color:var(--warm3);text-decoration:none;padding:2px 0}
+.pf-links a:hover{color:var(--teal)}
+.pf-btm{text-align:center;font-size:11px;color:var(--warm4);padding-top:12px;border-top:1px solid var(--cream3)}
+.pf-btm p{margin-bottom:3px}
 @media(max-width:600px){.p-hero{flex-direction:column;align-items:stretch}.p-score-circle{align-self:center}.p-name{font-size:20px}.p-platform-grid{grid-template-columns:1fr}.p-sbar{flex-wrap:wrap}.p-sbar-label{min-width:100%}.ph-nav{display:none}}</style>
 </head><body>
 <header class="ph"><a href="https://miroca.one/" class="ph-logo">MIROCA</a><nav class="ph-nav"><a href="https://miroca.one/guide/">ガイド</a><a href="https://miroca.one/pricing/">相場</a><a href="https://miroca.one/faq/">FAQ</a></nav><span class="ph-sep">/</span><span class="ph-title">業者詳細</span></header>
@@ -188,7 +191,22 @@ icon:L.divIcon({className:"",html:'<div style="background:#D97706;color:#fff;bor
 </section>
 <section class="p-bottom-cta"><a href="https://miroca.one/" class="p-bottom-btn">全193社を比較 →</a></section>
 </main>
-<footer class="pf"><div class="pf-links"><a href="https://miroca.one/">業者一覧</a><a href="https://miroca.one/guide/">選び方ガイド</a><a href="https://miroca.one/pricing/">料金相場</a><a href="https://miroca.one/faq/">FAQ</a><a href="https://miroca.one/checklist/">チェックリスト</a>
-<a href="https://miroca.one/area/zama/">座間市の業者</a>
-</div><p>MIROCA（ミロカ） — © 2026 BLST WEB — 2026-03-28</p></footer>
+<footer class="pf">
+<div class="pf-grid">
+<div class="pf-col"><div class="pf-col-h">コンテンツ</div><div class="pf-links">
+<a href="https://miroca.one/">業者一覧</a>
+<a href="https://miroca.one/guide/">選び方ガイド</a>
+<a href="https://miroca.one/pricing/">料金相場</a>
+<a href="https://miroca.one/faq/">FAQ</a>
+<a href="https://miroca.one/checklist/">チェックリスト</a>
+<a href="https://miroca.one/decide/">判断ガイド</a>
+</div></div>
+<div class="pf-col"><div class="pf-col-h">エリア</div><div class="pf-links">
+<a href="https://miroca.one/area/zama/">座間市</a>
+<a href="https://miroca.one/area/yokohama/">横浜市</a>
+<a href="https://miroca.one/area/kawasaki/">川崎市</a>
+</div></div>
+</div>
+<div class="pf-btm"><p>MIROCA（ミロカ）— © 2026 BLST WEB — 2026-03-28</p></div>
+</footer>
 </body></html>
