@@ -27,131 +27,301 @@
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"MIROCA（ミロカ）","alternateName":"ミロカ","url":"https://miroca.one/","description":"住まいのサービス業者を独自データで中立比較するDecision Engineプラットフォーム","publisher":{"@type":"Organization","name":"MIROCA（ミロカ）","url":"https://miroca.one","logo":{"@type":"ImageObject","url":"https://miroca.one/favicon.svg","width":512,"height":512}},"inLanguage":"ja"}</script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"Organization","name":"MIROCA（ミロカ）","url":"https://miroca.one","logo":"https://miroca.one/favicon.svg","description":"住まいのサービス業者の中立比較プラットフォーム","foundingDate":"2026","parentOrganization":{"@type":"Organization","name":"BLST WEB"}}</script>
 <style>
-:root{--cream:#FAF7F2;--cream2:#F5F0E8;--cream3:#EDE6DA;--warm:#3D2E1F;--warm2:#5A4A3A;--warm3:#7A6A5A;--warm4:#A09585;--teal:#1A8C7A;--teal-l:#E8F8F5;--white:#fff}
+:root{--bg:#FAFAF7;--bg2:#F3F1EC;--bg3:#EBE8E1;--ink:#1C1917;--ink2:#44403C;--ink3:#78716C;--ink4:#A8A29E;--teal:#1A8C7A;--teal-d:#14705F;--teal-bg:#E8F8F5;--gold:#D4820A;--gold-bg:#FFF8EC;--blue:#2B7AB5;--blue-bg:#EBF5FF;--white:#FFFFFF;--radius:16px}
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN",Meiryo,sans-serif;background:var(--cream);color:var(--warm);line-height:1.8}
-a{color:var(--teal);text-decoration:none}
-.portal-header{background:var(--white);border-bottom:1px solid var(--cream3);padding:16px 20px}
-.portal-header-in{max-width:960px;margin:0 auto;display:flex;align-items:center}
-.portal-logo{font:800 24px/1 -apple-system,BlinkMacSystemFont,"Hiragino Sans",Meiryo,sans-serif;color:var(--warm);text-decoration:none}
-.portal-logo small{font-size:11px;font-weight:400;color:var(--warm4);margin-left:8px}
-.portal-hero{position:relative;padding:64px 20px 56px;overflow:hidden;background:linear-gradient(170deg,#FDF8F0 0%,#F7EEE0 50%,#EFE4D2 100%);border-bottom:1px solid var(--cream3)}
-.portal-hero-bg{position:absolute;top:-100px;right:-60px;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(26,140,122,.06) 0%,transparent 70%);pointer-events:none}
-.portal-hero-in{max-width:960px;margin:0 auto;position:relative;z-index:1}
-.portal-h1{font-size:32px;font-weight:900;line-height:1.6;margin-bottom:16px}
-.portal-h1 em{font-style:normal;color:var(--teal);text-decoration:underline;text-decoration-color:rgba(26,140,122,.25);text-underline-offset:4px;text-decoration-thickness:3px}
-.portal-lead{font-size:15px;color:var(--warm3);line-height:2;max-width:600px}
-.portal-lead b{color:var(--warm2)}
-.portal-section-h{font-size:20px;font-weight:900;color:var(--warm);margin-bottom:24px;text-align:center}
-.portal-categories{padding:48px 20px}
-.portal-categories-in{max-width:960px;margin:0 auto}
-.portal-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:20px}
-.portal-card{background:var(--white);border:2px solid var(--cream3);border-radius:20px;padding:28px;display:flex;gap:20px;transition:.25s;overflow:hidden}
-.portal-card-active{cursor:pointer;text-decoration:none;color:var(--warm)}
-.portal-card-active:hover{border-color:var(--teal);box-shadow:0 8px 28px rgba(26,140,122,.12);transform:translateY(-3px);text-decoration:none}
-.portal-card-soon{opacity:.6;cursor:default}
-.portal-card-icon{width:56px;height:56px;border-radius:16px;display:flex;align-items:center;justify-content:center;font-size:28px;flex-shrink:0}
-.portal-card-body{flex:1;min-width:0}
-.portal-card-name{font-size:18px;font-weight:800;margin-bottom:2px}
-.portal-card-area{font-size:12px;color:var(--warm4);margin-bottom:8px}
-.portal-card-desc{font-size:13px;color:var(--warm3);line-height:1.8;margin-bottom:12px}
-.portal-card-stats{display:flex;gap:16px;margin-bottom:12px;font-size:13px;color:var(--warm3)}
-.portal-card-stats b{color:var(--warm);font-weight:700;font-size:16px;margin-right:2px}
-.portal-card-cta{font-size:14px;font-weight:700;color:var(--teal)}
-.portal-card-cta-soon{color:var(--warm4);font-weight:600}
-.portal-features{padding:48px 20px;background:var(--white);border-top:1px solid var(--cream3);border-bottom:1px solid var(--cream3)}
-.portal-features-in{max-width:960px;margin:0 auto}
-.portal-feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
-.portal-feature{text-align:center;padding:24px 16px}
-.portal-feature-icon{font-size:32px;margin-bottom:12px}
-.portal-feature h3{font-size:15px;font-weight:800;color:var(--warm);margin-bottom:8px}
-.portal-feature p{font-size:13px;color:var(--warm3);line-height:2}
-.portal-footer{padding:40px 20px 24px}
-.portal-footer-in{max-width:960px;margin:0 auto;text-align:center}
-.portal-footer-logo{font:800 20px/1 -apple-system,sans-serif;color:var(--warm);margin-bottom:12px}
-.portal-footer-logo small{font-size:10px;font-weight:400;color:var(--warm4);margin-left:6px}
-.portal-footer-about{font-size:12px;color:var(--warm4);line-height:1.8;margin-bottom:16px}
-.portal-footer-links{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bottom:12px}
-.portal-footer-links a{font-size:11px;color:var(--warm4)}
-.portal-footer-links a:hover{color:var(--teal)}
-.portal-footer-copy{font-size:11px;color:var(--warm4)}
-@media(max-width:700px){.portal-h1{font-size:24px}.portal-cards{grid-template-columns:1fr}.portal-feature-grid{grid-template-columns:1fr;gap:12px}.portal-feature{padding:16px}}
+body{font-family:"Hiragino Kaku Gothic ProN","Hiragino Sans",Meiryo,"Noto Sans JP",sans-serif;background:var(--bg);color:var(--ink);line-height:1.8;-webkit-font-smoothing:antialiased}
+a{color:inherit;text-decoration:none}
+.sp{display:none}
+@media(max-width:640px){.sp{display:inline}}
+.lp-hd{position:sticky;top:0;z-index:100;background:rgba(250,250,247,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--bg3);padding:12px 20px}
+.lp-hd-in{max-width:900px;margin:0 auto;display:flex;align-items:center;justify-content:space-between}
+.lp-logo{font-size:22px;font-weight:900;letter-spacing:-.02em;color:var(--ink)}
+.lp-logo span{font-size:10px;font-weight:400;color:var(--ink4);margin-left:6px;letter-spacing:.05em}
+.lp-hd-btn{font-size:13px;font-weight:700;color:var(--white);background:var(--teal);padding:8px 20px;border-radius:100px;transition:.2s}
+.lp-hd-btn:hover{background:var(--teal-d);transform:translateY(-1px)}
+.lp-hero{position:relative;padding:80px 20px 64px;overflow:hidden;background:linear-gradient(165deg,#FDFBF6 0%,#F5EFDF 40%,#EDE4CE 100%)}
+.lp-hero-bg{position:absolute;top:-200px;right:-150px;width:600px;height:600px;border-radius:50%;background:radial-gradient(circle,rgba(26,140,122,.07) 0%,transparent 70%);pointer-events:none}
+.lp-hero-deco{position:absolute;bottom:-80px;left:-60px;width:300px;height:300px;border-radius:50%;background:radial-gradient(circle,rgba(212,130,10,.04) 0%,transparent 70%);pointer-events:none}
+.lp-hero-in{max-width:900px;margin:0 auto;position:relative;z-index:1}
+.lp-hero-tag{display:inline-block;font-size:11px;font-weight:700;color:var(--teal);background:var(--teal-bg);padding:4px 14px;border-radius:100px;margin-bottom:20px;letter-spacing:.08em}
+.lp-h1{font-size:40px;font-weight:900;line-height:1.5;margin-bottom:20px;letter-spacing:-.02em}
+.lp-hero-sub{font-size:16px;color:var(--ink2);line-height:2;max-width:540px;margin-bottom:36px}
+.lp-hero-sub em{font-style:normal;color:var(--teal);font-weight:700}
+.lp-cta-btn{display:inline-flex;flex-direction:column;align-items:center;background:var(--teal);color:var(--white);padding:18px 48px;border-radius:100px;transition:.25s;text-align:center;box-shadow:0 4px 20px rgba(26,140,122,.3)}
+.lp-cta-btn:hover{background:var(--teal-d);transform:translateY(-3px);box-shadow:0 8px 32px rgba(26,140,122,.4)}
+.lp-cta-main{font-size:18px;font-weight:800;letter-spacing:.03em}
+.lp-cta-sub{font-size:11px;font-weight:400;opacity:.85;margin-top:4px}
+.lp-cta-btn-w{background:var(--white);color:var(--teal);box-shadow:0 4px 20px rgba(0,0,0,.1)}
+.lp-cta-btn-w:hover{background:var(--teal-bg);transform:translateY(-3px);box-shadow:0 8px 32px rgba(0,0,0,.15)}
+.lp-cta-btn-w .lp-cta-sub{color:var(--ink3)}
+.lp-worry{padding:64px 20px;background:var(--white);border-top:1px solid var(--bg3)}
+.lp-worry-in{max-width:720px;margin:0 auto}
+.lp-sec-h{font-size:26px;font-weight:900;line-height:1.5;text-align:center;margin-bottom:36px;letter-spacing:-.01em}
+.lp-sec-h-w{color:var(--white)}
+.lp-worry-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:32px}
+.lp-worry-item{background:var(--bg);border:1px solid var(--bg3);border-radius:var(--radius);padding:20px;display:flex;gap:14px;align-items:center}
+.lp-worry-icon{flex-shrink:0;line-height:1;color:var(--ink3);display:flex;align-items:center;justify-content:center;width:40px;height:40px;background:var(--white);border:1px solid var(--bg3);border-radius:10px}
+.lp-worry-icon svg{display:block}
+.lp-worry-item p{font-size:14px;font-weight:600;color:var(--ink2);line-height:1.7}
+.lp-worry-answer{text-align:center;font-size:18px;color:var(--ink2)}
+.lp-worry-answer strong{color:var(--teal);font-weight:800}
+.lp-points{padding:64px 20px;background:var(--bg)}
+.lp-points-in{max-width:720px;margin:0 auto}
+.lp-point{background:var(--white);border-radius:var(--radius);padding:32px;margin-bottom:20px;border:1px solid var(--bg3)}
+.lp-point-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+.lp-point-num{font-size:12px;font-weight:800;letter-spacing:.15em}
+.lp-point-icon{opacity:.35}
+.lp-point-icon svg{display:block}
+.lp-point-h{font-size:20px;font-weight:800;margin-bottom:12px;color:var(--ink)}
+.lp-point-desc{font-size:14px;color:var(--ink3);line-height:2}
+.lp-mid-cta{padding:48px 20px;background:var(--teal);text-align:center}
+.lp-mid-cta-in{max-width:600px;margin:0 auto}
+.lp-mid-cta-text{font-size:18px;font-weight:700;color:var(--white);margin-bottom:24px}
+.lp-stats{padding:64px 20px;background:var(--ink);color:var(--white)}
+.lp-stats-in{max-width:800px;margin:0 auto}
+.lp-stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.lp-stat{text-align:center;padding:20px 8px}
+.lp-stat-num{font-size:36px;font-weight:900;letter-spacing:-.02em;line-height:1.2}
+.lp-stat-num small{font-size:16px;font-weight:600;margin-left:2px}
+.lp-stat-label{font-size:12px;color:var(--ink4);margin-top:4px;letter-spacing:.05em}
+.lp-genres{padding:64px 20px;background:var(--white);border-top:1px solid var(--bg3)}
+.lp-genres-in{max-width:800px;margin:0 auto}
+.lp-genre-cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:20px}
+.lp-genre{background:var(--white);border:2px solid var(--bg3);border-radius:var(--radius);overflow:hidden;transition:.25s}
+.lp-genre-active{cursor:pointer;color:var(--ink)}
+.lp-genre-active:hover{transform:translateY(-4px);box-shadow:0 12px 40px rgba(0,0,0,.08)}
+.lp-genre-soon{opacity:.55;cursor:default}
+.lp-genre-head{display:flex;align-items:center;gap:14px;padding:20px 24px}
+.lp-genre-icon{display:flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:12px;background:var(--white);flex-shrink:0}
+.lp-genre-icon svg{display:block}
+.lp-genre-name{font-size:18px;font-weight:800}
+.lp-genre-area{font-size:11px;color:var(--ink4);margin-top:2px}
+.lp-genre-body{padding:0 24px 24px}
+.lp-genre-desc{font-size:13px;color:var(--ink3);line-height:1.8;margin-bottom:12px}
+.lp-genre-stats{display:flex;gap:16px;margin-bottom:14px;font-size:13px;color:var(--ink3)}
+.lp-genre-stats strong{color:var(--ink);font-weight:800;font-size:18px;margin-right:2px}
+.lp-genre-cta{font-size:15px;font-weight:800}
+.lp-genre-cta-soon{color:var(--ink4);font-weight:600;font-size:13px}
+.lp-faq{padding:64px 20px;background:var(--bg)}
+.lp-faq-in{max-width:680px;margin:0 auto}
+.lp-faq-item{border:1px solid var(--bg3);border-radius:12px;margin-bottom:12px;background:var(--white);overflow:hidden}
+.lp-faq-q{font-size:15px;font-weight:700;padding:18px 24px;cursor:pointer;list-style:none;display:flex;align-items:center;justify-content:space-between;gap:12px;color:var(--ink2)}
+.lp-faq-q::-webkit-details-marker{display:none}
+.lp-faq-q::after{content:"+";font-size:20px;font-weight:300;color:var(--ink4);flex-shrink:0;transition:.2s}
+details[open] .lp-faq-q::after{transform:rotate(45deg);color:var(--teal)}
+.lp-faq-a{padding:0 24px 18px;font-size:14px;color:var(--ink3);line-height:2}
+.lp-final-cta{padding:80px 20px;background:linear-gradient(165deg,#FDFBF6 0%,#F5EFDF 40%,#EDE4CE 100%);text-align:center}
+.lp-final-cta-in{max-width:600px;margin:0 auto}
+.lp-final-h{font-size:30px;font-weight:900;line-height:1.6;margin-bottom:16px}
+.lp-final-h em{font-style:normal;color:var(--teal);text-decoration:underline;text-decoration-color:rgba(26,140,122,.25);text-underline-offset:6px;text-decoration-thickness:3px}
+.lp-final-sub{font-size:15px;color:var(--ink3);margin-bottom:32px}
+.lp-ft{padding:48px 20px 24px;border-top:1px solid var(--bg3)}
+.lp-ft-in{max-width:600px;margin:0 auto;text-align:center}
+.lp-ft-logo{font-size:20px;font-weight:900;margin-bottom:12px}
+.lp-ft-logo span{font-size:10px;font-weight:400;color:var(--ink4);margin-left:6px}
+.lp-ft-about{font-size:12px;color:var(--ink4);line-height:1.9;margin-bottom:20px}
+.lp-ft-nav{display:flex;gap:20px;justify-content:center;flex-wrap:wrap;margin-bottom:16px}
+.lp-ft-nav a{font-size:12px;color:var(--ink4);transition:.15s}
+.lp-ft-nav a:hover{color:var(--teal)}
+.lp-ft-copy{font-size:11px;color:var(--ink4)}
+@media(max-width:640px){
+.lp-h1{font-size:28px}
+.lp-sec-h{font-size:22px}
+.lp-hero{padding:56px 20px 48px}
+.lp-worry-grid{grid-template-columns:1fr}
+.lp-stats-grid{grid-template-columns:repeat(2,1fr)}
+.lp-genre-cards{grid-template-columns:1fr}
+.lp-stat-num{font-size:28px}
+.lp-cta-btn{padding:16px 32px;width:100%}
+.lp-point{padding:24px}
+.lp-final-h{font-size:24px}
+.lp-hd-btn{font-size:12px;padding:7px 16px}
+}
 </style>
 </head><body>
-<header class="portal-header">
-<div class="portal-header-in">
-<a href="https://miroca.one/" class="portal-logo">MIROCA<small>ミロカ</small></a>
+<header class="lp-hd">
+<div class="lp-hd-in">
+<a href="https://miroca.one/" class="lp-logo">MIROCA<span>ミロカ</span></a>
+<a href="https://miroca.one/house-cleaning/" class="lp-hd-btn">業者を比較する</a>
 </div>
 </header>
-<section class="portal-hero">
-<div class="portal-hero-bg"></div>
-<div class="portal-hero-in">
-<h1 class="portal-h1">業者が言わないことを、<br><em>データが教える。</em></h1>
-<p class="portal-lead">口コミの星の数だけじゃ、本当のところはわからない。<br>MIROCAは、独自データで住まいのサービス業者を<b>中立比較</b>するプラットフォームです。</p>
+<section class="lp-hero">
+<div class="lp-hero-bg"></div>
+<div class="lp-hero-deco"></div>
+<div class="lp-hero-in">
+<p class="lp-hero-tag">住まいのサービス業者 中立比較</p>
+<h1 class="lp-h1">口コミの星だけで、<br>業者を選んで<br class="sp">いませんか？</h1>
+<p class="lp-hero-sub">「星4.8だから安心」——本当にそうでしょうか。<br>MIROCAは<em>独自データ</em>で、業者が言わないことを可視化します。</p>
+<a href="https://miroca.one/house-cleaning/" class="lp-cta-btn">
+<span class="lp-cta-main">無料で業者を比較する</span>
+<span class="lp-cta-sub">193社を独自指標で比較</span>
+</a>
 </div>
 </section>
-<section class="portal-categories">
-<div class="portal-categories-in">
-<h2 class="portal-section-h">ジャンルを選ぶ</h2>
-<div class="portal-cards">
-<a href="https://miroca.one/house-cleaning/" class="portal-card portal-card-active">
-<div class="portal-card-icon" style="background:#E8F8F5">🏠</div>
-<div class="portal-card-body">
-<div class="portal-card-name" style="color:#1A8C7A">ハウスクリーニング</div>
-<div class="portal-card-area">横浜・東京エリア</div>
-<p class="portal-card-desc">口コミ解析・料金透明性・リピート率で中立比較</p>
-<div class="portal-card-stats">
-<span><b>193</b>社</span>
-<span><b>42,278</b>件の口コミ</span>
+<section class="lp-worry">
+<div class="lp-worry-in">
+<h2 class="lp-sec-h">業者選び、<br class="sp">こんな不安ありませんか？</h2>
+<div class="lp-worry-grid">
+<div class="lp-worry-item">
+<span class="lp-worry-icon"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 1.5L13.5 7.5L20 8.5L15.5 13L16.5 20L11 17L5.5 20L6.5 13L2 8.5L8.5 7.5L11 1.5Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><circle cx="11" cy="11" r="2" fill="currentColor" opacity=".3"/></svg></span>
+<p>口コミの星が高いけど、サクラじゃないの？</p>
 </div>
-<div class="portal-card-cta">業者を比較する →</div>
+<div class="lp-worry-item">
+<span class="lp-worry-icon"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 4L11 12L17 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><line x1="6" y1="10" x2="16" y2="10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="6" y1="13" x2="16" y2="13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="11" y1="13" x2="11" y2="19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+<p>安いと思ったら追加料金がどんどん…</p>
+</div>
+<div class="lp-worry-item">
+<span class="lp-worry-icon"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 4L7 8H4C3.45 8 3 8.45 3 9V13C3 13.55 3.45 14 4 14H7L17 18V4Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M19 9C19.6 9.8 20 10.85 20 12C20 13.15 19.6 14.2 19 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+<p>比較サイトの「おすすめ」って広告では？</p>
+</div>
+<div class="lp-worry-item">
+<span class="lp-worry-icon"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="9" stroke="currentColor" stroke-width="1.5"/><path d="M8.5 8.5C8.5 7.12 9.62 6 11 6C12.38 6 13.5 7.12 13.5 8.5C13.5 9.88 12.38 11 11 11V13" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><circle cx="11" cy="15.5" r="0.75" fill="currentColor"/></svg></span>
+<p>結局どの業者が本当に良いのかわからない</p>
+</div>
+</div>
+<p class="lp-worry-answer">その不安、<strong>MIROCAが解決します。</strong></p>
+</div>
+</section>
+<section class="lp-points">
+<div class="lp-points-in">
+<h2 class="lp-sec-h">MIROCAが「ふつうの比較サイト」と違う理由</h2>
+<div class="lp-point">
+<div class="lp-point-head">
+<div class="lp-point-num" style="color:#1A8C7A">POINT 01</div>
+<div class="lp-point-icon" style="color:#1A8C7A"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="22" height="22" rx="3" stroke="currentColor" stroke-width="1.5"/><line x1="7" y1="9" x2="15" y2="9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="7" y1="14" x2="21" y2="14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="7" y1="19" x2="13" y2="19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M18 17L20 21L22 17" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+</div>
+<h3 class="lp-point-h">口コミテキストをAIで解析</h3>
+<p class="lp-point-desc">星の数だけでなく、口コミの文章からリピート率・時間厳守率・追加料金リスクなど6つの指標を独自に算出。「見えないサービス品質」を数値化します。</p>
+</div>
+<div class="lp-point">
+<div class="lp-point-head">
+<div class="lp-point-num" style="color:#D4820A">POINT 02</div>
+<div class="lp-point-icon" style="color:#D4820A"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 3L4 7V13C4 19.08 8.28 24.73 14 26C19.72 24.73 24 19.08 24 13V7L14 3Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><path d="M10 14L13 17L18 11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+</div>
+<h3 class="lp-point-h">完全中立 — 広告ゼロ</h3>
+<p class="lp-point-desc">業者から掲載料を一切受け取っていません。ランキング操作も、広告枠も、ステマもありません。データが示す事実だけを提示します。</p>
+</div>
+<div class="lp-point">
+<div class="lp-point-head">
+<div class="lp-point-num" style="color:#2B7AB5">POINT 03</div>
+<div class="lp-point-icon" style="color:#2B7AB5"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22 14C22 18.42 18.42 22 14 22C9.58 22 6 18.42 6 14C6 9.58 9.58 6 14 6C17.18 6 19.93 7.88 21.24 10.56" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><path d="M22 5V11H16" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+</div>
+<h3 class="lp-point-h">毎週自動で最新データに更新</h3>
+<p class="lp-point-desc">データは毎週月曜に自動収集・解析・更新。口コミ数の変動やスコアの推移もトラッキング。常に最新の情報で比較できます。</p>
+</div>
+</div>
+</section>
+<section class="lp-mid-cta">
+<div class="lp-mid-cta-in">
+<p class="lp-mid-cta-text">データに基づく業者比較を、無料で。</p>
+<a href="https://miroca.one/house-cleaning/" class="lp-cta-btn lp-cta-btn-w">
+<span class="lp-cta-main">業者を比較してみる</span>
+<span class="lp-cta-sub">登録不要・完全無料</span>
+</a>
+</div>
+</section>
+<section class="lp-stats">
+<div class="lp-stats-in">
+<h2 class="lp-sec-h lp-sec-h-w">数字で見る MIROCA</h2>
+<div class="lp-stats-grid">
+<div class="lp-stat">
+<div class="lp-stat-num">193<small>社</small></div>
+<div class="lp-stat-label">掲載業者数</div>
+</div>
+<div class="lp-stat">
+<div class="lp-stat-num">42,278<small>件</small></div>
+<div class="lp-stat-label">解析した口コミ</div>
+</div>
+<div class="lp-stat">
+<div class="lp-stat-num">6<small>指標</small></div>
+<div class="lp-stat-label">独自評価軸</div>
+</div>
+<div class="lp-stat">
+<div class="lp-stat-num">毎週<small>更新</small></div>
+<div class="lp-stat-label">データ鮮度</div>
+</div>
+</div>
+</div>
+</section>
+<section class="lp-genres">
+<div class="lp-genres-in">
+<h2 class="lp-sec-h">比較できるジャンル</h2>
+<div class="lp-genre-cards">
+<a href="https://miroca.one/house-cleaning/" class="lp-genre lp-genre-active" style="border-color:#1A8C7A">
+<div class="lp-genre-head" style="background:#E8F8F5">
+<span class="lp-genre-icon" style="color:#1A8C7A"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 13L14 4L24 13V23C24 23.55 23.55 24 23 24H5C4.45 24 4 23.55 4 23V13Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/><rect x="10" y="16" width="8" height="8" rx="1" stroke="currentColor" stroke-width="1.5"/><path d="M20 7L21 9.5L23.5 10.5L21 11.5L20 14L19 11.5L16.5 10.5L19 9.5L20 7Z" fill="currentColor" opacity=".5"/></svg></span>
+<div>
+<div class="lp-genre-name" style="color:#1A8C7A">ハウスクリーニング</div>
+<div class="lp-genre-area">横浜・東京エリア</div>
+</div>
+</div>
+<div class="lp-genre-body">
+<p class="lp-genre-desc">口コミ解析・料金透明性・リピート率で中立比較</p>
+<div class="lp-genre-stats">
+<span><strong>193</strong>社</span>
+<span><strong>42,278</strong>件の口コミ</span>
+</div>
+<div class="lp-genre-cta" style="color:#1A8C7A">業者を比較する →</div>
 </div>
 </a>
-<div class="portal-card portal-card-soon">
-<div class="portal-card-icon" style="background:#EBF5FF">🎨</div>
-<div class="portal-card-body">
-<div class="portal-card-name" style="color:#2B7AB5">外壁塗装・屋根工事</div>
-<div class="portal-card-area">横浜・東京エリア</div>
-<p class="portal-card-desc">建設業許可・メーカー認定・保証年数で中立比較</p>
-<div class="portal-card-cta portal-card-cta-soon">準備中</div>
+<div class="lp-genre lp-genre-soon">
+<div class="lp-genre-head" style="background:#EBF5FF">
+<span class="lp-genre-icon" style="color:#2B7AB5"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="4" y="4" width="18" height="8" rx="2" stroke="currentColor" stroke-width="1.5"/><line x1="22" y1="8" x2="24" y2="8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="24" y1="8" x2="24" y2="15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="24" y1="15" x2="14" y2="15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><line x1="14" y1="15" x2="14" y2="24" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/><rect x="12" y="22" width="4" height="3" rx="1" stroke="currentColor" stroke-width="1.5"/></svg></span>
+<div>
+<div class="lp-genre-name" style="color:#2B7AB5">外壁塗装・屋根工事</div>
+<div class="lp-genre-area">横浜・東京エリア</div>
+</div>
+</div>
+<div class="lp-genre-body">
+<p class="lp-genre-desc">建設業許可・メーカー認定・保証年数で中立比較</p>
+<div class="lp-genre-cta lp-genre-cta-soon">まもなく公開</div>
 </div>
 </div>
 </div>
 </div>
 </section>
-<section class="portal-features">
-<div class="portal-features-in">
-<h2 class="portal-section-h">MIROCAが「ふつうの比較サイト」と違う理由</h2>
-<div class="portal-feature-grid">
-<div class="portal-feature">
-<div class="portal-feature-icon">📊</div>
-<h3>独自指標で比較</h3>
-<p>星評価だけでなく、リピート率・時間厳守率・追加料金リスク・料金透明性など、口コミテキストから算出した独自指標で業者を評価します。</p>
-</div>
-<div class="portal-feature">
-<div class="portal-feature-icon">🔍</div>
-<h3>完全中立</h3>
-<p>業者から掲載料を受け取っていません。広告もありません。データに基づく事実だけを提示します。</p>
-</div>
-<div class="portal-feature">
-<div class="portal-feature-icon">🔄</div>
-<h3>毎週自動更新</h3>
-<p>データは毎週自動で収集・解析・更新されます。常に最新の情報で比較できます。</p>
-</div>
-</div>
+<section class="lp-faq">
+<div class="lp-faq-in">
+<h2 class="lp-sec-h">よくある質問</h2>
+<details class="lp-faq-item">
+<summary class="lp-faq-q">MIROCAは無料ですか？</summary>
+<div class="lp-faq-a">はい、完全無料です。ユーザー登録も不要です。業者から掲載料を受け取っておらず、広告も表示しません。</div>
+</details>
+<details class="lp-faq-item">
+<summary class="lp-faq-q">掲載業者はどうやって選んでいるのですか？</summary>
+<div class="lp-faq-a">くらしのマーケットとGoogleマップの2つのデータソースから、横浜・東京エリアの業者を自動収集しています。掲載を依頼された業者を優遇することはありません。</div>
+</details>
+<details class="lp-faq-item">
+<summary class="lp-faq-q">スコアはどうやって計算しているのですか？</summary>
+<div class="lp-faq-a">口コミテキストをAIで解析し、リピート率・時間厳守率・追加料金リスク・料金透明性・対応条件充実度・技術力の6指標を算出。これらを総合してMIROCAスコア（100点満点）を計算しています。</div>
+</details>
+<details class="lp-faq-item">
+<summary class="lp-faq-q">業者に直接依頼できますか？</summary>
+<div class="lp-faq-a">MIROCAは中立の比較サイトです。各業者の公式サイトや電話番号を掲載していますので、そちらから直接お問い合わせください。</div>
+</details>
 </div>
 </section>
-<footer class="portal-footer">
-<div class="portal-footer-in">
-<div class="portal-footer-logo">MIROCA<small>ミロカ</small></div>
-<p class="portal-footer-about">MIROCAは特定の業者をおすすめするサービスではありません。<br>複数のデータソースから収集した事実データを独自に分析し、中立的な比較情報を提供しています。</p>
-<nav class="portal-footer-links">
+<section class="lp-final-cta">
+<div class="lp-final-cta-in">
+<h2 class="lp-final-h">業者が言わないことを、<br><em>データが教える。</em></h2>
+<p class="lp-final-sub">口コミの裏側まで分析した、中立の業者比較。</p>
+<a href="https://miroca.one/house-cleaning/" class="lp-cta-btn">
+<span class="lp-cta-main">無料で業者を比較する</span>
+<span class="lp-cta-sub">193社 × 42,278件の口コミを解析</span>
+</a>
+</div>
+</section>
+<footer class="lp-ft">
+<div class="lp-ft-in">
+<div class="lp-ft-logo">MIROCA<span>ミロカ</span></div>
+<p class="lp-ft-about">MIROCAは特定の業者をおすすめするサービスではありません。<br>複数のデータソースから収集した事実データを独自に分析し、中立的な比較情報を提供しています。</p>
+<nav class="lp-ft-nav">
 <a href="https://miroca.one/terms/">利用規約</a>
 <a href="https://miroca.one/privacy/">プライバシーポリシー</a>
 <a href="https://miroca.one/policy/">掲載方針</a>
 <a href="https://miroca.one/contact/">お問い合わせ</a>
 </nav>
-<p class="portal-footer-copy">© 2026 BLST WEB — 最終更新: 2026-03-29</p>
+<p class="lp-ft-copy">© 2026 BLST WEB — 最終更新: 2026-03-29</p>
 </div>
 </footer>
 </body></html>
