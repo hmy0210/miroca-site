@@ -96,9 +96,22 @@
 .gf-logo{font:800 18px/1 -apple-system,BlinkMacSystemFont,"Hiragino Sans",Meiryo,sans-serif;color:var(--warm);margin-bottom:6px}
 .gf-logo small{font-size:10px;font-weight:400;color:var(--warm4);margin-left:6px}
 .gf-bottom p{font-size:11px;color:var(--warm5);margin:4px 0}
-.gf-bottom-links{display:flex;gap:12px;justify-content:center;margin-top:4px}
-.gf-bottom-links a{font-size:11px;color:var(--warm5)}.gf-bottom-links a:hover{color:var(--teal)}
-@media(max-width:700px){.gf-grid{grid-template-columns:1fr}.gf-card{padding:16px}}
+.gf-bottom-links{display:flex;flex-wrap:wrap;gap:4px 10px;justify-content:center;margin-top:4px;padding:0 10px}
+.gf-bottom-links a{font-size:10px;color:#A09585;white-space:nowrap;text-decoration:none}
+.gf-bottom-links a:hover{color:#1A8C7A}
+@media(max-width:700px){
+.gf-grid{grid-template-columns:1fr 1fr;gap:12px}
+.gf-card{padding:14px}
+.gf-card:last-child{grid-column:1/-1}
+.gf-nav{display:grid;grid-template-columns:1fr 1fr;gap:2px}
+.gf-nav a{padding:5px 8px;font-size:12px}
+.gf-card-h{font-size:12px;margin-bottom:8px}
+.gf-about{font-size:11px}
+}
+@media(max-width:400px){
+.gf-grid{grid-template-columns:1fr}
+.gf-nav{grid-template-columns:1fr 1fr}
+}
 @media(max-width:600px){.p-hero{flex-direction:column;align-items:stretch}.p-score-circle{align-self:center}.p-name{font-size:20px}.p-platform-grid{grid-template-columns:1fr}.p-sbar{flex-wrap:wrap}.p-sbar-label{min-width:100%}.ph-nav{display:none}}</style>
 </head><body>
 <header class="ph"><a href="https://miroca.one/" class="ph-logo">MIROCA</a><nav class="ph-nav"><a href="https://miroca.one/guide/">ガイド</a><a href="https://miroca.one/pricing/">相場</a><a href="https://miroca.one/faq/">FAQ</a></nav><span class="ph-sep">/</span><span class="ph-title">業者詳細</span></header>
