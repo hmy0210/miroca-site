@@ -1,0 +1,13 @@
+/sitemap-page/ /house-cleaning/sitemap-page/ 301
+/guide/ /house-cleaning/guide/ 301
+/guide/* /house-cleaning/guide/:splat 301
+/faq/ /house-cleaning/faq/ 301
+/faq/* /house-cleaning/faq/:splat 301
+/pricing/ /house-cleaning/pricing/ 301
+/pricing/* /house-cleaning/pricing/:splat 301
+/checklist/ /house-cleaning/checklist/ 301
+/checklist/* /house-cleaning/checklist/:splat 301
+/area/* /house-cleaning/area/:splat 301
+/provider/* /house-cleaning/provider/:splat 301
+/decide/* /house-cleaning/decide/:splat 301
+/report/* /house-cleaning/report/:splat 301
