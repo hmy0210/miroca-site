@@ -1,0 +1,54 @@
+name: KW Research Weekly
+
+# 実行タイミング
+on:
+  schedule:
+    # 毎週月曜 02:00 JST = 日曜 17:00 UTC（GASの週次パイプライン月曜3時の1時間前）
+    - cron: '0 17 * * 0'
+  # 手動実行も可能にする（テスト用）
+  workflow_dispatch:
+
+jobs:
+  kw-research:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: リポジトリをチェックアウト
+        uses: actions/checkout@v4
+
+      - name: Python をセットアップ
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: 依存パッケージをインストール
+        working-directory: _kwtools
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: 秘密情報をファイルに復元
+        working-directory: _kwtools
+        env:
+          GOOGLE_ADS_YAML: ${{ secrets.GOOGLE_ADS_YAML }}
+          SERVICE_ACCOUNT_JSON: ${{ secrets.SERVICE_ACCOUNT_JSON }}
+        run: |
+          printf '%s' "$GOOGLE_ADS_YAML" > google-ads.yaml
+          printf '%s' "$SERVICE_ACCOUNT_JSON" > service_account.json
+
+      - name: KWリサーチを実行
+        working-directory: _kwtools
+        env:
+          SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}
+          SERPAPI_KEY: ${{ secrets.SERPAPI_KEY }}
+          GOOGLE_ADS_CUSTOMER_ID: ${{ secrets.GOOGLE_ADS_CUSTOMER_ID }}
+          GOOGLE_ADS_YAML_PATH: google-ads.yaml
+          GOOGLE_SHEETS_CREDENTIALS: service_account.json
+        run: |
+          python kw_research.py
+
+      - name: 秘密情報ファイルを削除（念のため）
+        if: always()
+        working-directory: _kwtools
+        run: |
+          rm -f google-ads.yaml service_account.json
