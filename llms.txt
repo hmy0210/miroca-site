@@ -1,7 +1,7 @@
 # MIROCA
 > ハウスクリーニング業者の中立比較プラットフォーム（Decision Engine）
 
-214社のハウスクリーニング業者を46,372件の口コミから7種の独自指標で評価。
+222社のハウスクリーニング業者を49,977件の口コミから7種の独自指標で評価。
 横浜・東京エリア対応。データは毎月自動更新。
 
 ## 独自指標
@@ -14,7 +14,7 @@
 - 小田原市（空室）: ¥6,000～¥36,000（中央値¥30,000、3社）
 - 川崎市（空室）: ¥14,000～¥29,800（中央値¥21,000、8社）
 - 横浜市（在室）: ¥23,000～¥38,000（中央値¥25,000、8社）
-- 横浜市（空室）: ¥5,000～¥35,000（中央値¥23,000、31社）
+- 横浜市（空室）: ¥5,000～¥35,000（中央値¥24,800、33社）
 - 横須賀市（空室）: ¥19,800～¥25,000（中央値¥23,500、4社）
 - 江戸川区（空室）: ¥17,500～¥22,000（中央値¥22,000、3社）
 - 海老名市（空室）: ¥20,000～¥50,000（中央値¥24,200、3社）
@@ -30,179 +30,101 @@
 - https://miroca.one/house-cleaning/faq/ — FAQ
 - https://miroca.one/house-cleaning/pricing/ — 相場
 - https://miroca.one/house-cleaning/checklist/ — チェックリスト
-- https://miroca.one/house-cleaning/area/yokohama/ — 横浜市
 - https://miroca.one/house-cleaning/area/kawasaki/ — 川崎市
+- https://miroca.one/house-cleaning/area/yokohama/ — 横浜市
 - https://miroca.one/house-cleaning/area/sagamihara/ — 相模原市
 - https://miroca.one/house-cleaning/area/ota/ — 大田区
-- https://miroca.one/house-cleaning/area/kamakura/ — 鎌倉市
 - https://miroca.one/house-cleaning/area/isehara/ — 伊勢原市
 - https://miroca.one/house-cleaning/area/edogawa/ — 江戸川区
 - https://miroca.one/house-cleaning/area/yokosuka/ — 横須賀市
 - https://miroca.one/house-cleaning/area/odawara/ — 小田原市
 - https://miroca.one/house-cleaning/area/setagaya/ — 世田谷区
+- https://miroca.one/house-cleaning/area/kamakura/ — 鎌倉市
 - https://miroca.one/house-cleaning/area/hadano/ — 秦野市
+- https://miroca.one/house-cleaning/area/chiyoda/ — 千代田区
 - https://miroca.one/house-cleaning/area/fujisawa/ — 藤沢市
 - https://miroca.one/house-cleaning/area/chigasaki/ — 茅ヶ崎市
-- https://miroca.one/house-cleaning/area/ebina/ — 海老名市
+- https://miroca.one/house-cleaning/area/shinagawa/ — 品川区
 - https://miroca.one/house-cleaning/area/machida/ — 町田市
 - https://miroca.one/house-cleaning/area/shinjuku/ — 新宿区
-- https://miroca.one/house-cleaning/area/nakano/ — 中野区
+- https://miroca.one/house-cleaning/area/ebina/ — 海老名市
 - https://miroca.one/house-cleaning/area/shibuya/ — 渋谷区
-- https://miroca.one/house-cleaning/provider/530733975/ — お掃除のキレイエ
-- https://miroca.one/house-cleaning/provider/564007905/ — おそうじ革命 鎌倉大船駅前店
-- https://miroca.one/house-cleaning/provider/897733595/ — おそうじ革命 江戸川北葛西店
-- https://miroca.one/house-cleaning/provider/241920035/ — 世界一謙虚なおそうじ屋さん
-- https://miroca.one/house-cleaning/provider/619506429/ — 合同会社ホームアシスト
-- https://miroca.one/house-cleaning/provider/053565395/ — としまハウスクリーニング 豊島南長崎店
-- https://miroca.one/house-cleaning/provider/725686250/ — はなえハウスクリーニング
-- https://miroca.one/house-cleaning/provider/617554909/ — おそうじやさん新座店
-- https://miroca.one/house-cleaning/provider/gmaps_995800393/ — ライフサポートサービス「まごころ」
-- https://miroca.one/house-cleaning/provider/gmaps_995800423/ — Magocoro
-- https://miroca.one/house-cleaning/provider/gmaps_995800447/ — おそうじ本舗 大井町店
-- https://miroca.one/house-cleaning/provider/gmaps_995800449/ — Osojikakumei Chuoku Kachidokiekimaeten
-- https://miroca.one/house-cleaning/provider/507005875/ — アーリーカインド
-- https://miroca.one/house-cleaning/provider/382001675/ — 合同会社ホームアシスト
-- https://miroca.one/house-cleaning/provider/859448562/ — ありがとうエアコンお掃除専門店
-- https://miroca.one/house-cleaning/provider/596184045/ — おそうじ本舗 町田駅前店
-- https://miroca.one/house-cleaning/provider/783844751/ — エアコン完全分解クリーニング専門店 エアタクミ
-- https://miroca.one/house-cleaning/provider/gmaps_995800382/ — （株）アイ・コーポレーション 横浜店
-- https://miroca.one/house-cleaning/provider/gmaps_995800389/ — ダッククリーンサービス
-- https://miroca.one/house-cleaning/provider/gmaps_995800419/ — エアコン・ハウスクリーニング専門清掃/Magocoro 小田原支店
-- https://miroca.one/house-cleaning/provider/gmaps_995800429/ — おそうじ本舗篠崎店
-- https://miroca.one/house-cleaning/provider/gmaps_995800435/ — おそうじエンジニアリング
-- https://miroca.one/house-cleaning/provider/gmaps_995800444/ — おそうじ本舗武蔵野緑町店
-- https://miroca.one/house-cleaning/provider/gmaps_995800448/ — Osojikakumei Shinjukuyotsuyagaienten
-- https://miroca.one/house-cleaning/provider/gmaps_995800454/ — きらりんお掃除専門店
-- https://miroca.one/house-cleaning/provider/755692286/ — 世界一謙虚なおそうじ屋さん
-- https://miroca.one/house-cleaning/provider/174605863/ — おそうじ革命 横浜阪東橋駅前店
-- https://miroca.one/house-cleaning/provider/gmaps_995800441/ — おそうじ本舗 新宿曙橋店
-- https://miroca.one/house-cleaning/provider/gmaps_995800442/ — おそうじ本舗豊洲店
-- https://miroca.one/house-cleaning/provider/gmaps_995800446/ — おそうじ本舗鈴ヶ森店
-- https://miroca.one/house-cleaning/provider/gmaps_995800453/ — おそうじ屋 プリッチェ
-- https://miroca.one/house-cleaning/provider/150313061/ — エアコンクリーニング 大田区多摩川店｜おそうじ革命 公式店
-- https://miroca.one/house-cleaning/provider/801946946/ — 株式会社アイルユー 水の匠
-- https://miroca.one/house-cleaning/provider/214188217/ — （株）ホットクリーンサービス
-- https://miroca.one/house-cleaning/provider/gmaps_995800424/ — エアコン・ハウスクリーニングのよろづ屋マルシン
-- https://miroca.one/house-cleaning/provider/gmaps_995800430/ — プロクリーン誠進
-- https://miroca.one/house-cleaning/provider/gmaps_995800445/ — 株式会社ベイクリーンサービス
-- https://miroca.one/house-cleaning/provider/gmaps_995800450/ — おそうじ革命荒川西尾久店
-- https://miroca.one/house-cleaning/provider/gmaps_995800451/ — 39ハウスクリーニング
-- https://miroca.one/house-cleaning/provider/gmaps_995800383/ — おそうじマスターズ®
-- https://miroca.one/house-cleaning/provider/gmaps_995800390/ — おそうじ本舗 新川崎駅前店
-- https://miroca.one/house-cleaning/provider/645451250/ — おそうじ革命 横浜井土ヶ谷店
-- https://miroca.one/house-cleaning/provider/991626678/ — おそうじ革命 川崎登戸店
-- https://miroca.one/house-cleaning/provider/686509174/ — ハウスクリーニングのスポット
-- https://miroca.one/house-cleaning/provider/gmaps_995800398/ — クリーンファースト エアコンクリーニング専門店大田区本店
-- https://miroca.one/house-cleaning/provider/286738033/ — 横須賀のエアコン・ハウスクリーニングのハウスセーバーSEISHO
-- https://miroca.one/house-cleaning/provider/gmaps_995800387/ — あしがるハウスサービス
-- https://miroca.one/house-cleaning/provider/gmaps_995800388/ — ＢＢ（ブリッジブック）ハウスクリーニング 川崎店
-- https://miroca.one/house-cleaning/provider/gmaps_995800392/ — おそうじ本舗川崎中島店
-- https://miroca.one/house-cleaning/provider/gmaps_995800394/ — 森の香クリーンサービス
-- https://miroca.one/house-cleaning/provider/gmaps_995800395/ — エアコンクリーニング専門店 Keiクリーニング
-- https://miroca.one/house-cleaning/provider/gmaps_995800399/ — ハウスエイト
-- https://miroca.one/house-cleaning/provider/gmaps_995800400/ — Osojikakumei Fujisawamirokujiten
-- https://miroca.one/house-cleaning/provider/gmaps_995800403/ — おそうじ本舗 大船店
-- https://miroca.one/house-cleaning/provider/gmaps_995800410/ — ミスタークリーナーズ
-- https://miroca.one/house-cleaning/provider/gmaps_995800431/ — ワンヒッター㈱
-- https://miroca.one/house-cleaning/provider/gmaps_995800438/ — おそうじ本舗 市川湾岸店
-- https://miroca.one/house-cleaning/provider/gmaps_995800443/ — ハートクリーニング
-- https://miroca.one/house-cleaning/provider/gmaps_995800455/ — 横浜の家事代行掃除サービス
-- https://miroca.one/house-cleaning/provider/006280290/ — おそうじ本舗 湘南ライフタウン店
-- https://miroca.one/house-cleaning/provider/gmaps_995800452/ — おそうじ本舗麻布店/家事達人麻布店
-- https://miroca.one/house-cleaning/provider/443777862/ — おそうじ革命 千代田麹町店
-- https://miroca.one/house-cleaning/provider/gmaps_995800380/ — 掃除屋SOMEBODY
-- https://miroca.one/house-cleaning/provider/gmaps_995800391/ — おそうじ革命神奈川新川崎店
-- https://miroca.one/house-cleaning/provider/gmaps_995800397/ — おそうじ本舗幸塚越店
-- https://miroca.one/house-cleaning/provider/gmaps_995800401/ — Osojikakumei Shonanfujisawakameinoten
-- https://miroca.one/house-cleaning/provider/gmaps_995800404/ — 湘南サポート
-- https://miroca.one/house-cleaning/provider/gmaps_995800407/ — 株式会社タケトラ【あきやま商会】
-- https://miroca.one/house-cleaning/provider/gmaps_995800420/ — おうちのみがき屋さん 株式会社グラティ
-- https://miroca.one/house-cleaning/provider/gmaps_995800432/ — サンパクリーンサービス
-- https://miroca.one/house-cleaning/provider/gmaps_995800434/ — おそうじ革命 千葉浦安舞浜店
-- https://miroca.one/house-cleaning/provider/gmaps_995800436/ — Gomoyashiki Hunter
-- https://miroca.one/house-cleaning/provider/gmaps_995800437/ — Life Assist
-- https://miroca.one/house-cleaning/provider/017226227/ — おそうじ革命 町田忠生店
-- https://miroca.one/house-cleaning/provider/gmaps_995800381/ — おそうじ本舗 関内店
-- https://miroca.one/house-cleaning/provider/gmaps_995800396/ — おそうじ革命 川崎幸店
-- https://miroca.one/house-cleaning/provider/gmaps_995800412/ — ハウスクリーニングRIO
-- https://miroca.one/house-cleaning/provider/gmaps_995800413/ — KK Co
-- https://miroca.one/house-cleaning/provider/gmaps_995800439/ — ㈱HQサプライ ハイクオリティーサービス
-- https://miroca.one/house-cleaning/provider/625871694/ — 株式会社トゥーフロント
-- https://miroca.one/house-cleaning/provider/gmaps_995800386/ — おそうじ本舗横浜戸部店
-- https://miroca.one/house-cleaning/provider/gmaps_995800408/ — 湘南おそうじ.com
-- https://miroca.one/house-cleaning/provider/g995800380/ — 掃除屋SOMEBODY
-- https://miroca.one/house-cleaning/provider/g995800381/ — おそうじ本舗 関内店
-- https://miroca.one/house-cleaning/provider/g995800382/ — （株）アイ・コーポレーション 横浜店
-- https://miroca.one/house-cleaning/provider/g995800383/ — おそうじマスターズ®
-- https://miroca.one/house-cleaning/provider/g995800386/ — おそうじ本舗横浜戸部店
-- https://miroca.one/house-cleaning/provider/g995800387/ — あしがるハウスサービス
-- https://miroca.one/house-cleaning/provider/g995800388/ — ＢＢ（ブリッジブック）ハウスクリーニング 川崎店
-- https://miroca.one/house-cleaning/provider/g995800389/ — ダッククリーンサービス
-- https://miroca.one/house-cleaning/provider/g995800390/ — おそうじ本舗 新川崎駅前店
-- https://miroca.one/house-cleaning/provider/g995800391/ — おそうじ革命神奈川新川崎店
-- https://miroca.one/house-cleaning/provider/g995800392/ — おそうじ本舗川崎中島店
-- https://miroca.one/house-cleaning/provider/g995800393/ — ライフサポートサービス「まごころ」
-- https://miroca.one/house-cleaning/provider/g995800394/ — 森の香クリーンサービス
-- https://miroca.one/house-cleaning/provider/g995800395/ — エアコンクリーニング専門店 Keiクリーニング
-- https://miroca.one/house-cleaning/provider/g995800396/ — おそうじ革命 川崎幸店
-- https://miroca.one/house-cleaning/provider/g995800397/ — おそうじ本舗幸塚越店
-- https://miroca.one/house-cleaning/provider/g995800398/ — クリーンファースト エアコンクリーニング専門店大田区本店
-- https://miroca.one/house-cleaning/provider/g995800399/ — ハウスエイト
-- https://miroca.one/house-cleaning/provider/g995800400/ — Osojikakumei Fujisawamirokujiten
-- https://miroca.one/house-cleaning/provider/g995800401/ — Osojikakumei Shonanfujisawakameinoten
-- https://miroca.one/house-cleaning/provider/g995800403/ — おそうじ本舗 大船店
-- https://miroca.one/house-cleaning/provider/g995800404/ — 湘南サポート
-- https://miroca.one/house-cleaning/provider/g995800407/ — 株式会社タケトラ【あきやま商会】
-- https://miroca.one/house-cleaning/provider/g995800408/ — 湘南おそうじ.com
-- https://miroca.one/house-cleaning/provider/g995800410/ — ミスタークリーナーズ
-- https://miroca.one/house-cleaning/provider/g995800412/ — ハウスクリーニングRIO
-- https://miroca.one/house-cleaning/provider/g995800413/ — KK Co
-- https://miroca.one/house-cleaning/provider/g995800419/ — エアコン・ハウスクリーニング専門清掃/Magocoro 小田原支店
-- https://miroca.one/house-cleaning/provider/g995800420/ — おうちのみがき屋さん 株式会社グラティ
-- https://miroca.one/house-cleaning/provider/g995800423/ — Magocoro
-- https://miroca.one/house-cleaning/provider/g995800424/ — エアコン・ハウスクリーニングのよろづ屋マルシン
-- https://miroca.one/house-cleaning/provider/g995800429/ — おそうじ本舗篠崎店
-- https://miroca.one/house-cleaning/provider/g995800430/ — プロクリーン誠進
-- https://miroca.one/house-cleaning/provider/g995800431/ — ワンヒッター㈱
-- https://miroca.one/house-cleaning/provider/g995800432/ — サンパクリーンサービス
-- https://miroca.one/house-cleaning/provider/g995800434/ — おそうじ革命 千葉浦安舞浜店
-- https://miroca.one/house-cleaning/provider/g995800435/ — おそうじエンジニアリング
-- https://miroca.one/house-cleaning/provider/g995800436/ — Gomoyashiki Hunter
-- https://miroca.one/house-cleaning/provider/g995800437/ — Life Assist
-- https://miroca.one/house-cleaning/provider/g995800438/ — おそうじ本舗 市川湾岸店
-- https://miroca.one/house-cleaning/provider/g995800439/ — ㈱HQサプライ ハイクオリティーサービス
-- https://miroca.one/house-cleaning/provider/g995800441/ — おそうじ本舗 新宿曙橋店
-- https://miroca.one/house-cleaning/provider/g995800442/ — おそうじ本舗豊洲店
-- https://miroca.one/house-cleaning/provider/g995800443/ — ハートクリーニング
-- https://miroca.one/house-cleaning/provider/g995800444/ — おそうじ本舗武蔵野緑町店
-- https://miroca.one/house-cleaning/provider/g995800445/ — 株式会社ベイクリーンサービス
-- https://miroca.one/house-cleaning/provider/g995800446/ — おそうじ本舗鈴ヶ森店
-- https://miroca.one/house-cleaning/provider/g995800447/ — おそうじ本舗 大井町店
-- https://miroca.one/house-cleaning/provider/g995800448/ — Osojikakumei Shinjukuyotsuyagaienten
-- https://miroca.one/house-cleaning/provider/g995800449/ — Osojikakumei Chuoku Kachidokiekimaeten
-- https://miroca.one/house-cleaning/provider/g995800450/ — おそうじ革命荒川西尾久店
-- https://miroca.one/house-cleaning/provider/g995800451/ — 39ハウスクリーニング
-- https://miroca.one/house-cleaning/provider/g995800452/ — おそうじ本舗麻布店/家事達人麻布店
-- https://miroca.one/house-cleaning/provider/g995800453/ — おそうじ屋 プリッチェ
-- https://miroca.one/house-cleaning/provider/g995800454/ — きらりんお掃除専門店
-- https://miroca.one/house-cleaning/provider/g995800455/ — 横浜の家事代行掃除サービス
+- https://miroca.one/house-cleaning/area/nakano/ — 中野区
+- https://miroca.one/house-cleaning/provider/g995800698/ — エアコン完全分解クリーニング専門店 エアタクミ
+- https://miroca.one/house-cleaning/provider/g995800700/ — おそうじ本舗 関内店
+- https://miroca.one/house-cleaning/provider/g995800701/ — （株）アイ・コーポレーション 横浜店
+- https://miroca.one/house-cleaning/provider/g995800703/ — おそうじマスターズ®
+- https://miroca.one/house-cleaning/provider/g995800705/ — A&Kハウスクリーニング
+- https://miroca.one/house-cleaning/provider/g995800706/ — Osojikakumei Yokohamaidogayaten
+- https://miroca.one/house-cleaning/provider/g995800707/ — スマイルクリーンサービス
+- https://miroca.one/house-cleaning/provider/g995800708/ — ＢＢ（ブリッジブック）ハウスクリーニング 川崎店
+- https://miroca.one/house-cleaning/provider/g995800709/ — ダッククリーンサービス
+- https://miroca.one/house-cleaning/provider/g995800710/ — おそうじ本舗 新川崎駅前店
+- https://miroca.one/house-cleaning/provider/g995800711/ — おそうじ本舗川崎中島店
+- https://miroca.one/house-cleaning/provider/g995800712/ — 森の香クリーンサービス
+- https://miroca.one/house-cleaning/provider/g995800713/ — おそうじ革命神奈川新川崎店
+- https://miroca.one/house-cleaning/provider/g995800714/ — (株)toYou ハウスクリーニング2525
+- https://miroca.one/house-cleaning/provider/g995800716/ — おそうじ本舗幸塚越店
+- https://miroca.one/house-cleaning/provider/g995800717/ — エアコンクリーニング専門店 Keiクリーニング
+- https://miroca.one/house-cleaning/provider/g995800719/ — Osojikakumei Kawasakinoboritoten
+- https://miroca.one/house-cleaning/provider/g995800720/ — ハウスエイト
+- https://miroca.one/house-cleaning/provider/g995800721/ — おそうじ本舗 湘南ライフタウン店
+- https://miroca.one/house-cleaning/provider/g995800723/ — Osojikakumei Shonanfujisawakameinoten
+- https://miroca.one/house-cleaning/provider/g995800724/ — おそうじ本舗 大船店
+- https://miroca.one/house-cleaning/provider/g995800726/ — 湘南サポート
+- https://miroca.one/house-cleaning/provider/g995800727/ — ハウスクリーニング専門&便利屋ワトソン
+- https://miroca.one/house-cleaning/provider/g995800729/ — 金ちゃんクリーニング(湘南本店)
+- https://miroca.one/house-cleaning/provider/g995800730/ — 株式会社タケトラ【あきやま商会】
+- https://miroca.one/house-cleaning/provider/g995800731/ — ハーツクリーン本部（ハーツリッチ株式会社）
+- https://miroca.one/house-cleaning/provider/g995800733/ — アイコーポレーション藤沢店
+- https://miroca.one/house-cleaning/provider/g995800734/ — ミスタークリーナーズ
+- https://miroca.one/house-cleaning/provider/g995800736/ — ハウスクリーニングRIO
+- https://miroca.one/house-cleaning/provider/g995800737/ — KK Co
+- https://miroca.one/house-cleaning/provider/g995800740/ — エアコン・ハウスクリーニング専門清掃/Magocoro 小田原支店
+- https://miroca.one/house-cleaning/provider/g995800742/ — おうちのみがき屋さん 株式会社グラティ
+- https://miroca.one/house-cleaning/provider/g995800745/ — Magocoro
+- https://miroca.one/house-cleaning/provider/g995800748/ — エアコン・ハウスクリーニングのよろづ屋マルシン
+- https://miroca.one/house-cleaning/provider/g995800749/ — おそうじ本舗篠崎店
+- https://miroca.one/house-cleaning/provider/g995800750/ — プロクリーン誠進
+- https://miroca.one/house-cleaning/provider/g995800751/ — ＳＯＵＲＩＲＥ ハウスクリーニング
+- https://miroca.one/house-cleaning/provider/g995800752/ — ㈱HQサプライ ハイクオリティーサービス
+- https://miroca.one/house-cleaning/provider/g995800753/ — サンパクリーンサービス
+- https://miroca.one/house-cleaning/provider/g995800754/ — おそうじ本舗西小岩店
+- https://miroca.one/house-cleaning/provider/g995800755/ — ファーストエアコンクリーニング
+- https://miroca.one/house-cleaning/provider/g995800759/ — おそうじ革命 東京本店
+- https://miroca.one/house-cleaning/provider/g995800760/ — ライフサポートサービス「まごころ」
+- https://miroca.one/house-cleaning/provider/g995800761/ — ハピネスクリーン
+- https://miroca.one/house-cleaning/provider/g995800762/ — ハートクリーニング
+- https://miroca.one/house-cleaning/provider/g995800763/ — アールクリーニング
+- https://miroca.one/house-cleaning/provider/g995800764/ — おそうじ本舗 新宿曙橋店
+- https://miroca.one/house-cleaning/provider/g995800765/ — 株式会社グッドクリーン
+- https://miroca.one/house-cleaning/provider/g995800766/ — おそうじ本舗武蔵野緑町店
+- https://miroca.one/house-cleaning/provider/g995800767/ — ハウスクリーニング専門 たくみの
+- https://miroca.one/house-cleaning/provider/g995800768/ — おそうじ本舗大崎店
+- https://miroca.one/house-cleaning/provider/g995800769/ — おそうじ本舗 大井町店
+- https://miroca.one/house-cleaning/provider/g995800770/ — Osojikakumei Chiyodakojimachitentokyo
+- https://miroca.one/house-cleaning/provider/g995800771/ — Osojikakumei Chuoku Kachidokiekimaeten
+- https://miroca.one/house-cleaning/provider/g995800772/ — おそうじ本舗鈴ヶ森店
+- https://miroca.one/house-cleaning/provider/g995800773/ — おそうじ革命荒川西尾久店
+- https://miroca.one/house-cleaning/provider/g995800775/ — おそうじ本舗 保土ヶ谷駅前店
 - https://miroca.one/report/ — 市場レポート一覧
 - https://miroca.one/house-cleaning/report/2026-03/ — 2026年03月レポート
 - https://miroca.one/house-cleaning/report/2026-04/ — 2026年04月レポート
-- https://miroca.one/house-cleaning/decide/aircon-cleaning-mold/ — エアコンクリーニングでカビはどこまで取れる？214社調査でわかった満足度と注意点
+- https://miroca.one/house-cleaning/report/2026-05/ — 2026年05月レポート
+- https://miroca.one/house-cleaning/decide/aircon-cleaning-mold/ — エアコンクリーニングでカビはどこまで取れる？222社調査でわかった満足度と注意点
 - https://miroca.one/house-cleaning/decide/year-end-cleaning-booking/ — 年末の大掃除を業者に頼むといくら？予約時期・料金・失敗しない選び方
-- https://miroca.one/house-cleaning/decide/rental-move-out-cleaning/ — 退去時のハウスクリーニングは自分で頼むべき？賃貸214社データで判断基準を解説
+- https://miroca.one/house-cleaning/decide/rental-move-out-cleaning/ — 退去時のハウスクリーニングは自分で頼むべき？賃貸222社データで判断基準を解説
 - https://miroca.one/house-cleaning/decide/bathroom-cleaning/ — 浴室クリーニングの料金と効果を徹底比較｜カビ・水垢はプロでどこまで落ちる？
 - https://miroca.one/house-cleaning/decide/women/ — 女性一人暮らしでも安心？ハウスクリーニングの不安を解消するデータと選び方
-- https://miroca.one/house-cleaning/decide/kitchen-range-hood/ — キッチン・換気扇クリーニングをセットで頼むと安い？214社の料金と口コミを分析
+- https://miroca.one/house-cleaning/decide/kitchen-range-hood/ — キッチン・換気扇クリーニングをセットで頼むと安い？222社の料金と口コミを分析
 - https://miroca.one/house-cleaning/decide/periodic-vs-spot/ — 定期クリーニングとスポット依頼、どっちが得？リピート率50%の業者が選ばれる理由
-- https://miroca.one/house-cleaning/decide/move-in-cleaning/ — 入居前のハウスクリーニングは必要？46,372件の口コミでわかった頼んでよかった理由
+- https://miroca.one/house-cleaning/decide/move-in-cleaning/ — 入居前のハウスクリーニングは必要？49,977件の口コミでわかった頼んでよかった理由
 - https://miroca.one/house-cleaning/decide/toilet-cleaning/ — トイレクリーニングの料金相場と効果｜自分で落ちない尿石・黄ばみはプロに任せるべき？
-- https://miroca.one/house-cleaning/decide/veranda-window-cleaning/ — ベランダ・窓の掃除を業者に頼む人が増えている理由｜46,372件の口コミ分析
-- https://miroca.one/house-cleaning/decide/additional-charge-risk/ — ハウスクリーニングで追加料金を請求されるのはどんなとき？214社のリスク傾向を公開
+- https://miroca.one/house-cleaning/decide/veranda-window-cleaning/ — ベランダ・窓の掃除を業者に頼む人が増えている理由｜49,977件の口コミ分析
+- https://miroca.one/house-cleaning/decide/additional-charge-risk/ — ハウスクリーニングで追加料金を請求されるのはどんなとき？222社のリスク傾向を公開
 - https://miroca.one/house-cleaning/decide/water-set-cleaning/ — 水回りセットクリーニングの料金と満足度｜キッチン・浴室・トイレまとめて頼むべき？
-- https://miroca.one/house-cleaning/decide/same-day/ — 当日対応OKのハウスクリーニング業者は信頼できる？46,372件の口コミから検証
-- https://miroca.one/house-cleaning/decide/apartment-owner/ — 賃貸オーナー向けハウスクリーニング完全ガイド｜空室・退去時の業者選びを214社データで解説
+- https://miroca.one/house-cleaning/decide/same-day/ — 当日対応OKのハウスクリーニング業者は信頼できる？49,977件の口コミから検証
+- https://miroca.one/house-cleaning/decide/apartment-owner/ — 賃貸オーナー向けハウスクリーニング完全ガイド｜空室・退去時の業者選びを222社データで解説
 - https://miroca.one/house-cleaning/decide/elderly-parents-home/ — 実家の掃除を業者に頼む人が急増中｜高齢の親の家をきれいにする選び方と費用
 - https://miroca.one/house-cleaning/decide/repeat-rate/ — リピート率から読み解くハウスクリーニング業者の実力
 - https://miroca.one/house-cleaning/decide/first-time/ — 初めてのハウスクリーニング完全ガイド
@@ -220,8 +142,8 @@
 - https://miroca.one/house-cleaning/decide/pet-multi-odor-removal/ — ペット多頭飼いの臭い・毛・汚れ対策｜プロのハウスクリーニングで効果が出る箇所と料金目安
 - https://miroca.one/house-cleaning/decide/solo-woman-security-cleaning/ — 女性一人暮らしのハウスクリーニング｜不在・鍵預け・男性作業員の不安をデータで解消
 - https://miroca.one/house-cleaning/decide/breakage-damage-insurance-data/ — 作業中の破損・汚損トラブルは何社が補償してくれる？損害保険加入率の実態と選び方
-- https://miroca.one/house-cleaning/decide/hidden-extra-charge-exposed/ — 追加料金リスクが高い業者は214社中214社｜見積もり後の値上げを防ぐ交渉術
-- https://miroca.one/house-cleaning/decide/major-vs-independent-cleaning/ — 大手チェーンvs地元個人店｜自社施工214社のリピート率17.7%が示す品質の真実
+- https://miroca.one/house-cleaning/decide/hidden-extra-charge-exposed/ — 追加料金リスクが高い業者は222社中222社｜見積もり後の値上げを防ぐ交渉術
+- https://miroca.one/house-cleaning/decide/major-vs-independent-cleaning/ — 大手チェーンvs地元個人店｜自社施工222社のリピート率17.7%が示す品質の真実
 - https://miroca.one/house-cleaning/decide/absent-key-handover-cleaning/ — 不在時のハウスクリーニング｜鍵の預け方・立会い不要の条件・トラブル予防をデータで解説
 - https://miroca.one/house-cleaning/decide/ — 判断ガイド一覧
 - https://miroca.one/terms/ — 利用規約
@@ -232,11 +154,11 @@
 - https://miroca.one/house-cleaning/ — ハウスクリーニング
 
 ## データ
-- 業者数: 214社
-- 口コミ: 46,372件+
+- 業者数: 222社
+- 口コミ: 49,977件+
 - ソース: くらしのマーケット, Googleマップ
 - エリア: 横浜市, 東京23区を中心に首都圏
-- 更新: 2026-04-19
+- 更新: 2026-06-21
 
 ## 運営
 BLST WEB (blstweb.jp)
